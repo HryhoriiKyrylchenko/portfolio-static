@@ -28,11 +28,11 @@ jobs:
 
       - name: Install
         run: npm ci
-        working-directory: ./portfolio-static
+        working-directory: ./
 
       - name: Build
         run: npm run build:pages
-        working-directory: ./portfolio-static
+        working-directory: ./
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
