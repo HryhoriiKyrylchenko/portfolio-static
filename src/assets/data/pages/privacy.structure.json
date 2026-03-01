@@ -1,0 +1,86 @@
+{
+  "privacy": {
+    "sections": [
+      {
+        "title": "privacy.content.introduction.title",
+        "paragraphs": [
+          "privacy.introduction.p1"
+        ]
+      },
+      {
+        "title": "privacy.content.dataController.title",
+        "paragraphs": [
+          "privacy.dataController.p1"
+        ]
+      },
+      {
+        "title": "privacy.content.personalData.title",
+        "paragraphs": [
+          "privacy.personalData.p1",
+          "privacy.personalData.p2"
+        ]
+      },
+      {
+        "title": "privacy.content.technicalData.title",
+        "paragraphs": [
+          "privacy.technicalData.p1",
+          "privacy.technicalData.p2"
+        ]
+      },
+      {
+        "title": "privacy.content.cookiesStorage.title",
+        "paragraphs": [
+          "privacy.cookiesStorage.p1",
+          "privacy.cookiesStorage.p2",
+          "privacy.cookiesStorage.p3"
+        ]
+      },
+      {
+        "title": "privacy.content.thirdParties.title",
+        "paragraphs": [
+          "privacy.thirdParties.p1",
+          "privacy.thirdParties.p2"
+        ]
+      },
+      {
+        "title": "privacy.content.dataSharing.title",
+        "paragraphs": [
+          "privacy.dataSharing.p1",
+          "privacy.dataSharing.p2"
+        ]
+      },
+      {
+        "title": "privacy.content.dataRetention.title",
+        "paragraphs": [
+          "privacy.dataRetention.p1",
+          "privacy.dataRetention.p2"
+        ]
+      },
+      {
+        "title": "privacy.content.userRights.title",
+        "paragraphs": [
+          "privacy.userRights.p1",
+          "privacy.userRights.p2"
+        ]
+      },
+      {
+        "title": "privacy.content.security.title",
+        "paragraphs": [
+          "privacy.security.p1"
+        ]
+      },
+      {
+        "title": "privacy.content.changes.title",
+        "paragraphs": [
+          "privacy.changes.p1"
+        ]
+      },
+      {
+        "title": "privacy.content.contact.title",
+        "paragraphs": [
+          "privacy.contact.p1"
+        ]
+      }
+    ]
+  }
+}

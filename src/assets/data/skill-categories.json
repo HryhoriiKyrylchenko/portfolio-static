@@ -1,0 +1,20 @@
+[
+  {
+    "key": "languages",
+    "displayOrder": 1,
+    "nameKey": "skillCategories.languages.name",
+    "descriptionKey": "skillCategories.languages.description"
+  },
+  {
+    "key": "frameworks",
+    "displayOrder": 2,
+    "nameKey": "skillCategories.frameworks.name",
+    "descriptionKey": "skillCategories.frameworks.description"
+  },
+  {
+    "key": "tools",
+    "displayOrder": 3,
+    "nameKey": "skillCategories.tools.name",
+    "descriptionKey": "skillCategories.tools.description"
+  }
+]

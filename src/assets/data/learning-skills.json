@@ -1,0 +1,17 @@
+[
+  {
+    "skillKey": "blazor",
+    "learningStatus": "Planned",
+    "displayOrder": 1
+  },
+  {
+    "skillKey": "grpc",
+    "learningStatus": "Planned",
+    "displayOrder": 3
+  },
+  {
+    "skillKey": "githubactions",
+    "learningStatus": "Practicing",
+    "displayOrder": 2
+  }
+]

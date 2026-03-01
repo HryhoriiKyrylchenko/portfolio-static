@@ -1,0 +1,74 @@
+[
+  {
+    "skillKey": "typescript",
+    "proficiency": 2
+  },
+  {
+    "skillKey": "javascript",
+    "proficiency": 2
+  },
+  {
+    "skillKey": "entityframeworkcore",
+    "proficiency": 2
+  },
+  {
+    "skillKey": "angular",
+    "proficiency": 1
+  },
+  {
+    "skillKey": "aws",
+    "proficiency": 1
+  },
+  {
+    "skillKey": "css",
+    "proficiency": 2
+  },
+  {
+    "skillKey": "docker",
+    "proficiency": 1
+  },
+  {
+    "skillKey": "git",
+    "proficiency": 2
+  },
+  {
+    "skillKey": "html",
+    "proficiency": 2
+  },
+  {
+    "skillKey": "keycloak",
+    "proficiency": 1
+  },
+  {
+    "skillKey": "minio",
+    "proficiency": 2
+  },
+  {
+    "skillKey": "postman",
+    "proficiency": 2
+  },
+  {
+    "skillKey": "postgresql",
+    "proficiency": 1
+  },
+  {
+    "skillKey": "swagger",
+    "proficiency": 2
+  },
+  {
+    "skillKey": "webstorm",
+    "proficiency": 2
+  },
+  {
+    "skillKey": "aspnetcore",
+    "proficiency": 2
+  },
+  {
+    "skillKey": "rider",
+    "proficiency": 2
+  },
+  {
+    "skillKey": "csharp",
+    "proficiency": 3
+  }
+]

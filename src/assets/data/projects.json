@@ -1,0 +1,173 @@
+[
+  {
+    "id": 1,
+    "slug": "forja-platform",
+    "coverImage": "assets/images/projects/forja_cover.png",
+    "demoUrl": "",
+    "repoUrl": "https://github.com/HryhoriiKyrylchenko/forja-platform",
+    "titleKey": "projects-list.forja.title",
+    "shortDescriptionKey": "projects-list.forja.short",
+    "descriptionSectionsKeys": {
+      "overview": "projects-list.forja.sections.overview",
+      "features": "projects-list.forja.sections.features",
+      "architecture": "projects-list.forja.sections.architecture",
+      "deployment": "projects-list.forja.sections.deployment",
+      "results": "projects-list.forja.sections.results",
+      "technologies": "projects-list.forja.sections.technologies"
+    },
+    "skills": [
+      {
+        "skillKey": "csharp"
+      },
+      {
+        "skillKey": "aspnetcore"
+      },
+      {
+        "skillKey": "entityframeworkcore"
+      },
+      {
+        "skillKey": "postgresql"
+      },
+      {
+        "skillKey": "rider"
+      },
+      {
+        "skillKey": "swagger"
+      },
+      {
+        "skillKey": "docker"
+      },
+      {
+        "skillKey": "git"
+      },
+      {
+        "skillKey": "keycloak"
+      },
+      {
+        "skillKey": "minio"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "personal-site",
+    "coverImage": "assets/images/projects/personal_site_cover.png",
+    "demoUrl": "",
+    "repoUrl": "https://github.com/HryhoriiKyrylchenko/personal-site",
+    "titleKey": "projects-list.personal-site.title",
+    "shortDescriptionKey": "projects-list.personal-site.short",
+    "descriptionSectionsKeys": {
+      "overview": "projects-list.personal-site.sections.overview",
+      "features": "projects-list.personal-site.sections.features",
+      "architecture": "projects-list.personal-site.sections.architecture",
+      "deployment": "projects-list.personal-site.sections.deployment",
+      "results": "projects-list.personal-site.sections.results",
+      "technologies": "projects-list.personal-site.sections.technologies"
+    },
+    "skills": [
+      {
+        "skillKey": "csharp"
+      },
+      {
+        "skillKey": "typescript"
+      },
+      {
+        "skillKey": "aspnetcore"
+      },
+      {
+        "skillKey": "angular"
+      },
+      {
+        "skillKey": "entityframeworkcore"
+      },
+      {
+        "skillKey": "postman"
+      },
+      {
+        "skillKey": "postgresql"
+      },
+      {
+        "skillKey": "rider"
+      },
+      {
+        "skillKey": "webstorm"
+      },
+      {
+        "skillKey": "githubactions"
+      },
+      {
+        "skillKey": "aws"
+      },
+      {
+        "skillKey": "css"
+      },
+      {
+        "skillKey": "git"
+      },
+      {
+        "skillKey": "html"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "personal-site",
+    "coverImage": "assets/images/projects/personal_site_cover.png",
+    "demoUrl": "",
+    "repoUrl": "https://github.com/HryhoriiKyrylchenko/personal-site",
+    "titleKey": "projects-list.personal-site.title",
+    "shortDescriptionKey": "projects-list.personal-site.short",
+    "descriptionSectionsKeys": {
+      "overview": "projects-list.personal-site.sections.overview",
+      "features": "projects-list.personal-site.sections.features",
+      "architecture": "projects-list.personal-site.sections.architecture",
+      "deployment": "projects-list.personal-site.sections.deployment",
+      "results": "projects-list.personal-site.sections.results",
+      "technologies": "projects-list.personal-site.sections.technologies"
+    },
+    "skills": [
+      {
+        "skillKey": "csharp"
+      },
+      {
+        "skillKey": "typescript"
+      },
+      {
+        "skillKey": "aspnetcore"
+      },
+      {
+        "skillKey": "angular"
+      },
+      {
+        "skillKey": "entityframeworkcore"
+      },
+      {
+        "skillKey": "postman"
+      },
+      {
+        "skillKey": "postgresql"
+      },
+      {
+        "skillKey": "rider"
+      },
+      {
+        "skillKey": "webstorm"
+      },
+      {
+        "skillKey": "githubactions"
+      },
+      {
+        "skillKey": "aws"
+      },
+      {
+        "skillKey": "css"
+      },
+      {
+        "skillKey": "git"
+      },
+      {
+        "skillKey": "html"
+      }
+    ]
+  }
+]

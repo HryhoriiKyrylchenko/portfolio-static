@@ -1,0 +1,8 @@
+@if (skill) {
+  <div
+    class="skill-item"
+    [title]="skill.descriptionKey | transloco"
+  >
+    <span class="skill-name">{{ skill.nameKey | transloco }}</span>
+  </div>
+}
