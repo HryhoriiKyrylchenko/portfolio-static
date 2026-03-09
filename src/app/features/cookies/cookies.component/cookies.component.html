@@ -1,9 +1,9 @@
-@if (page$ | async; as page) {
+@if (page$ | async; as sections) {
   <div class="cookies-page">
     <h4 class="title">
       {{ 'cookies.page_title' | transloco }}
     </h4>
-      @for (section of page.sections; track section.title) {
+      @for (section of sections; track section.title) {
         <section class="content">
           <h4>{{ section.title | transloco }}</h4>
 

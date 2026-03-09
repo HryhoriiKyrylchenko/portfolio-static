@@ -15,7 +15,7 @@
     ></div>
 
     <h3 class="project-title">
-      {{ project.title }}
+      {{ project.titleKey | transloco }}
     </h3>
 
     <div class="project-description">
@@ -23,41 +23,41 @@
         {{ 'project.overview' | transloco }}
       </h6>
       <p class="project-content">
-        {{ project.descriptionSections['Overview'] }}
+        {{ project.descriptionSectionsKeys['overview'] | transloco }}
       </p>
       <h6 class="project-subtitle">
         {{ 'project.technologies' | transloco }}
       </h6>
       <p class="project-content">
-        {{ project.descriptionSections['Technologies'] }}
+        {{ project.descriptionSectionsKeys['technologies'] | transloco }}
       </p>
       <h6 class="project-subtitle">
         {{ 'project.features' | transloco }}
       </h6>
       <p class="project-content">
-        {{ project.descriptionSections['Features'] }}
+        {{ project.descriptionSectionsKeys['features'] | transloco }}
       </p>
       <h6 class="project-subtitle">
         {{ 'project.architecture' | transloco }}
       </h6>
       <p class="project-content">
-        {{ project.descriptionSections['Architecture'] }}
+        {{ project.descriptionSectionsKeys['architecture'] | transloco }}
       </p>
       <h6 class="project-subtitle">
         {{ 'project.deployment' | transloco }}
       </h6>
       <p class="project-content">
-        {{ project.descriptionSections['Deployment'] }}
+        {{ project.descriptionSectionsKeys['deployment'] | transloco }}
       </p>
       <h6 class="project-subtitle">
         {{ 'project.results' | transloco }}
       </h6>
       <p class="project-content">
-        {{ project.descriptionSections['Results'] }}
+        {{ project.descriptionSectionsKeys['results'] | transloco }}
       </p>
     </div>
 
-    @if (skillsByCategory$ | async; as skillsByCategory) {
+    @if (skillsByCategory | async; as skillsByCategory) {
       <h4 class="project-skills-title">
         {{ 'project.skills' | transloco }}
       </h4>
@@ -68,7 +68,7 @@
             {{ 'skill.category.languages' | transloco }}
           </h5>
           <div class="category-skills">
-            @for (skill of skillsByCategory['Languages']; track skill.key)  {
+            @for (skill of skillsByCategory['languages']; track skill.key)  {
               <app-skill [skill]="skill"></app-skill>
             }
           </div>
@@ -79,7 +79,7 @@
             {{ 'skill.category.frameworks' | transloco }}
           </h5>
           <div class="category-skills">
-            @for (skill of skillsByCategory['Frameworks']; track skill.key)  {
+            @for (skill of skillsByCategory['frameworks']; track skill.key)  {
               <app-skill [skill]="skill"></app-skill>
             }
           </div>
@@ -90,7 +90,7 @@
             {{ 'skill.category.tools' | transloco }}
           </h5>
           <div class="category-skills">
-            @for (skill of skillsByCategory['Tools']; track skill.key)  {
+            @for (skill of skillsByCategory['tools']; track skill.key)  {
               <app-skill [skill]="skill"></app-skill>
             }
           </div>

@@ -8,7 +8,7 @@ import {MatButton} from '@angular/material/button';
 import {ProjectsService} from '../../../core/services/projects.service';
 import {SkillFullDto} from '../../../shared/models/skill-dtos';
 import {SkillComponent} from '../../../shared/components/skill.component/skill.component';
-import {TranslocoPipe} from '@jsverse/transloco';
+import {TranslocoPipe, TranslocoService} from '@jsverse/transloco';
 
 @Component({
   selector: 'app-project',
@@ -27,6 +27,7 @@ export class ProjectComponent {
   private route = inject(ActivatedRoute);
   private router = inject(Router);
   private titleService = inject(Title);
+  private transloco = inject(TranslocoService);
 
   readonly projects = inject(ProjectsService).getProjects();
 
@@ -39,14 +40,15 @@ export class ProjectComponent {
         map(projects => projects.find(p => p.slug === slug) ?? null),
         tap(project => {
           if (project) {
-            this.titleService.setTitle( project.title);
+            const translatedTitle = this.transloco.translate(project.titleKey);
+            this.titleService.setTitle(translatedTitle);
           }
         })
       );
     })
   );
 
-  readonly skills$ = this.project$.pipe(
+  readonly skills = this.project$.pipe(
     map(project =>
       (project?.skills ?? []).slice().sort((a, b) => {
         const orderDiff = a.category.displayOrder - b.category.displayOrder;
@@ -57,16 +59,16 @@ export class ProjectComponent {
     )
   );
 
-  readonly skillsByCategory$ = this.skills$.pipe(
+  readonly skillsByCategory = this.skills.pipe(
     map(skills => {
       const grouped: Record<string, SkillFullDto[]> = {
-        Languages: [],
-        Tools: [],
-        Frameworks: []
+        languages: [],
+        tools: [],
+        frameworks: []
       };
 
       for (const skill of skills) {
-        const key = skill.category.key;
+        const key = skill.categoryKey;
         if (grouped[key]) {
           grouped[key].push(skill);
         }

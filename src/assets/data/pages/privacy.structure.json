@@ -4,81 +4,81 @@
       {
         "title": "privacy.content.introduction.title",
         "paragraphs": [
-          "privacy.introduction.p1"
+          "privacy.content.introduction.p1"
         ]
       },
       {
-        "title": "privacy.content.dataController.title",
+        "title": "privacy.content.data_controller.title",
         "paragraphs": [
-          "privacy.dataController.p1"
+          "privacy.content.data_controller.p1"
         ]
       },
       {
-        "title": "privacy.content.personalData.title",
+        "title": "privacy.content.personal_data_collection.title",
         "paragraphs": [
-          "privacy.personalData.p1",
-          "privacy.personalData.p2"
+          "privacy.content.personal_data_collection.p1",
+          "privacy.content.personal_data_collection.p2"
         ]
       },
       {
-        "title": "privacy.content.technicalData.title",
+        "title": "privacy.content.technical_data.title",
         "paragraphs": [
-          "privacy.technicalData.p1",
-          "privacy.technicalData.p2"
+          "privacy.content.technical_data.p1",
+          "privacy.content.technical_data.p2"
         ]
       },
       {
-        "title": "privacy.content.cookiesStorage.title",
+        "title": "privacy.content.cookies_storage.title",
         "paragraphs": [
-          "privacy.cookiesStorage.p1",
-          "privacy.cookiesStorage.p2",
-          "privacy.cookiesStorage.p3"
+          "privacy.content.cookies_storage.p1",
+          "privacy.content.cookies_storage.p2",
+          "privacy.content.cookies_storage.p3"
         ]
       },
       {
-        "title": "privacy.content.thirdParties.title",
+        "title": "privacy.content.third_parties.title",
         "paragraphs": [
-          "privacy.thirdParties.p1",
-          "privacy.thirdParties.p2"
+          "privacy.content.third_parties.p1",
+          "privacy.content.third_parties.p2"
         ]
       },
       {
-        "title": "privacy.content.dataSharing.title",
+        "title": "privacy.content.data_sharing.title",
         "paragraphs": [
-          "privacy.dataSharing.p1",
-          "privacy.dataSharing.p2"
+          "privacy.content.data_sharing.p1",
+          "privacy.content.data_sharing.p2"
         ]
       },
       {
-        "title": "privacy.content.dataRetention.title",
+        "title": "privacy.content.data_retention.title",
         "paragraphs": [
-          "privacy.dataRetention.p1",
-          "privacy.dataRetention.p2"
+          "privacy.content.data_retention.p1",
+          "privacy.content.data_retention.p2"
         ]
       },
       {
-        "title": "privacy.content.userRights.title",
+        "title": "privacy.content.user_rights.title",
         "paragraphs": [
-          "privacy.userRights.p1",
-          "privacy.userRights.p2"
+          "privacy.content.user_rights.p1",
+          "privacy.content.user_rights.p2"
         ]
       },
       {
         "title": "privacy.content.security.title",
         "paragraphs": [
-          "privacy.security.p1"
+          "privacy.content.security.p1"
         ]
       },
       {
         "title": "privacy.content.changes.title",
         "paragraphs": [
-          "privacy.changes.p1"
+          "privacy.content.changes.p1"
         ]
       },
       {
         "title": "privacy.content.contact.title",
         "paragraphs": [
-          "privacy.contact.p1"
+          "privacy.content.contact.p1"
         ]
       }
     ]

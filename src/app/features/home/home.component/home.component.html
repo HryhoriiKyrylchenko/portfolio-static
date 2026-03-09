@@ -75,11 +75,11 @@
           }
 
           <h5 class="project-title">
-            {{ project.title }}
+            {{ project.titleKey | transloco }}
           </h5>
 
           <p class="project-description">
-            {{ project.shortDescription }}
+            {{ project.shortDescriptionKey | transloco }}
           </p>
         </div>
 
@@ -91,19 +91,23 @@
             {{ 'button.read_more' | transloco }}
           </button>
 
-          <button
-            class="btn btn-secondary btn-repo"
-            (click)="onRepoClick()"
-          >
-            {{ 'button.repo' | transloco }}
-          </button>
+          @if (project.repoUrl && project.repoUrl.length > 0) {
+            <button
+              class="btn btn-secondary btn-repo"
+              (click)="onRepoClick()"
+            >
+              {{ 'button.repo' | transloco }}
+            </button>
+          }
 
-          <button
-            class="btn btn-secondary btn-demo"
-            (click)="onDemoClick()"
-          >
-            {{ 'button.demo' | transloco }}
-          </button>
+          @if (project.demoUrl && project.demoUrl.length > 0) {
+            <button
+              class="btn btn-secondary btn-demo"
+              (click)="onDemoClick()"
+            >
+              {{ 'button.demo' | transloco }}
+            </button>
+          }
         </div>
       </div>
     </div>

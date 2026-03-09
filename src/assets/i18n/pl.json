@@ -39,7 +39,7 @@
         "title": "Wprowadzenie",
         "p1": "Ta witryna hyrhoriikyrylchenko.dev (dalej \\\"Serwis\\\") wykorzystuje pliki cookie i podobne technologie, aby zapewnić prawidłowe działanie. Wszystkie przechowywane dane — takie jak pliki cookie i local storage — są niezbędne do funkcjonowania tej deweloperskiej strony portfolio."
       },
-      "whatAre": {
+      "what-are": {
         "title": "Czym są pliki cookie?",
         "p1": "Pliki cookie to niewielkie pliki tekstowe zapisywane w przeglądarce, które umożliwiają kluczowe funkcje, takie jak sesje oraz zapamiętywanie ustawień języka czy motywu. Local storage również przechowuje preferencje, takie jak \\\"theme\\\" (jasny/ciemny)."
       },
@@ -167,18 +167,18 @@
   "projects-list": {
     "forja": {
       "title": "Forja – Platforma niezależnego studia gier",
-      "short": "Solidna, tożsamościowo-zorientowana platforma content-owa, stworzona dla buildów gier, opinii graczy i zarządzania zespołowym contentem.",
+      "short": "Solidna platforma do zarządzania treścią, stworzona z myślą o tworzeniu gier, zbieraniu opinii graczy i zarządzaniu zespołowym contentem.",
       "sections": {
-        "results": "W ciągu 3 miesięcy dostarczyłem wysokowydajny backend. Moja rola: zaprojektowanie schematu bazy danych, zbudowanie i wdrożenie architektury backendu, implementacja funkcjonalności serwerowej oraz integracja powiązanych technologii. Pracowaliśmy w metodyce Agile, blisko współpracując z frontendem, designem i specjalistą ds. bezpieczeństwa.",
-        "features": "Mechanizmy feedbacku graczy, narzędzia do zgłaszania błędów oraz wewnętrzny CMS do organizacji projektów studia i zasobów contentowych.",
-        "overview": "Forja to dedykowana platforma dla niezależnego studia gier, świadomie unikająca gotowych rozwiązań. Zapewnia uporządkowane środowisko do zarządzania buildami, zbierania opinii graczy i pracy nad zespołowym contentem.",
-        "deployment": "Platforma przygotowana do wdrożenia w chmurze (np. AWS, Azure lub prywatna chmura). Konteneryzacja Docker ułatwia skalowanie, orkiestrację i zarządzanie wydaniami.",
-        "architecture": "Backend oparty na ASP.NET Core (C#), obsługujący ponad 40 dynamicznych stron UI przez kontrolery i serwisy. Dane w PostgreSQL, Redis do cache'owania, MinIO jako obiektowe storage, Keycloak do uwierzytelniania. Dokumentacja API w Swaggerze, całość orkiestruje .NET Aspire Dashboard.",
-        "technologies": "C#, ASP.NET Core, PostgreSQL, Redis, Docker, MinIO, Keycloak, Swagger, .NET Aspire Dashboard"
+        "results": "Dostarczono wydajny backend w ciągu skoncentrowanego, 3-miesięcznego sprintu. Moje zadania obejmowały projektowanie schematu bazy danych, architektury backendu, implementację funkcjonalności oraz integrację technologii. Zespół Agile zapewnił sprawną koordynację z frontendem, projektowaniem i bezpieczeństwem.",
+        "features": "Mechanizmy zbierania opinii graczy, narzędzia do zgłaszania błędów oraz wewnętrzny system zarządzania treścią do organizowania projektów studia i zasobów contentowych.",
+        "overview": "Forja to dedykowana platforma dla niezależnego studia gier, unikająca rozwiązań generycznych. Zapewnia zoptymalizowane środowisko do zarządzania buildami, zbierania opinii graczy i nadzorowania zespołowego contentu w spójnym ekosystemie.",
+        "deployment": "Platforma zaprojektowana do wdrożenia w chmurze (AWS, Azure lub prywatna). Konteneryzacja w Dockerze umożliwia skalowanie, orkiestrację i utrzymanie systemu, usprawniając procesy wdrożeń i zarządzania infrastrukturą.",
+        "architecture": "Backend zbudowany w ASP.NET Core (C#), obsługujący ponad 40 dynamicznych stron UI przez kontrolery i serwisy. PostgreSQL zarządza danymi, Redis przyspiesza cache, MinIO zapewnia skalowalne przechowywanie obiektów, Keycloak obsługuje uwierzytelnianie. Dokumentacja API w Swagger; całość zarządzana przez .NET Aspire Dashboard.",
+        "technologies": "C#, ASP.NET Core, Entity Framework Core, Docker, Git, Keycloak, PostgreSQL, Redis, MinIO, Swagger, .NET Aspire Dashboard"
       }
     },
     "personal-site": {
-      "title": "Osobiste portfolio i blog dla deweloperów",
+      "title": "Osobiste Portfolio Dewelopera i Blog",
       "short": "Wielojęzyczna aplikacja full‑stack prezentująca projekty, wpisy i wybory technologiczne.",
       "sections": {
         "results": "Osobiście opracowałem cały serwis — backend, frontend i strukturę bazy danych — we współpracy z projektantem UX/UI. Strona jest wdrożona i dostępna online.",
@@ -187,6 +187,18 @@
         "deployment": "Konteneryzacja z użyciem Docker; CI/CD oparte na GitHub Actions wdrażające na AWS. Zautomatyzowane migracje bazy danych i provisioning infrastruktury zapewniają płynne wdrożenia i aktualizacje.",
         "architecture": "Architektura backendu opiera się na zasadach Domain-Driven Design (DDD) i Clean Architecture, zorganizowana według wzorca Vertical Slice. System wykorzystuje MediatR do implementacji wzorca Mediator i CQRS, co umożliwia rozdzielenie komend i zapytań oraz minimalizuje logikę w kontrolerach. Każdy vertical slice zawiera własne żądanie/handler (komendę lub zapytanie), walidację i definicję endpointu.",
         "technologies": "C#, ASP.NET Core, Entity Framework Core, PostgreSQL, Angular, Docker, AWS S3, AWS Cognito, Postman, GitHub Actions, AWS"
+      }
+    },
+    "portfolio-static": {
+      "title": "Osobiste Portfolio (Wersja Statyczna)",
+      "short": "Statyczna wersja osobistej strony portfolio, prezentująca projekty i umiejętności.",
+      "sections": {
+        "results": "Jest to statyczna kopia mojego pełnego portfolio. Prezentuje projekty, umiejętności i możliwości frontendowe. Backend, dynamiczny blog i panel administracyjny nie są uwzględnione.",
+        "features": "Obsługa statycznych list projektów, wielojęzyczna (en/pl/ru/uk) i podstawowa nawigacja po stronie. Cała zawartość ładowana jest z lokalnych plików JSON. Brak API backendu, uwierzytelniania lub dynamicznej zawartości.",
+        "overview": "Strona statyczna zbudowana w Angular i wdrożona na GitHub Pages jako Single Page Application (SPA). Prezentuje umiejętności frontendowe, portfolio projektów oraz osobistą markę.",
+        "deployment": "Wdrożona przy użyciu `ng build --configuration production` i `npx gh-pages -d dist/portfolio-static`. Nie wymaga serwera ani backendu.",
+        "architecture": "SPA frontendowe oparte wyłącznie na komponentach Angular standalone. Brak SSR, backendu lub panelu administracyjnego. Skupia się na lekkim, statycznym pokazie oryginalnego projektu (https://github.com/HryhoriiKyrylchenko/personal-site).",
+        "technologies": "Angular, TypeScript, SCSS, GitHub Pages, JSON do statycznej zawartości."
       }
     }
   },
@@ -297,6 +309,10 @@
     "githubactions": {
       "name": "GitHub Actions",
       "description": "Wbudowana platforma CI/CD w GitHub. Umożliwia definiowanie workflow w YAML do budowania, testowania i wdrażania kodu po zdarzeniach repozytorium."
+    },
+    "redis": {
+      "name": "Redis",
+      "description": "Pamięciowy magazyn struktur danych używany jako baza danych, pamięć podręczna i broker komunikatów do szybkiego dostępu do danych i przetwarzania w czasie rzeczywistym."
     }
   }
 }

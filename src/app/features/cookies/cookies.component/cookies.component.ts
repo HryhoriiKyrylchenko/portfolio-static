@@ -16,5 +16,5 @@ import {CookiesPageService} from '../../../core/services/cookies-page.service';
 export class CookiesComponent {
   private cookiesPageService = inject(CookiesPageService);
 
-  readonly page$ = this.cookiesPageService.getStructure();
+  readonly page$ = this.cookiesPageService.getSections();
 }

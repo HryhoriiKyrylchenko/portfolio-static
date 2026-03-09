@@ -126,5 +126,11 @@
     "nameKey": "skills-list.minio.name",
     "descriptionKey": "skills-list.minio.description",
     "categoryKey": "tools"
+  },
+  {
+    "key": "redis",
+    "nameKey": "skills-list.redis.name",
+    "descriptionKey": "skills-list.redis.description",
+    "categoryKey": "tools"
   }
 ]

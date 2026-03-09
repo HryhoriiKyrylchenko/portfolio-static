@@ -31,7 +31,7 @@ export class AboutComponent {
   private learningSkillsService = inject(LearningSkillsService);
   private transloco = inject(TranslocoService);
 
-  readonly aboutImageUrl = 'assets/images/about-image.jpg';
+  readonly aboutImageUrl = "assets/images/about_image.jpg";
 
   readonly skills = this.userSkillsService.getUserSkills().pipe(
     map(skills => skills.sort((a, b) => {
@@ -42,7 +42,7 @@ export class AboutComponent {
     }))
   );
 
-  readonly skillsByCategory$ = this.skills.pipe(
+  readonly skillsByCategory = this.skills.pipe(
     map(skills => {
       const grouped: Record<string, UserSkillFullDto[]> = {
         languages: [],

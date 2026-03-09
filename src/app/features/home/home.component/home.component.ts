@@ -28,7 +28,7 @@ export class HomeComponent {
   private projectsService = inject(ProjectsService);
   private userSkillsService = inject(UserSkillsService);
 
-  readonly homeImageUrl = 'assets/images/home-image.jpg';
+  readonly homeImageUrl = "assets/images/home_image.jpg";
 
   readonly skills = this.userSkillsService.getUserSkills().pipe(
     map(skills => skills.sort((a, b) => {
@@ -45,7 +45,7 @@ export class HomeComponent {
     map(project => project?.skills ?? [])
   );
 
-  readonly resumeUrl = 'assets/data/resume/CV_Hryhorii_Kyrylchenko.pdf';
+  readonly resumeUrl = 'assets/resume/CV_Hryhorii_Kyrylchenko.pdf';
 
   onContactClick() {
     void this.router.navigate(['/contacts']);

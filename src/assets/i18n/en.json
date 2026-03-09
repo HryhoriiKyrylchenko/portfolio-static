@@ -39,7 +39,7 @@
         "title": "Introduction",
         "p1": "This website hyrhoriikyrylchenko.dev (the \"Site\") uses cookies and similar technologies to ensure proper functioning. All data stored—such as cookies and local storage—is strictly necessary for the operation of this developer portfolio site."
       },
-      "whatAre": {
+      "what-are": {
         "title": "What are Cookies?",
         "p1": "Cookies are small text files stored in your browser to enable key functionalities like sessions and language or theme settings. Local storage also preserves preferences such as \"theme\" (light/dark)."
       },
@@ -174,19 +174,31 @@
         "overview": "Forja is a bespoke platform developed for an independent game studio, intentionally steering clear of generic solutions. It offers a streamlined environment for managing game builds, collecting player feedback, and overseeing team content, all within a cohesive ecosystem.",
         "deployment": "The platform is designed for deployment on cloud infrastructure (e.g., AWS, Azure, or any private cloud). With Docker-based containerization, the system can be easily scaled, orchestrated, and maintained in cloud environments, enabling streamlined release workflows and infrastructure management.",
         "architecture": "The backend is constructed using ASP.NET Core (C#), serving over 40 dynamic UI pages via controllers and services. Data is managed with PostgreSQL, while Redis is employed for caching to enhance performance. MinIO is utilized for scalable object storage, and Keycloak manages authentication. API documentation is maintained using Swagger, and the entire system is orchestrated through the .NET Aspire Dashboard.",
-        "technologies": "C#, ASP.NET Core, PostgreSQL, Redis, Docker, MinIO, Keycloak, Swagger, .NET Aspire Dashboard"
+        "technologies": "C#, ASP.NET Core, Entity Framework Core, Docker, Git, Keycloak, PostgreSQL, Redis,  MinIO,  Swagger, .NET Aspire Dashboard"
       }
     },
     "personal-site": {
-      "title": "Personal Developer Portfolio & Blog-test",
-      "short": "A multilingual full‑stack site to showcase projects, blog posts, and technology choices.",
+      "title": "Personal Developer Portfolio & Blog",
+      "short": "A modern, multilingual full‑stack site with portfolio, blog, and admin panel, showcasing development projects and professional skills.",
       "sections": {
-        "results": "I personally developed the entire site—backend, frontend, and database design—collaborating with a designer for UX/UI. Now deployed and live.",
-        "features": "Support for multilingual posts (pl/ru/uk/en), tag filtering and cloud, an admin interface for content management, admin authentication via AWS Cognito, storage on AWS S3, and SEO-friendly routing with metadata support.",
-        "overview": "This website is a full-stack portfolio and blog platform that presents me as a software developer. It includes an 'About Me' section, a portfolio listing with detailed project pages, and a blog section featuring individual posts. The site showcases my skills and brand through live content and dynamic interaction.",
-        "deployment": "Containerized using Docker, with CI/CD via GitHub Actions deploying to AWS. Includes automated database migrations and infrastructure provisioning for smooth deployment and updates.",
-        "architecture": "The backend architecture follows Domain-Driven Design and Clean Architecture principles, structured using Vertical Slice patterns. The system uses MediatR to implement the Mediator and CQRS patterns, enabling clear separation between commands and queries, and keeping controllers minimal. Each vertical slice contains its own request/handler logic (commands or queries), validation, and endpoint definitions.",
-        "technologies": "C#, ASP.NET Core, Entity Framework Core, PostgreSQL, Angular, Docker, AWS S3, AWS Cognito, Postman, GitHub Actions, AWS."
+        "results": "I developed the entire site, including backend, frontend, and database, implementing responsive design and multilingual support, and collaborating with a designer for UX/UI.",
+        "features": "Portfolio with project showcases, blog section, About page, contact form with email notifications, social links, admin panel for content management, and localization via JSON and database translations. Unit tests implemented with xUnit, Moq, and FluentAssertions.",
+        "overview": "This full-stack site features an 'About' section, portfolio pages with detailed projects, a blog with articles, and a contact form. It demonstrates development skills, project showcases, and professional branding with dynamic interaction and multilingual support.",
+        "deployment": "Containerized with Docker, CI/CD implemented via GitHub Actions, deploying to AWS. Includes automated database migrations and infrastructure provisioning for reliable deployment and updates.",
+        "architecture": "Backend uses Domain-Driven Design and Clean Architecture with Vertical Slice patterns. MediatR implements CQRS, separating commands and queries. Each vertical slice contains its own request/handler logic, validation, and endpoint definitions. Frontend is Angular, fully responsive and localized.",
+        "technologies": "C#, TypeScript, ASP.NET Core, Entity Framework Core, Angular, PostgreSQL, Postman, Git, GitHub Actions, AWS, HTML, CSS, Rider, WebStorm."
+      }
+    },
+    "portfolio-static": {
+      "title": "Personal Portfolio (Static Version)",
+      "short": "A static version of my personal portfolio website, showcasing projects and skills.",
+      "sections": {
+        "results": "This is a static copy of my fullstack portfolio site. It shows projects, skills, and frontend capabilities. Backend, dynamic blog, and admin panel are not included.",
+        "features": "Supports static project listings, multilingual support (en/pl/ru/uk), and basic site navigation. All content is loaded from local JSON files. No backend API, authentication, or dynamic content.",
+        "overview": "The static site is built with Angular and deployed to GitHub Pages as a Single Page Application (SPA). It demonstrates my frontend skills, projects portfolio, and personal branding.",
+        "deployment": "Deployed using ng build --configuration production and npx gh-pages -d dist/portfolio-static. No server or backend required.",
+        "architecture": "Frontend-only SPA using Angular standalone components. No SSR, backend, or admin panel is included. The focus is on a lightweight, static showcase of the original project (https://github.com/HryhoriiKyrylchenko/personal-site).",
+        "technologies": "Angular, TypeScript, SCSS, GitHub Pages, JSON for static content."
       }
     }
   },
@@ -297,6 +309,10 @@
     "githubactions": {
       "name": "GitHub Actions",
       "description": "Integrated CI/CD platform in GitHub enabling automated build, test, and deployment workflows triggered by repository events."
+    },
+    "redis": {
+      "name": "Redis",
+      "description": "An in-memory data structure store used as a database, cache, and message broker for fast data access and real-time processing."
     }
   }
 }

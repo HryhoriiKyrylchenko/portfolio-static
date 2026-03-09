@@ -28,7 +28,7 @@
     </div>
   </div>
 
-  @if (skillsByCategory$ | async; as skillsByCategory) {
+  @if (skillsByCategory | async; as skillsByCategory) {
     <h4 class="user-skills-title">
       {{ 'skill.title' | transloco }}
     </h4>
@@ -39,7 +39,7 @@
           {{ 'skill.category.languages' | transloco }}
         </h5>
         <div class="category-skills">
-          @for (skill of skillsByCategory['Languages']; track skill.skillKey) {
+          @for (skill of skillsByCategory['languages']; track skill.skillKey) {
             <div class="skill-item">
               <app-skill [skill]="skill.skill"></app-skill>
               <app-skill-level [level]="skill.proficiency"></app-skill-level>
@@ -53,7 +53,7 @@
           {{ 'skill.category.frameworks' | transloco }}
         </h5>
         <div class="category-skills">
-          @for (skill of skillsByCategory['Frameworks']; track skill.skill.key) {
+          @for (skill of skillsByCategory['frameworks']; track skill.skill.key) {
             <div class="skill-item">
               <app-skill [skill]="skill.skill"></app-skill>
               <app-skill-level [level]="skill.proficiency"></app-skill-level>
@@ -67,7 +67,7 @@
           {{ 'skill.category.tools' | transloco }}
         </h5>
         <div class="category-skills">
-          @for (skill of skillsByCategory['Tools']; track skill.skill.key) {
+          @for (skill of skillsByCategory['tools']; track skill.skill.key) {
             <div class="skill-item">
               <app-skill [skill]="skill.skill"></app-skill>
               <app-skill-level [level]="skill.proficiency"></app-skill-level>

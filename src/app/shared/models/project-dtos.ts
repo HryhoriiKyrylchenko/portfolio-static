@@ -6,9 +6,9 @@ export interface ProjectDto {
   coverImage: string;
   demoUrl: string;
   repoUrl: string;
-  title: string;
-  shortDescription: string;
-  descriptionSections: Record<string, string>;
+  titleKey: string;
+  shortDescriptionKey: string;
+  descriptionSectionsKeys: Record<string, string>;
   skills: SkillRefDto[];
 }
 

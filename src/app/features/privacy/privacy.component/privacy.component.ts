@@ -16,5 +16,5 @@ import {TranslocoPipe} from '@jsverse/transloco';
 export class PrivacyComponent {
   private privacyPageService = inject(PrivacyPageService);
 
-  readonly page$ = this.privacyPageService.getStructure();
+  readonly page$ = this.privacyPageService.getSections();
 }

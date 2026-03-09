@@ -4,37 +4,37 @@
       {
         "title": "cookies.content.introduction.title",
         "paragraphs": [
-          "cookies.introduction.p1"
+          "cookies.content.introduction.p1"
         ]
       },
       {
-        "title": "cookies.content.whatAre.title",
+        "title": "cookies.content.what-are.title",
         "paragraphs": [
-          "cookies.whatAre.p1"
+          "cookies.content.what-are.p1"
         ]
       },
       {
         "title": "cookies.content.usage.title",
         "paragraphs": [
-          "cookies.usage.p1"
+          "cookies.content.usage.p1"
         ]
       },
       {
         "title": "cookies.content.types.title",
         "paragraphs": [
-          "cookies.types.p1"
+          "cookies.content.types.p1"
         ]
       },
       {
         "title": "cookies.content.manage.title",
         "paragraphs": [
-          "cookies.manage.p1"
+          "cookies.content.manage.p1"
         ]
       },
       {
         "title": "cookies.content.changes.title",
         "paragraphs": [
-          "cookies.changes.p1"
+          "cookies.content.changes.p1"
         ]
       }
     ]

@@ -70,5 +70,9 @@
   {
     "skillKey": "csharp",
     "proficiency": 3
+  },
+  {
+    "skillKey": "redis",
+    "proficiency": 2
   }
 ]
