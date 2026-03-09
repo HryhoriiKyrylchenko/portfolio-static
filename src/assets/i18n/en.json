@@ -1,0 +1,318 @@
+{
+  "home": {
+    "title": "Hryhorii Kyrylchenko",
+    "button-back-to-top": "Back to top",
+    "rights-reserved": "All rights reserved.",
+    "project": "Last Project",
+    "subtitle": "C# .NET Developer | Web Applications",
+    "description": "Driven by curiosity and a commitment to lifelong learning, I embrace challenges and craft solutions that make a difference — every project is an opportunity to grow, adapt, and deliver real value. I’m dedicated to creating applications that bring real value to people’s lives."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contacts": "Contacts"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "about":{
+    "title": "Hi, I'm Hryhorii Kyrylchenko",
+    "description": "Aspiring .NET developer with a diverse professional background in law, logistics, sales, and consulting. Completed training at IT STEP Academy in Poland, proficient in C#, ASP.NET Core, SQL, and more. Seeking new challenges in .NET development.",
+    "content": "I am a beginner .NET developer with an unconventional professional background in areas such as law, logistics, sales, and consulting. This rich experience has shaped skills like analytical thinking, adaptability, and communication—valuable additions to my technical knowledge.\n\nAfter moving to Poland, I successfully completed my studies at IT STEP Academy, where I mastered C#, ASP.NET Core, Web API, SQL, EF Core, LINQ, as well as HTML, CSS, and JavaScript. This provided me with a solid foundation for transitioning into web development.\n\nCurrently, I am open to interesting projects and positions in the .NET development field—aiming to apply my skills effectively and grow together with a team."
+  },
+  "policy": {
+    "cookies": "Cookie Policy",
+    "privacy": "Privacy Policy"
+  },
+  "error": {
+    "title": "Error 404",
+    "text": "Looks like this page got... crumpled. \u2028We tried to smooth it out, rewrite it, even cut a new one — but nope.",
+    "button": "Reload Page"
+  },
+  "cookies": {
+    "page_title": "Cookie Policy",
+    "page_description": "This policy explains how cookies are used on this site.",
+    "content": {
+      "introduction": {
+        "title": "Introduction",
+        "p1": "This website hyrhoriikyrylchenko.dev (the \"Site\") uses cookies and similar technologies to ensure proper functioning. All data stored—such as cookies and local storage—is strictly necessary for the operation of this developer portfolio site."
+      },
+      "what-are": {
+        "title": "What are Cookies?",
+        "p1": "Cookies are small text files stored in your browser to enable key functionalities like sessions and language or theme settings. Local storage also preserves preferences such as \"theme\" (light/dark)."
+      },
+      "usage": {
+        "title": "How We Use Cookies",
+        "p1": "We use minimal, essential storage mechanisms only."
+      },
+      "types": {
+        "title": "Cookie Types",
+        "p1": "Essential cookies and storage: Necessary for site operation. These include browser-set cookies like “translocoLang”, as well as “cookie_consent” and local storage key “theme”. Without them, the site would not function properly. Consent is assumed through use of the site."
+      },
+      "manage": {
+        "title": "How to Manage Cookies",
+        "p1": "These essential cookies and settings cannot be disabled without impacting the site's functionality. You may clear them via your browser settings, but the site may not work correctly afterward."
+      },
+      "changes": {
+        "title": "Changes",
+        "p1": "This policy may be updated. Please revisit this page for any changes."
+      }
+    },
+    "accept_button": "Accept",
+    "learn_more": "Learn More About Cookies",
+    "title": "We use cookies",
+    "start": "to improve your experience on our site.",
+    "end": "By continuing to use our site, you agree to this."
+  },
+  "privacy": {
+    "page_title": "Privacy Policy",
+    "page_description": "This policy explains how this website processes data and protects user privacy.",
+    "content": {
+      "introduction": {
+        "title": "Introduction",
+        "p1": "This Privacy Policy explains how the website hyrhoriikyrylchenko.dev (the \"Site\") handles information when you visit it. This Site is a static developer portfolio and does not actively collect personal data from users."
+      },
+      "data_controller": {
+        "title": "Data Controller",
+        "p1": "The data controller for this website is the owner of hyrhoriikyrylchenko.dev. If you have any questions regarding this Privacy Policy, you may contact the website owner using the contact information provided on the Site."
+      },
+      "personal_data_collection": {
+        "title": "Personal Data Collection",
+        "p1": "This Site does not provide user accounts, contact forms, newsletters, or any interactive features that would require the submission of personal information.",
+        "p2": "The Site does not intentionally collect, store, or process personal data such as names, email addresses, phone numbers, or payment information."
+      },
+      "technical_data": {
+        "title": "Automatically Processed Technical Data",
+        "p1": "When you access the Site, certain technical information may be processed automatically by the hosting provider. This may include IP address, browser type, device information, and access timestamps.",
+        "p2": "Such data is processed solely for the purpose of ensuring server security, preventing abuse, and maintaining proper website operation. The website owner does not directly access or use this information for tracking or profiling purposes."
+      },
+      "cookies_storage": {
+        "title": "Cookies and Local Storage",
+        "p1": "The Site uses only essential cookies and browser storage mechanisms necessary for its operation.",
+        "p2": "These may include a language preference cookie (such as \"translocoLang\"), a cookie consent indicator (\"cookie_consent\"), and a local storage key for theme preference (\"theme\").",
+        "p3": "These storage mechanisms do not track users, are not used for advertising purposes, and do not share data with third parties."
+      },
+      "third_parties": {
+        "title": "Third-Party Services",
+        "p1": "The Site does not use third-party analytics tools, advertising networks, tracking pixels, or marketing integrations.",
+        "p2": "The website may be hosted by a third-party hosting provider, which may process technical data as part of its infrastructure services."
+      },
+      "data_sharing": {
+        "title": "Data Sharing",
+        "p1": "The website owner does not sell, trade, or otherwise transfer personal data to third parties.",
+        "p2": "No personal data is shared for marketing, profiling, or commercial purposes."
+      },
+      "data_retention": {
+        "title": "Data Retention",
+        "p1": "Because the Site does not collect personal data directly, no personal data is stored or retained by the website owner.",
+        "p2": "Technical server logs, if generated by the hosting provider, are retained according to the hosting provider’s internal policies."
+      },
+      "user_rights": {
+        "title": "User Rights",
+        "p1": "Under applicable data protection laws, including the General Data Protection Regulation (GDPR), users may have rights regarding their personal data.",
+        "p2": "Since this Site does not directly collect or process personal data, most data protection rights may not apply in practice. However, users may contact the website owner with any privacy-related inquiries."
+      },
+      "security": {
+        "title": "Data Security",
+        "p1": "The Site uses standard security practices provided by the hosting provider to protect against unauthorized access, alteration, disclosure, or destruction of data."
+      },
+      "changes": {
+        "title": "Changes to This Privacy Policy",
+        "p1": "This Privacy Policy may be updated from time to time to reflect legal or technical changes. Any updates will be published on this page."
+      },
+      "contact": {
+        "title": "Contact",
+        "p1": "If you have any questions about this Privacy Policy, you may contact the website owner using the contact details provided on the Site."
+      }
+    }
+  },
+  "contacts": {
+    "name": "Hryhorii Kyrylchenko",
+    "address": "Poland, Poznan",
+    "data_title": "Contacts",
+    "data_name": "Name:",
+    "data_email": "Email:",
+    "data_location": "My Location:",
+    "social_media_title": "Social Media",
+    "social_media_description": "tap to visit my social media"
+  },
+  "button": {
+    "read": "Read",
+    "share": "Share",
+    "close": "Close",
+    "read_more": "Read More",
+    "copied": "Link copied!",
+    "repo": "Repository",
+    "demo": "Demo",
+    "contact": "Contact me",
+    "download": "Download CV",
+    "portfolio": "View Portfolio",
+    "tooltip": {
+      "linkedin": "Share on LinkedIn",
+      "facebook": "Share on Facebook",
+      "copy_link": "Copy link"
+    }
+  },
+  "project": {
+    "overview": "Project overview",
+    "technologies": "Used technologies",
+    "features": "Main features",
+    "architecture": "Project architecture",
+    "deployment": "Deployment",
+    "results": "Results",
+    "skills": "Skills"
+  },
+  "projects-list": {
+    "forja": {
+      "title": "Forja – Independent Game Studio Platform",
+      "short": "A robust, identity-driven content platform tailored for game development builds, player feedback, and team content management.",
+      "sections": {
+        "results": "Delivered a high-performance backend within a focused 3-month sprint. My role included designing the database schema, structuring and implementing the backend architecture, all backend functionality, and integrating related technologies. Agile teamwork ensured seamless coordination with frontend, design, and security specialists.",
+        "features": "Player feedback mechanisms, bug reporting tools, and an internal content management system for organizing studio projects, and content assets.",
+        "overview": "Forja is a bespoke platform developed for an independent game studio, intentionally steering clear of generic solutions. It offers a streamlined environment for managing game builds, collecting player feedback, and overseeing team content, all within a cohesive ecosystem.",
+        "deployment": "The platform is designed for deployment on cloud infrastructure (e.g., AWS, Azure, or any private cloud). With Docker-based containerization, the system can be easily scaled, orchestrated, and maintained in cloud environments, enabling streamlined release workflows and infrastructure management.",
+        "architecture": "The backend is constructed using ASP.NET Core (C#), serving over 40 dynamic UI pages via controllers and services. Data is managed with PostgreSQL, while Redis is employed for caching to enhance performance. MinIO is utilized for scalable object storage, and Keycloak manages authentication. API documentation is maintained using Swagger, and the entire system is orchestrated through the .NET Aspire Dashboard.",
+        "technologies": "C#, ASP.NET Core, Entity Framework Core, Docker, Git, Keycloak, PostgreSQL, Redis,  MinIO,  Swagger, .NET Aspire Dashboard"
+      }
+    },
+    "personal-site": {
+      "title": "Personal Developer Portfolio & Blog",
+      "short": "A modern, multilingual full‑stack site with portfolio, blog, and admin panel, showcasing development projects and professional skills.",
+      "sections": {
+        "results": "I developed the entire site, including backend, frontend, and database, implementing responsive design and multilingual support, and collaborating with a designer for UX/UI.",
+        "features": "Portfolio with project showcases, blog section, About page, contact form with email notifications, social links, admin panel for content management, and localization via JSON and database translations. Unit tests implemented with xUnit, Moq, and FluentAssertions.",
+        "overview": "This full-stack site features an 'About' section, portfolio pages with detailed projects, a blog with articles, and a contact form. It demonstrates development skills, project showcases, and professional branding with dynamic interaction and multilingual support.",
+        "deployment": "Containerized with Docker, CI/CD implemented via GitHub Actions, deploying to AWS. Includes automated database migrations and infrastructure provisioning for reliable deployment and updates.",
+        "architecture": "Backend uses Domain-Driven Design and Clean Architecture with Vertical Slice patterns. MediatR implements CQRS, separating commands and queries. Each vertical slice contains its own request/handler logic, validation, and endpoint definitions. Frontend is Angular, fully responsive and localized.",
+        "technologies": "C#, TypeScript, ASP.NET Core, Entity Framework Core, Angular, PostgreSQL, Postman, Git, GitHub Actions, AWS, HTML, CSS, Rider, WebStorm."
+      }
+    },
+    "portfolio-static": {
+      "title": "Personal Portfolio (Static Version)",
+      "short": "A static version of my personal portfolio website, showcasing projects and skills.",
+      "sections": {
+        "results": "This is a static copy of my fullstack portfolio site. It shows projects, skills, and frontend capabilities. Backend, dynamic blog, and admin panel are not included.",
+        "features": "Supports static project listings, multilingual support (en/pl/ru/uk), and basic site navigation. All content is loaded from local JSON files. No backend API, authentication, or dynamic content.",
+        "overview": "The static site is built with Angular and deployed to GitHub Pages as a Single Page Application (SPA). It demonstrates my frontend skills, projects portfolio, and personal branding.",
+        "deployment": "Deployed using ng build --configuration production and npx gh-pages -d dist/portfolio-static. No server or backend required.",
+        "architecture": "Frontend-only SPA using Angular standalone components. No SSR, backend, or admin panel is included. The focus is on a lightweight, static showcase of the original project (https://github.com/HryhoriiKyrylchenko/personal-site).",
+        "technologies": "Angular, TypeScript, SCSS, GitHub Pages, JSON for static content."
+      }
+    }
+  },
+  "skill": {
+    "title": "Skills",
+    "learning": "Learning Roadmap",
+    "category": {
+      "languages": "Languages",
+      "frameworks": "Frameworks",
+      "tools": "Tools"
+    }
+  },
+  "skillCategories": {
+    "languages": {
+      "name": "Languages",
+      "description": "Programming languages I use"
+    },
+    "frameworks": {
+      "name": "Frameworks",
+      "description": "Frameworks and libraries I work with"
+    },
+    "tools": {
+      "name": "Tools",
+      "description": "Developer tools and utilities"
+    }
+  },
+  "skills-list": {
+    "csharp": {
+      "name": "C#",
+      "description": "A modern, general-purpose, object-oriented programming language by Microsoft, running on .NET and used for web, desktop, mobile, and game development."
+    },
+    "typescript": {
+      "name": "TypeScript",
+      "description": "A statically typed superset of JavaScript by Microsoft, adds optional types and tooling for scalable, maintainable applications; compiles to plain JavaScript."
+    },
+    "javascript": {
+      "name": "JavaScript",
+      "description": "A high-level, multi-paradigm, dynamically typed scripting language that powers interactivity on the web, running in browsers and on servers like Node.js."
+    },
+    "aspnetcore": {
+      "name": "ASP.NET Core",
+      "description": "A high-performance, cross-platform, open-source framework for building modern web applications and APIs using .NET."
+    },
+    "entityframeworkcore": {
+      "name": "Entity Framework Core",
+      "description": "A lightweight, cross-platform ORM by Microsoft enabling data access via .NET objects instead of raw SQL; supports migrations, LINQ, and multiple database providers like PostgreSQL."
+    },
+    "angular": {
+      "name": "Angular",
+      "description": "An open-source, TypeScript-based framework by Google for building scalable single-page applications with integrated routing, forms, HTTP, and modular architecture."
+    },
+    "blazor": {
+      "name": "Blazor",
+      "description": "Declarative web UI framework from Microsoft using C# and Razor components to build SPA and interactive applications running on Server or WebAssembly."
+    },
+    "grpc": {
+      "name": "gRPC",
+      "description": "Open-source RPC framework using HTTP/2 and Protocol Buffers for efficient, strongly-typed service communication."
+    },
+    "aws": {
+      "name": "AWS",
+      "description": "Cloud platform by Amazon offering on-demand compute, storage, databases, analytics, and over 200 services."
+    },
+    "css": {
+      "name": "CSS",
+      "description": "Style sheet language defining presentation of HTML documents including layout, colors, fonts, and responsive design."
+    },
+    "docker": {
+      "name": "Docker",
+      "description": "Open-source platform for automating application deployment inside lightweight containers across environments."
+    },
+    "git": {
+      "name": "Git",
+      "description": "Distributed version control system tracking source code changes and enabling collaborative development."
+    },
+    "html": {
+      "name": "HTML",
+      "description": "Standard markup language for structuring web pages using elements like headings, paragraphs, links, and images."
+    },
+    "keycloak": {
+      "name": "Keycloak",
+      "description": "Open-source identity and access management solution providing single sign-on, user federation, and fine-grained authorization."
+    },
+    "minio": {
+      "name": "MinIO",
+      "description": "High-performance open-source object storage system compatible with AWS S3 for cloud-native and scalable environments."
+    },
+    "postman": {
+      "name": "Postman",
+      "description": "Comprehensive API platform for designing, testing, and managing APIs."
+    },
+    "postgresql": {
+      "name": "PostgreSQL",
+      "description": "Open-source object-relational database known for reliability, extensibility, and SQL standards compliance."
+    },
+    "rider": {
+      "name": "Rider",
+      "description": "Cross-platform .NET IDE by JetBrains based on IntelliJ and ReSharper, supporting C#, ASP.NET, JavaScript, TypeScript, SQL, and more."
+    },
+    "swagger": {
+      "name": "Swagger",
+      "description": "Suite of open-source tools for designing, documenting, and consuming REST APIs based on the OpenAPI specification."
+    },
+    "webstorm": {
+      "name": "WebStorm",
+      "description": "Cross-platform IDE by JetBrains for JavaScript and TypeScript with advanced code intelligence and debugging tools."
+    },
+    "githubactions": {
+      "name": "GitHub Actions",
+      "description": "Integrated CI/CD platform in GitHub enabling automated build, test, and deployment workflows triggered by repository events."
+    },
+    "redis": {
+      "name": "Redis",
+      "description": "An in-memory data structure store used as a database, cache, and message broker for fast data access and real-time processing."
+    }
+  }
+}

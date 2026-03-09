@@ -1,0 +1,86 @@
+{
+  "privacy": {
+    "sections": [
+      {
+        "title": "privacy.content.introduction.title",
+        "paragraphs": [
+          "privacy.content.introduction.p1"
+        ]
+      },
+      {
+        "title": "privacy.content.data_controller.title",
+        "paragraphs": [
+          "privacy.content.data_controller.p1"
+        ]
+      },
+      {
+        "title": "privacy.content.personal_data_collection.title",
+        "paragraphs": [
+          "privacy.content.personal_data_collection.p1",
+          "privacy.content.personal_data_collection.p2"
+        ]
+      },
+      {
+        "title": "privacy.content.technical_data.title",
+        "paragraphs": [
+          "privacy.content.technical_data.p1",
+          "privacy.content.technical_data.p2"
+        ]
+      },
+      {
+        "title": "privacy.content.cookies_storage.title",
+        "paragraphs": [
+          "privacy.content.cookies_storage.p1",
+          "privacy.content.cookies_storage.p2",
+          "privacy.content.cookies_storage.p3"
+        ]
+      },
+      {
+        "title": "privacy.content.third_parties.title",
+        "paragraphs": [
+          "privacy.content.third_parties.p1",
+          "privacy.content.third_parties.p2"
+        ]
+      },
+      {
+        "title": "privacy.content.data_sharing.title",
+        "paragraphs": [
+          "privacy.content.data_sharing.p1",
+          "privacy.content.data_sharing.p2"
+        ]
+      },
+      {
+        "title": "privacy.content.data_retention.title",
+        "paragraphs": [
+          "privacy.content.data_retention.p1",
+          "privacy.content.data_retention.p2"
+        ]
+      },
+      {
+        "title": "privacy.content.user_rights.title",
+        "paragraphs": [
+          "privacy.content.user_rights.p1",
+          "privacy.content.user_rights.p2"
+        ]
+      },
+      {
+        "title": "privacy.content.security.title",
+        "paragraphs": [
+          "privacy.content.security.p1"
+        ]
+      },
+      {
+        "title": "privacy.content.changes.title",
+        "paragraphs": [
+          "privacy.content.changes.p1"
+        ]
+      },
+      {
+        "title": "privacy.content.contact.title",
+        "paragraphs": [
+          "privacy.content.contact.p1"
+        ]
+      }
+    ]
+  }
+}

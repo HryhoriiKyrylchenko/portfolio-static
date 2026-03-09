@@ -1,0 +1,156 @@
+[
+  {
+    "id": 1,
+    "slug": "forja-platform",
+    "coverImage": "assets/images/projects/forja_cover.png",
+    "demoUrl": "",
+    "repoUrl": "https://github.com/HryhoriiKyrylchenko/forja-platform",
+    "titleKey": "projects-list.forja.title",
+    "shortDescriptionKey": "projects-list.forja.short",
+    "descriptionSectionsKeys": {
+      "overview": "projects-list.forja.sections.overview",
+      "features": "projects-list.forja.sections.features",
+      "architecture": "projects-list.forja.sections.architecture",
+      "deployment": "projects-list.forja.sections.deployment",
+      "results": "projects-list.forja.sections.results",
+      "technologies": "projects-list.forja.sections.technologies"
+    },
+    "skills": [
+      {
+        "skillKey": "csharp"
+      },
+      {
+        "skillKey": "aspnetcore"
+      },
+      {
+        "skillKey": "entityframeworkcore"
+      },
+      {
+        "skillKey": "postgresql"
+      },
+      {
+        "skillKey": "rider"
+      },
+      {
+        "skillKey": "swagger"
+      },
+      {
+        "skillKey": "docker"
+      },
+      {
+        "skillKey": "git"
+      },
+      {
+        "skillKey": "keycloak"
+      },
+      {
+        "skillKey": "minio"
+      },
+      {
+        "skillKey": "redis"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "personal-site",
+    "coverImage": "assets/images/projects/personal_site_cover.png",
+    "demoUrl": "",
+    "repoUrl": "https://github.com/HryhoriiKyrylchenko/personal-site",
+    "titleKey": "projects-list.personal-site.title",
+    "shortDescriptionKey": "projects-list.personal-site.short",
+    "descriptionSectionsKeys": {
+      "overview": "projects-list.personal-site.sections.overview",
+      "features": "projects-list.personal-site.sections.features",
+      "architecture": "projects-list.personal-site.sections.architecture",
+      "deployment": "projects-list.personal-site.sections.deployment",
+      "results": "projects-list.personal-site.sections.results",
+      "technologies": "projects-list.personal-site.sections.technologies"
+    },
+    "skills": [
+      {
+        "skillKey": "csharp"
+      },
+      {
+        "skillKey": "typescript"
+      },
+      {
+        "skillKey": "aspnetcore"
+      },
+      {
+        "skillKey": "angular"
+      },
+      {
+        "skillKey": "entityframeworkcore"
+      },
+      {
+        "skillKey": "postman"
+      },
+      {
+        "skillKey": "postgresql"
+      },
+      {
+        "skillKey": "rider"
+      },
+      {
+        "skillKey": "webstorm"
+      },
+      {
+        "skillKey": "githubactions"
+      },
+      {
+        "skillKey": "aws"
+      },
+      {
+        "skillKey": "css"
+      },
+      {
+        "skillKey": "git"
+      },
+      {
+        "skillKey": "html"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "portfolio-static",
+    "coverImage": "assets/images/projects/portfolio-static_cover.png",
+    "demoUrl": "https://hryhoriikyrylchenko.dev",
+    "repoUrl": "https://github.com/HryhoriiKyrylchenko/portfolio-static",
+    "titleKey": "projects-list.portfolio-static.title",
+    "shortDescriptionKey": "projects-list.portfolio-static.short",
+    "descriptionSectionsKeys": {
+      "overview": "projects-list.portfolio-static.sections.overview",
+      "features": "projects-list.portfolio-static.sections.features",
+      "architecture": "projects-list.portfolio-static.sections.architecture",
+      "deployment": "projects-list.portfolio-static.sections.deployment",
+      "results": "projects-list.portfolio-static.sections.results",
+      "technologies": "projects-list.portfolio-static.sections.technologies"
+    },
+    "skills": [
+
+      {
+        "skillKey": "typescript"
+      },
+      {
+        "skillKey": "angular"
+      },
+      {
+        "skillKey": "webstorm"
+      },
+      {
+        "skillKey": "githubactions"
+      },
+      {
+        "skillKey": "css"
+      },
+      {
+        "skillKey": "git"
+      },
+      {
+        "skillKey": "html"
+      }
+    ]
+  }
+]

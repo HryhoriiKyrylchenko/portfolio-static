@@ -1,0 +1,136 @@
+[
+  {
+    "key": "csharp",
+    "nameKey": "skills-list.csharp.name",
+    "descriptionKey": "skills-list.csharp.description",
+    "categoryKey": "languages"
+  },
+  {
+    "key": "typescript",
+    "nameKey": "skills-list.typescript.name",
+    "descriptionKey": "skills-list.typescript.description",
+    "categoryKey": "languages"
+  },
+  {
+    "key": "javascript",
+    "nameKey": "skills-list.javascript.name",
+    "descriptionKey": "skills-list.javascript.description",
+    "categoryKey": "languages"
+  },
+
+  {
+    "key": "blazor",
+    "nameKey": "skills-list.blazor.name",
+    "descriptionKey": "skills-list.blazor.description",
+    "categoryKey": "frameworks"
+  },
+  {
+    "key": "grpc",
+    "nameKey": "skills-list.grpc.name",
+    "descriptionKey": "skills-list.grpc.description",
+    "categoryKey": "frameworks"
+  },
+  {
+    "key": "aspnetcore",
+    "nameKey": "skills-list.aspnetcore.name",
+    "descriptionKey": "skills-list.aspnetcore.description",
+    "categoryKey": "frameworks"
+  },
+  {
+    "key": "angular",
+    "nameKey": "skills-list.angular.name",
+    "descriptionKey": "skills-list.angular.description",
+    "categoryKey": "frameworks"
+  },
+  {
+    "key": "entityframeworkcore",
+    "nameKey": "skills-list.entityframeworkcore.name",
+    "descriptionKey": "skills-list.entityframeworkcore.description",
+    "categoryKey": "frameworks"
+  },
+
+  {
+    "key": "postman",
+    "nameKey": "skills-list.postman.name",
+    "descriptionKey": "skills-list.postman.description",
+    "categoryKey": "tools"
+  },
+  {
+    "key": "postgresql",
+    "nameKey": "skills-list.postgresql.name",
+    "descriptionKey": "skills-list.postgresql.description",
+    "categoryKey": "tools"
+  },
+  {
+    "key": "rider",
+    "nameKey": "skills-list.rider.name",
+    "descriptionKey": "skills-list.rider.description",
+    "categoryKey": "tools"
+  },
+  {
+    "key": "swagger",
+    "nameKey": "skills-list.swagger.name",
+    "descriptionKey": "skills-list.swagger.description",
+    "categoryKey": "tools"
+  },
+  {
+    "key": "webstorm",
+    "nameKey": "skills-list.webstorm.name",
+    "descriptionKey": "skills-list.webstorm.description",
+    "categoryKey": "tools"
+  },
+  {
+    "key": "githubactions",
+    "nameKey": "skills-list.githubactions.name",
+    "descriptionKey": "skills-list.githubactions.description",
+    "categoryKey": "tools"
+  },
+  {
+    "key": "aws",
+    "nameKey": "skills-list.aws.name",
+    "descriptionKey": "skills-list.aws.description",
+    "categoryKey": "tools"
+  },
+  {
+    "key": "css",
+    "nameKey": "skills-list.css.name",
+    "descriptionKey": "skills-list.css.description",
+    "categoryKey": "tools"
+  },
+  {
+    "key": "docker",
+    "nameKey": "skills-list.docker.name",
+    "descriptionKey": "skills-list.docker.description",
+    "categoryKey": "tools"
+  },
+  {
+    "key": "git",
+    "nameKey": "skills-list.git.name",
+    "descriptionKey": "skills-list.git.description",
+    "categoryKey": "tools"
+  },
+  {
+    "key": "html",
+    "nameKey": "skills-list.html.name",
+    "descriptionKey": "skills-list.html.description",
+    "categoryKey": "tools"
+  },
+  {
+    "key": "keycloak",
+    "nameKey": "skills-list.keycloak.name",
+    "descriptionKey": "skills-list.keycloak.description",
+    "categoryKey": "tools"
+  },
+  {
+    "key": "minio",
+    "nameKey": "skills-list.minio.name",
+    "descriptionKey": "skills-list.minio.description",
+    "categoryKey": "tools"
+  },
+  {
+    "key": "redis",
+    "nameKey": "skills-list.redis.name",
+    "descriptionKey": "skills-list.redis.description",
+    "categoryKey": "tools"
+  }
+]

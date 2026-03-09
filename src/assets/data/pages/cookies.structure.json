@@ -1,0 +1,42 @@
+{
+  "cookies": {
+    "sections": [
+      {
+        "title": "cookies.content.introduction.title",
+        "paragraphs": [
+          "cookies.content.introduction.p1"
+        ]
+      },
+      {
+        "title": "cookies.content.what-are.title",
+        "paragraphs": [
+          "cookies.content.what-are.p1"
+        ]
+      },
+      {
+        "title": "cookies.content.usage.title",
+        "paragraphs": [
+          "cookies.content.usage.p1"
+        ]
+      },
+      {
+        "title": "cookies.content.types.title",
+        "paragraphs": [
+          "cookies.content.types.p1"
+        ]
+      },
+      {
+        "title": "cookies.content.manage.title",
+        "paragraphs": [
+          "cookies.content.manage.p1"
+        ]
+      },
+      {
+        "title": "cookies.content.changes.title",
+        "paragraphs": [
+          "cookies.content.changes.p1"
+        ]
+      }
+    ]
+  }
+}
