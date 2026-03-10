@@ -197,7 +197,7 @@
         "features": "Supports static project listings, multilingual support (en/pl/ru/uk), and basic site navigation. All content is loaded from local JSON files. No backend API, authentication, or dynamic content.",
         "overview": "The static site is built with Angular and deployed to GitHub Pages as a Single Page Application (SPA). It demonstrates my frontend skills, projects portfolio, and personal branding.",
         "deployment": "Deployed using ng build --configuration production and npx gh-pages -d dist/portfolio-static. No server or backend required.",
-        "architecture": "Frontend-only SPA using Angular standalone components. No SSR, backend, or admin panel is included. The focus is on a lightweight, static showcase of the original project (https://github.com/HryhoriiKyrylchenko/personal-site).",
+        "architecture": "Frontend-only SPA using Angular standalone components. No SSR, backend, or admin panel is included. The focus is on a lightweight, static showcase of the original project.",
         "technologies": "Angular, TypeScript, SCSS, GitHub Pages, JSON for static content."
       }
     }

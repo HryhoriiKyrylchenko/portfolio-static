@@ -197,7 +197,7 @@
         "features": "Obsługa statycznych list projektów, wielojęzyczna (en/pl/ru/uk) i podstawowa nawigacja po stronie. Cała zawartość ładowana jest z lokalnych plików JSON. Brak API backendu, uwierzytelniania lub dynamicznej zawartości.",
         "overview": "Strona statyczna zbudowana w Angular i wdrożona na GitHub Pages jako Single Page Application (SPA). Prezentuje umiejętności frontendowe, portfolio projektów oraz osobistą markę.",
         "deployment": "Wdrożona przy użyciu `ng build --configuration production` i `npx gh-pages -d dist/portfolio-static`. Nie wymaga serwera ani backendu.",
-        "architecture": "SPA frontendowe oparte wyłącznie na komponentach Angular standalone. Brak SSR, backendu lub panelu administracyjnego. Skupia się na lekkim, statycznym pokazie oryginalnego projektu (https://github.com/HryhoriiKyrylchenko/personal-site).",
+        "architecture": "SPA frontendowe oparte wyłącznie na komponentach Angular standalone. Brak SSR, backendu lub panelu administracyjnego. Skupia się na lekkim, statycznym pokazie oryginalnego projektu.",
         "technologies": "Angular, TypeScript, SCSS, GitHub Pages, JSON do statycznej zawartości."
       }
     }
