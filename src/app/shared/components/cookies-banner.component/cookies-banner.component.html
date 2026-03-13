@@ -1,11 +1,6 @@
 @if(show) {
   <div
     class="cookie-backdrop"
-    role="button"
-    tabindex="0"
-    (click)="accept()"
-    (keydown.enter)="accept()"
-    (keydown.escape)="accept()"
   >
     <div class="cookie-banner">
       <h4 class="title">{{ 'cookies.title' | transloco }}</h4>

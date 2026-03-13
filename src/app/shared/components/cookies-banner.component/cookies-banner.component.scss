@@ -3,8 +3,9 @@ $breakpoint-lg: 1399px;
 
 .cookie-backdrop {
   position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -18,7 +19,7 @@ $breakpoint-lg: 1399px;
   justify-items: center;
   padding: 1rem;
   width: 100%;
-  background: var(--color-background);
+  background: var(--color-background-banner);
   color: var(--color-text-primary);
   text-align: center;
 
