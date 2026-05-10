@@ -118,37 +118,8 @@ $skill-item-height: 3rem;
   grid-area: description;
 }
 
-.btn {
-  display: flex;
-  padding: 0.625rem 1.25rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
-  align-self: stretch;
-  border-radius: 0.625rem;
-  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.10) inset, 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-  color: var(--color-modal-text);
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: capitalize;
-
-  &:hover {
-    background: var(--color-hover);
-    color: var(--color-hover-text);
-  }
-}
-
 .btn-primary {
-  background: var(--color-modal-button);
-  grid-area: button_read;
   width: 18.725rem;
-
-  &:active {
-    background: var(--color-active);
-    color: var(--color-active-text);
-  }
 }
 
 

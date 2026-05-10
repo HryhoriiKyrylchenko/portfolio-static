@@ -4,7 +4,6 @@ import {Title} from '@angular/platform-browser';
 import {switchMap, tap} from 'rxjs/operators';
 import {map, of} from 'rxjs';
 import {AsyncPipe, NgStyle} from '@angular/common';
-import {MatButton} from '@angular/material/button';
 import {ProjectsService} from '../../../core/services/projects.service';
 import {SkillFullDto} from '../../../shared/models/skill-dtos';
 import {SkillComponent} from '../../../shared/components/skill.component/skill.component';
@@ -15,7 +14,6 @@ import {TranslocoPipe, TranslocoService} from '@jsverse/transloco';
   standalone: true,
   imports: [
     AsyncPipe,
-    MatButton,
     TranslocoPipe,
     NgStyle,
     SkillComponent

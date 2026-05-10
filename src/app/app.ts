@@ -1,8 +1,9 @@
-import {Component, inject} from '@angular/core';
+import {Component, DestroyRef, inject} from '@angular/core';
 import {ActivatedRoute, NavigationEnd, Router, RouterOutlet} from '@angular/router';
 import {CookiesBannerComponent} from './shared/components/cookies-banner.component/cookies-banner.component';
 import {Title} from '@angular/platform-browser';
-import {filter} from 'rxjs/operators';
+import {filter, map, switchMap} from 'rxjs';
+import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,7 @@ import {filter} from 'rxjs/operators';
   styleUrl: './app.scss'
 })
 export class App {
+  private destroyRef = inject(DestroyRef);
   private titleService = inject(Title);
   private router = inject(Router);
   private activatedRoute = inject(ActivatedRoute);
@@ -19,13 +21,13 @@ export class App {
   constructor() {
     this.router.events
       .pipe(
-        filter(event => event instanceof NavigationEnd)
+        filter(event => event instanceof NavigationEnd),
+        map(() => this.getChild(this.activatedRoute)),
+        switchMap(route => route.data as import('rxjs').Observable<{ title?: string }>),
+        takeUntilDestroyed(this.destroyRef)
       )
-      .subscribe(() => {
-        const route = this.getChild(this.activatedRoute);
-        route.data.subscribe(data => {
-          this.titleService.setTitle(data['title'] ? data['title'] + " | " + this.title : this.title);
-        });
+      .subscribe(data => {
+        this.titleService.setTitle(data.title ? `${data.title} | ${this.title}` : this.title);
       });
   }
 

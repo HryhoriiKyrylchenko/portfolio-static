@@ -1,8 +1,8 @@
 @if (project$ | async; as project) {
   <div class="project-dialog">
     <button
-      class="btn"
-      mat-button
+      type="button"
+      class="btn btn-secondary"
       (click)="onCloseClick()"
     >
       {{ 'button.close' | transloco }}

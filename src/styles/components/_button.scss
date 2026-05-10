@@ -1,27 +1,33 @@
+@use '../abstracts/mixins';
+
 /* Base button styles */
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem 1rem;
-  font: inherit;
-  cursor: pointer;
-  border: 2px solid transparent;
-  border-radius: 4px;
-  background-color: var(--color-background);
-  color: var(--color-text-primary);
-  transition: background-color 0.2s, color 0.2s;
+  @include mixins.button-base(0.625rem 1.25rem, 0.625rem, var(--color-background), var(--color-text-primary));
+  gap: 0.625rem;
+  font-size: 1.125rem;
+  line-height: normal;
+  align-self: stretch;
 
   &:hover {
-    background-color: var(--color-hover);
+    background: var(--color-hover);
+    color: var(--color-hover-text);
   }
 
   &:active {
-    background-color: var(--color-active);
+    background: var(--color-active);
+    color: var(--color-active-text);
   }
 
   &--small {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
   }
+}
+
+.btn-primary {
+  @include mixins.button-variant(var(--color-modal-button));
+}
+
+.btn-secondary {
+  @include mixins.button-variant(var(--color-modal-button-secondary));
 }

@@ -1,0 +1,35 @@
+@mixin button-base($padding: 0.5rem 1rem, $radius: 0.625rem, $background: var(--color-background), $color: var(--color-text-primary)) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $padding;
+  font: inherit;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: $radius;
+  background: $background;
+  color: $color;
+  transition: background-color 0.2s, color 0.2s;
+  text-transform: capitalize;
+}
+
+@mixin button-variant($background, $hover: var(--color-hover), $active: var(--color-active), $text: var(--color-modal-text), $hoverText: var(--color-hover-text), $activeText: var(--color-active-text)) {
+  background: $background;
+  color: $text;
+
+  &:hover {
+    background: $hover;
+    color: $hoverText;
+  }
+
+  &:active {
+    background: $active;
+    color: $activeText;
+  }
+}
+
+@mixin card-surface($background: var(--color-learning-skill-background), $radius: 0.625rem, $shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25)) {
+  background: $background;
+  border-radius: $radius;
+  box-shadow: $shadow;
+}

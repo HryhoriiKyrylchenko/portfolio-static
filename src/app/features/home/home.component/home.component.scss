@@ -40,7 +40,6 @@ $home-lg: 1400px;
     width: 100%;
     font-size: 2rem;
     font-weight: 500;
-    color: var(--color-text-primary);
     grid-area: name;
   }
 
@@ -48,7 +47,6 @@ $home-lg: 1400px;
     align-self: stretch;
     font-size: 1.725rem;
     font-weight: 400;
-    color: var(--color-text-primary);
     grid-area: title;
   }
 
@@ -57,12 +55,9 @@ $home-lg: 1400px;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 7;
-
     overflow: hidden;
-    color: var(--color-text-primary);
     text-overflow: ellipsis;
     font-size: 1.25rem;
-
     grid-area: description;
   }
 
@@ -104,47 +99,6 @@ $home-lg: 1400px;
   }
 }
 
-.btn {
-  display: flex;
-  padding: 0.625rem 1.25rem;
-  justify-content: center;
-  align-items: center;
-  gap: 0.625rem;
-  align-self: stretch;
-  border-radius: 0.625rem;
-  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.10) inset, 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-  color: var(--color-modal-text);
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: capitalize;
-
-  &:hover {
-    background: var(--color-hover);
-    color: var(--color-hover-text);
-  }
-
-
-}
-
-.btn-primary {
-  background: var(--color-modal-button);
-
-  &:active {
-    background: var(--color-active);
-    color: var(--color-active-text);
-  }
-}
-
-.btn-secondary {
-  background: var(--color-modal-button-secondary);
-
-  &:active {
-    background: var(--color-active);
-    color: var(--color-active-text);
-  }
-}
 
 .project-data-container {
   display: flex;
@@ -152,7 +106,6 @@ $home-lg: 1400px;
 
   .project-data-title {
     font-size: 1.5rem;
-    color: var(--color-text-primary);
   }
 
   .project-data-container-inner {
@@ -196,7 +149,6 @@ $home-lg: 1400px;
         font-size: 1.75rem;
         font-weight: 500;
         margin: 0;
-        color: var(--color-text-primary);
         grid-area: project-title;
       }
 
@@ -205,9 +157,7 @@ $home-lg: 1400px;
         width: 100%;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 7;
-
         overflow: hidden;
-        color: var(--color-text-primary);
         text-overflow: ellipsis;
         font-size: 1.25rem;
         grid-area: project-description;

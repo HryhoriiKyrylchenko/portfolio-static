@@ -1,7 +1,7 @@
-import {Component, inject, OnDestroy, OnInit} from '@angular/core';
+import {Component, inject} from '@angular/core';
+import {toSignal} from '@angular/core/rxjs-interop';
 import {MatProgressSpinner} from '@angular/material/progress-spinner';
 import {LoadingService} from '../../../core/services/loading.service';
-import {Subscription} from 'rxjs';
 
 @Component({
   selector: 'app-loading-spinner',
@@ -12,22 +12,8 @@ import {Subscription} from 'rxjs';
   templateUrl: './loading-spinner.component.html',
   styleUrl: './loading-spinner.component.scss'
 })
-export class LoadingSpinnerComponent implements OnInit, OnDestroy {
-  isLoading = false;
-  private loadingSubscription: Subscription | null = null;
+export class LoadingSpinnerComponent {
   private loadingService = inject(LoadingService);
 
-  ngOnInit() {
-    this.loadingSubscription = this.loadingService.loading$.subscribe(
-      (loading) => {
-        this.isLoading = loading;
-      }
-    );
-  }
-
-  ngOnDestroy() {
-    if (this.loadingSubscription) {
-      this.loadingSubscription.unsubscribe();
-    }
-  }
+  readonly isLoading = toSignal(this.loadingService.loading$, { initialValue: false });
 }

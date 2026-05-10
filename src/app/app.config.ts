@@ -19,8 +19,6 @@ export const appConfig: ApplicationConfig = {
     provideTranslocoPersistLang({
       storage: { useValue: cookiesStorageRoot() },
       getLangFn: ({ cachedLang, browserLang, cultureLang, defaultLang }) => {
-        console.log('Language detection:', { cachedLang, browserLang, cultureLang, defaultLang });
-
         const mapLang = (lang?: string): string | undefined => {
           if (!lang) return undefined;
 
@@ -34,10 +32,7 @@ export const appConfig: ApplicationConfig = {
           return 'en';
         };
 
-        const result = cachedLang || mapLang(cultureLang) || mapLang(browserLang) || defaultLang;
-
-        console.log('Selected language:', result);
-        return result;
+        return cachedLang || mapLang(cultureLang) || mapLang(browserLang) || defaultLang;
       }
     }),
     provideTransloco({
@@ -59,15 +54,10 @@ export const appConfig: ApplicationConfig = {
       const transloco = inject(TranslocoService);
       const activeLang = transloco.getActiveLang() || 'en';
 
-      console.log('Loading language:', activeLang);
-
       return firstValueFrom(
         transloco.load(activeLang).pipe(
           switchMap(() => transloco.selectTranslation(activeLang)),
-          catchError((error) => {
-            console.error('Error loading language:', error);
-            return transloco.load('en');
-          })
+          catchError(() => transloco.load('en'))
         )
       );
     }),

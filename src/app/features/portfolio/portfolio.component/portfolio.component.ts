@@ -1,8 +1,8 @@
-import {Component, DOCUMENT, inject, OnInit} from '@angular/core';
+import {Component, DestroyRef, DOCUMENT, inject} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {ActivatedRoute, NavigationEnd, Router, RouterOutlet} from '@angular/router';
-import {map} from 'rxjs';
-import {filter} from 'rxjs/operators';
+import {filter, map} from 'rxjs';
+import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
 import {ProjectsService} from '../../../core/services/projects.service';
 import {SkillComponent} from '../../../shared/components/skill.component/skill.component';
 import {ProjectFullDto} from '../../../shared/models/project-dtos';
@@ -15,7 +15,8 @@ import {TranslocoPipe} from '@jsverse/transloco';
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss']
 })
-export class PortfolioComponent implements OnInit {
+export class PortfolioComponent {
+  private destroyRef = inject(DestroyRef);
   private router = inject(Router);
   private route = inject(ActivatedRoute);
   readonly projectService = inject(ProjectsService);
@@ -56,9 +57,11 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit() {
     this.updateHasDetail();
-    this.router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe(() => {
-      this.updateHasDetail();
-    });
+    this.router.events
+      .pipe(filter(e => e instanceof NavigationEnd), takeUntilDestroyed(this.destroyRef))
+      .subscribe(() => {
+        this.updateHasDetail();
+      });
   }
 
   private updateHasDetail() {
