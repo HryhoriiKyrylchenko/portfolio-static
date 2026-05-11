@@ -45,7 +45,7 @@ export class HomeComponent {
     map(project => project?.skills ?? [])
   );
 
-  readonly resumeUrl = 'assets/resume/CV_Hryhorii_Kyrylchenko.pdf';
+  readonly resumeUrl = 'assets/resume/Hryhorii_Kyrylchenko_Junior_.NET_Developer_Poznan_Poland.pdf';
 
   onContactClick() {
     void this.router.navigate(['/contacts']);
@@ -54,7 +54,7 @@ export class HomeComponent {
   onDownloadClick() {
     const link = document.createElement('a');
     link.href = this.resumeUrl;
-    link.download = 'CV_Hryhorii_Kyrylchenko.pdf';
+    link.download = 'Hryhorii_Kyrylchenko_Junior_.NET_Developer_Poznan_Poland.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
