@@ -22,11 +22,7 @@ export class CookiesBannerComponent implements OnInit {
   private readonly cookieService = inject(CookieService);
 
   ngOnInit(): void {
-    if (typeof window !== 'undefined') {
-      Promise.resolve().then(() => {
-        this.show = !this.cookieService.check(this.cookieName);
-      });
-    }
+    this.show = !this.cookieService.check(this.cookieName);
   }
 
   accept(): void {
