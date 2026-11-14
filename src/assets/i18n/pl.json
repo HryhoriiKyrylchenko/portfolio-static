@@ -10,14 +10,14 @@
   "nav": {
     "home": "Strona główna",
     "about": "O mnie",
-    "portfolio": "Portfolio",
-    "contacts": "Kontakt"
+    "contacts": "Kontakt",
+    "experience": "Doświadczenie"
   },
   "theme": {
     "light": "Jasny",
     "dark": "Ciemny"
   },
-  "about":{
+  "about": {
     "title": "Cześć, jestem Hryhorii Kyrylchenko.",
     "description": "Aspirujący programista .NET z różnorodnym doświadczeniem zawodowym w dziedzinie prawa, logistyki, sprzedaży i konsultingu. Ukończyłem szkolenie w IT STEP Academy w Polsce, posiadam umiejętności w zakresie C#, ASP.NET Core, SQL i innych technologii. Poszukuję nowych wyzwań w obszarze programowania .NET.",
     "content": "Jestem początkującym programistą .NET z nietypowym doświadczeniem zawodowym w takich dziedzinach jak prawo, logistyka, sprzedaż i doradztwo. To bogate doświadczenie pozwoliło mi rozwinąć umiejętności takie jak myślenie analityczne, elastyczność i komunikatywność – cenne uzupełnienie mojej wiedzy technicznej.\n\nPo przeprowadzce do Polski ukończyłem z sukcesem kurs w IT STEP Academy, gdzie opanowałem C#, ASP.NET Core, Web API, SQL, EF Core, LINQ, a także HTML, CSS i JavaScript. Dało mi to solidną podstawę do przejścia do branży tworzenia aplikacji internetowych.\n\nObecnie jestem otwarty na ciekawe projekty i stanowiska w obszarze .NET – dążę do efektywnego wykorzystania moich umiejętności i wspólnego rozwoju z zespołem."
@@ -28,7 +28,7 @@
   },
   "error": {
     "title": "Błąd 404",
-    "text": "Wygląda na to, że ta strona się... pogubiła. \u2028Próbowaliśmy ją odnaleźć, przepisać, a nawet stworzyć nową — ale nic z tego.",
+    "text": "Wygląda na to, że ta strona się... pogubiła.  Próbowaliśmy ją odnaleźć, przepisać, a nawet stworzyć nową — ale nic z tego.",
     "button": "Odśwież stronę"
   },
   "cookies": {
@@ -148,12 +148,14 @@
     "demo": "Demo",
     "contact": "Skontaktuj się ze mną",
     "download": "Pobierz CV",
-    "portfolio": "Zobacz portfolio",
     "tooltip": {
       "linkedin": "Udostępnij na LinkedIn",
       "facebook": "Udostępnij na Facebooku",
       "copy_link": "Skopiuj link"
-    }
+    },
+    "experience": "Zobacz doświadczenie",
+    "case_study": "Zobacz case study",
+    "back": "Wróć do doświadczenia"
   },
   "project": {
     "overview": "Przegląd projektu",
@@ -190,15 +192,15 @@
       }
     },
     "portfolio-static": {
-      "title": "Osobiste Portfolio (Wersja Statyczna)",
-      "short": "Statyczna wersja osobistej strony portfolio, prezentująca projekty i umiejętności.",
+      "title": "Statyczna strona portfolio",
+      "short": "Ta strona: SPA w Angularze bez backendu na GitHub Pages, z treścią w JSON i lokalizacją angielską/polską.",
       "sections": {
-        "results": "Jest to statyczna kopia mojego pełnego portfolio. Prezentuje projekty, umiejętności i możliwości frontendowe. Backend, dynamiczny blog i panel administracyjny nie są uwzględnione.",
-        "features": "Obsługa statycznych list projektów, wielojęzyczna (en/pl/ru/uk) i podstawowa nawigacja po stronie. Cała zawartość ładowana jest z lokalnych plików JSON. Brak API backendu, uwierzytelniania lub dynamicznej zawartości.",
-        "overview": "Strona statyczna zbudowana w Angular i wdrożona na GitHub Pages jako Single Page Application (SPA). Prezentuje umiejętności frontendowe, portfolio projektów oraz osobistą markę.",
-        "deployment": "Wdrożona przy użyciu `ng build --configuration production` i `npx gh-pages -d dist/portfolio-static`. Nie wymaga serwera ani backendu.",
-        "architecture": "SPA frontendowe oparte wyłącznie na komponentach Angular standalone. Brak SSR, backendu lub panelu administracyjnego. Skupia się na lekkim, statycznym pokazie oryginalnego projektu.",
-        "technologies": "Angular, TypeScript, SCSS, GitHub Pages, JSON do statycznej zawartości."
+        "overview": "Statyczna wersja mojej strony full-stack. Celem było utrzymanie portfolio online bez płacenia za serwery: nie ma backendu, a cała strona jest serwowana z GitHub Pages.",
+        "features": "Oś czasu doświadczenia, case studies projektów, umiejętności, certyfikaty, CV do pobrania, jasny i ciemny motyw oraz lokalizacja angielska/polska z zapamiętaniem wybranego języka w cookie.",
+        "architecture": "Komponenty standalone Angulara z leniwie ładowaną stroną case study. Serwisy łączą po stronie klienta kilka plików JSON (doświadczenie, projekty, umiejętności, kategorie), odtwarzając działanie oryginalnego API, więc treść edytuje się jako dane i klucze tłumaczeń.",
+        "deployment": "GitHub Actions buduje i wdraża stronę przy każdym pushu do main. Skrypt po buildzie kopiuje powłokę aplikacji na każdą znaną trasę, więc bezpośrednie linki i odświeżenia zwracają HTTP 200, a nieznane adresy prawdziwy 404.",
+        "results": "Koszty hostingu spadły do zera, a strona na żywo zawsze odpowiada repozytorium. Nowe prace i projekty dodaje się jako wpisy JSON bez zmian w kodzie.",
+        "technologies": "Angular, TypeScript, RxJS, Transloco, SCSS, GitHub Actions, GitHub Pages."
       }
     }
   },
@@ -314,6 +316,71 @@
       "name": "Redis",
       "description": "Pamięciowy magazyn struktur danych używany jako baza danych, pamięć podręczna i broker komunikatów do szybkiego dostępu do danych i przetwarzania w czasie rzeczywistym."
     }
+  },
+  "experience": {
+    "title": "Doświadczenie",
+    "intro": "Edukacja, staż i projekty: co zbudowałem, za co odpowiadałem i jakie decyzje za tym stały.",
+    "present": "obecnie",
+    "type": {
+      "work": "Praca",
+      "internship": "Staż",
+      "project": "Projekt",
+      "education": "Edukacja"
+    }
+  },
+  "experience-list": {
+    "epam-specialization": {
+      "title": "Trainee .NET Developer: .NET Specialization",
+      "summary": "Zaawansowany program .NET w EPAM: budowa produkcyjnego ASP.NET Core Web API w etapach (epikach), zgodnie z praktykami enterprise i cloud-native.",
+      "highlights": {
+        "api": "Budowa ASP.NET Core Web API od początku do końca w Clean Architecture, dostarczanego przyrostowo w kolejnych epikach.",
+        "security": "Projektowanie bezpiecznych endpointów REST z uwierzytelnianiem tokenowym i szczegółową autoryzacją, wraz z logowaniem i dokumentacją Swagger/OpenAPI.",
+        "quality": "Praca w podejściu TDD, wdrożenia oparte na Dockerze, praktyki clean code i Git według EPAM EngX; wykorzystanie narzędzi generatywnej AI do refaktoryzacji i zwiększenia produktywności."
+      }
+    },
+    "portfolio-static": {
+      "title": "Ta strona: statyczne portfolio",
+      "summary": "Wersja mojej strony osobistej w Angularze bez backendu, hostowana bezpłatnie na GitHub Pages. To strona, którą właśnie czytasz.",
+      "highlights": {
+        "content": "Treść jako dane: struktura w JSON, teksty w plikach tłumaczeń, więc nowa praca czy projekt to zmiana treści, a nie kodu.",
+        "delivery": "Każdy push do main jest budowany i wdrażany przez GitHub Actions; krok po buildzie generuje strony dla każdej trasy, więc bezpośrednie linki zwracają HTTP 200, a nieznane adresy prawdziwy 404.",
+        "maintenance": "Utrzymywana na aktualnej wersji Angulara, z aktualizacjami bezpieczeństwa zależności i lokalizacją angielską/polską."
+      }
+    },
+    "epam-fundamentals": {
+      "title": "Trainee .NET Developer: .NET Fundamentals",
+      "summary": "Ukończony intensywny program .NET Fundamentals w EPAM, z praktycznymi zadaniami programistycznymi na platformie AutoCode.",
+      "highlights": {
+        "csharp": "Zaawansowany C#: refleksja, serializacja, wielowątkowość, Task Parallel Library i programowanie asynchroniczne.",
+        "data": "Projektowanie relacyjnych baz danych i zapytania w SQL, ADO.NET oraz Entity Framework Core.",
+        "quality": "Testy jednostkowe i wzorce projektowe zastosowane w komponentach backendowych ASP.NET Core."
+      }
+    },
+    "personal-site": {
+      "title": "Strona osobista: platforma full-stack",
+      "summary": "Zaprojektowałem i zbudowałem od podstaw wielojęzyczną platformę z portfolio i blogiem: backend .NET, frontend Angular, panel administracyjny i wdrożenie w chmurze.",
+      "highlights": {
+        "architecture": "Backend oparty na Domain-Driven Design, Clean Architecture i vertical slices; CQRS z MediatR trzyma żądanie, walidację i endpoint każdej funkcji w jednym miejscu.",
+        "delivery": "Konteneryzacja w Dockerze i wdrożenie na AWS; CI/CD w GitHub Actions z automatycznymi migracjami skróciło czas wdrożenia z 15 do 5 minut.",
+        "quality": "Backend pokryty testami jednostkowymi (xUnit, Moq, FluentAssertions); współpraca z projektantem UX przy dziewięciu responsywnych, wielojęzycznych stronach."
+      }
+    },
+    "forja": {
+      "title": "Forja: platforma dla studia gier (projekt dyplomowy)",
+      "summary": "Zespołowy projekt dyplomowy w IT STEP Academy: dedykowana platforma dla niezależnego studia gier do zarządzania buildami, opiniami graczy i treściami wewnętrznymi.",
+      "highlights": {
+        "ownership": "Odpowiadałem za cały backend: schemat bazy danych, architekturę i całą logikę serwerową, dostarczone w trzymiesięcznym sprincie.",
+        "performance": "Zaprojektowałem stos PostgreSQL i Redis; cache przyspieszył pobieranie danych o 40%.",
+        "integrations": "Integracja magazynu obiektów MinIO i uwierzytelniania Keycloak; dokumentacja Swagger i dashboard .NET Aspire ułatwiły integrację API zespołowi frontendowemu."
+      }
+    },
+    "itstep": {
+      "title": "Program Software Development",
+      "summary": "Szkolenie full-stack .NET w IT STEP Academy na Ukrainie.",
+      "highlights": {
+        "curriculum": "C#, ASP.NET Core Web API, SQL, Entity Framework Core i LINQ, a także HTML, CSS i JavaScript.",
+        "diploma": "Projekt dyplomowy: Forja, platforma backendowa dla studia gier."
+      }
+    }
   }
 }
-

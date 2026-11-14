@@ -29,7 +29,7 @@ export class LayoutComponent implements AfterViewInit {
   links = [
     { textKey: 'nav.home', path: '/' },
     { textKey: 'nav.about', path: '/about' },
-    { textKey: 'nav.portfolio', path: '/portfolio' },
+    { textKey: 'nav.experience', path: '/experience' },
     { textKey: 'nav.contacts', path: '/contacts' },
   ];
 }

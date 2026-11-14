@@ -61,7 +61,7 @@ export class HomeComponent {
   }
 
   onPortfolioClick() {
-    void this.router.navigate(['/portfolio']);
+    void this.router.navigate(['/experience']);
   }
 
   onReadClick() {
@@ -69,7 +69,7 @@ export class HomeComponent {
       .pipe(take(1))
       .subscribe(project => {
         if (project?.slug) {
-          void this.router.navigate(['/portfolio', project.slug]);
+          void this.router.navigate(['/projects', project.slug]);
         }
       });
   }

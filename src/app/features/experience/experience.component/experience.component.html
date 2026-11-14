@@ -1,0 +1,52 @@
+<section class="experience-page">
+  <header class="experience-header">
+    <h2 class="experience-title">{{ 'experience.title' | transloco }}</h2>
+    <p class="experience-intro">{{ 'experience.intro' | transloco }}</p>
+  </header>
+
+  @if (entries$ | async; as entries) {
+    <ol class="timeline">
+      @for (entry of entries; track entry.id) {
+        <li class="timeline-item" [class.ongoing]="!entry.endDate">
+          <article class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-type">{{ 'experience.type.' + entry.type | transloco }}</span>
+              @if (lang$ | async; as lang) {
+                <time class="timeline-period">{{ formatPeriod(entry, lang) }}</time>
+              }
+            </div>
+
+            <h3 class="timeline-title">{{ entry.titleKey | transloco }}</h3>
+            @if (entry.organization) {
+              <p class="timeline-org">{{ entry.organization }}</p>
+            }
+
+            <p class="timeline-summary">{{ entry.summaryKey | transloco }}</p>
+
+            @if (entry.highlightKeys.length) {
+              <ul class="timeline-highlights">
+                @for (key of entry.highlightKeys; track key) {
+                  <li>{{ key | transloco }}</li>
+                }
+              </ul>
+            }
+
+            @if (entry.skills.length) {
+              <div class="timeline-skills">
+                @for (skill of entry.skills; track skill.key) {
+                  <app-skill [skill]="skill"></app-skill>
+                }
+              </div>
+            }
+
+            @if (entry.projectSlug) {
+              <a class="btn btn-primary timeline-link" [routerLink]="['/projects', entry.projectSlug]">
+                {{ 'button.case_study' | transloco }}
+              </a>
+            }
+          </article>
+        </li>
+      }
+    </ol>
+  }
+</section>

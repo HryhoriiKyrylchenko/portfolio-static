@@ -14,10 +14,14 @@ import { copyFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
 const DIST = 'dist/portfolio-static/browser';
-const STATIC_ROUTES = ['about', 'portfolio', 'contacts', 'privacy', 'cookies'];
+// 'portfolio' and 'portfolio/<slug>' are legacy URLs; the SPA redirects them to the new routes.
+const STATIC_ROUTES = ['about', 'experience', 'contacts', 'privacy', 'cookies', 'portfolio'];
 
 const projects = JSON.parse(readFileSync('src/assets/data/projects.json', 'utf8'));
-const routes = [...STATIC_ROUTES, ...projects.map((p) => `portfolio/${p.slug}`)];
+const routes = [
+  ...STATIC_ROUTES,
+  ...projects.flatMap((p) => [`projects/${p.slug}`, `portfolio/${p.slug}`]),
+];
 
 const index = join(DIST, 'index.html');
 const copy = (target) => {

@@ -77,6 +77,6 @@ export class ProjectComponent {
   );
 
   onCloseClick(): void {
-    void this.router.navigate(['../'], { relativeTo: this.route });
+    void this.router.navigate(['/experience']);
   }
 }

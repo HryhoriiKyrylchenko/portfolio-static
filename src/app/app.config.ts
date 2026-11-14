@@ -13,6 +13,7 @@ import { provideTranslocoPersistLang } from '@jsverse/transloco-persist-lang';
 import {cookiesStorageRoot} from './shared/utils/cookie-storage.helper';
 import {catchError, firstValueFrom, switchMap} from 'rxjs';
 import {LoadingInterceptor} from './core/interceptors/loading.interceptor';
+import {SUPPORTED_LANG_CODES} from './config/languages.config';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -26,18 +27,16 @@ export const appConfig: ApplicationConfig = {
 
           if (lang.startsWith('en') || lang === 'en-us' || lang === 'en-gb') return 'en';
           if (lang.startsWith('pl') || lang === 'pl-pl') return 'pl';
-          if (lang.startsWith('ru') || lang === 'ru-ru') return 'ru';
-          if (lang.startsWith('uk') || lang === 'uk-ua') return 'uk';
 
           return 'en';
         };
 
-        return cachedLang || mapLang(cultureLang) || mapLang(browserLang) || defaultLang;
+        return (cachedLang && SUPPORTED_LANG_CODES.includes(cachedLang) ? cachedLang : undefined) || mapLang(cultureLang) || mapLang(browserLang) || defaultLang;
       }
     }),
     provideTransloco({
       config: translocoConfig({
-        availableLangs: ['en', 'pl', 'ru', 'uk'],
+        availableLangs: SUPPORTED_LANG_CODES,
         defaultLang: 'en',
         fallbackLang: 'en',
         reRenderOnLangChange: true,
