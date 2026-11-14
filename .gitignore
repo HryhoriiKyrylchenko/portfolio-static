@@ -37,6 +37,9 @@ angular-*.log
 
 # Testing
 /test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
 junit.xml
 testem.log
 
@@ -143,5 +146,7 @@ jspm_packages/
 *.js
 *.js.map
 *.d.ts
+# Hand-written declarations (not compiler output)
+!src/**/*.d.ts
 !*.spec.ts
 !*.e2e.ts

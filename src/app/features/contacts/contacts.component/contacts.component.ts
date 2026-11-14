@@ -14,12 +14,16 @@ import {CONTACT_EMAIL} from '../../../config/contact.config';
   ]
 })
 export class ContactsComponent {
-  iconSize = '5.875rem';
   readonly email = CONTACT_EMAIL;
+  iconSize = ContactsComponent.iconSizeFor(window.innerWidth);
+
+  /** Larger social icons on desktop (the same 1400px breakpoint as the header). */
+  static iconSizeFor(width: number): string {
+    return width >= 1400 ? '7.8125rem' : '5.875rem';
+  }
 
   @HostListener('window:resize')
   onResize(): void {
-    const width = window.innerWidth;
-    this.iconSize = width >= 1400 ? '7.8125rem' : '5.875rem';
+    this.iconSize = ContactsComponent.iconSizeFor(window.innerWidth);
   }
 }

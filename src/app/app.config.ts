@@ -14,25 +14,13 @@ import {cookiesStorageRoot} from './shared/utils/cookie-storage.helper';
 import {catchError, firstValueFrom, switchMap} from 'rxjs';
 import {LoadingInterceptor} from './core/interceptors/loading.interceptor';
 import {SUPPORTED_LANG_CODES} from './config/languages.config';
+import {resolveStartLang} from './shared/utils/lang-detection';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideTranslocoPersistLang({
       storage: { useValue: cookiesStorageRoot() },
-      getLangFn: ({ cachedLang, browserLang, cultureLang, defaultLang }) => {
-        const mapLang = (lang?: string): string | undefined => {
-          if (!lang) return undefined;
-
-          lang = lang.toLowerCase();
-
-          if (lang.startsWith('en') || lang === 'en-us' || lang === 'en-gb') return 'en';
-          if (lang.startsWith('pl') || lang === 'pl-pl') return 'pl';
-
-          return 'en';
-        };
-
-        return (cachedLang && SUPPORTED_LANG_CODES.includes(cachedLang) ? cachedLang : undefined) || mapLang(cultureLang) || mapLang(browserLang) || defaultLang;
-      }
+      getLangFn: resolveStartLang,
     }),
     provideTransloco({
       config: translocoConfig({

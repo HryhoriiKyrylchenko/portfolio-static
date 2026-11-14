@@ -9,6 +9,16 @@ import {SkillCategoryDto, SkillFullDto} from '../../../shared/models/skill-dtos'
 import {SkillComponent} from '../../../shared/components/skill.component/skill.component';
 import {TranslocoPipe} from '@jsverse/transloco';
 
+/** Case-study sections in reading order: problem first, stack last. */
+export const CASE_STUDY_SECTIONS: readonly string[] = [
+  'overview',
+  'features',
+  'architecture',
+  'deployment',
+  'results',
+  'technologies',
+];
+
 @Component({
   selector: 'app-project',
   standalone: true,
@@ -26,8 +36,7 @@ export class ProjectComponent {
   private router = inject(Router);
   private seo = inject(SeoService);
 
-  /** Case-study sections in reading order: problem first, stack last. */
-  readonly sections: readonly string[] = ['overview', 'features', 'architecture', 'deployment', 'results', 'technologies'];
+  readonly sections = CASE_STUDY_SECTIONS;
 
   readonly projects = inject(ProjectsService).getProjects();
 

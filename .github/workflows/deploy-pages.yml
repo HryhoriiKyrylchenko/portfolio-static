@@ -30,8 +30,19 @@ jobs:
         run: npm ci
         working-directory: ./
 
+      - name: Test
+        run: npm test -- --watch=false
+        working-directory: ./
+
       - name: Build
         run: npm run build:pages
+        working-directory: ./
+
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
+      - name: End-to-end tests
+        run: npx playwright test
         working-directory: ./
 
       - name: Upload artifact
