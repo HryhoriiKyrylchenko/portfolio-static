@@ -1,92 +1,41 @@
-import {
-  Component,
-  inject,
-} from '@angular/core';
-import {map, take} from 'rxjs';
-import {AsyncPipe, NgStyle} from '@angular/common';
-import {Router} from '@angular/router';
-import {SkillComponent} from '../../../shared/components/skill.component/skill.component';
-import {ProjectsService} from '../../../core/services/projects.service';
-import {UserSkillsService} from '../../../core/services/user-skills.service';
-import {TranslocoPipe} from '@jsverse/transloco';
+import { Component, inject } from '@angular/core';
+import { AsyncPipe } from '@angular/common';
+import { RouterLink } from '@angular/router';
+import { TranslocoPipe, TranslocoService } from '@jsverse/transloco';
+import { ExperienceService } from '../../../core/services/experience.service';
+import { SkillComponent } from '../../../shared/components/skill.component/skill.component';
+import { ExperienceFullDto } from '../../../shared/models/experience-dtos';
+import { formatPeriod } from '../../../shared/utils/period';
+import { CONTACT_EMAIL, RESUME } from '../../../config/contact.config';
+import { SOCIAL_LINKS } from '../../../config/social-links.config';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [
-    AsyncPipe,
-    TranslocoPipe,
-    SkillComponent,
-    NgStyle,
-    SkillComponent
-  ],
+  imports: [AsyncPipe, RouterLink, TranslocoPipe, SkillComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  private router = inject(Router);
-  private projectsService = inject(ProjectsService);
-  private userSkillsService = inject(UserSkillsService);
+  private transloco = inject(TranslocoService);
 
-  readonly homeImageUrl = "assets/images/home_image.jpg";
+  readonly homeImageUrl = 'assets/images/home_image.jpg';
+  readonly resume = RESUME;
+  readonly email = CONTACT_EMAIL;
+  readonly linkedInUrl = SOCIAL_LINKS.find((l) => l.platform === 'LinkedIn')?.url;
 
-  // Already sorted by area and tier; the home page shows only the stronger tiers.
-  readonly skills = this.userSkillsService.getUserSkills().pipe(
-    map(skills => skills.filter(s => s.tier !== 'familiar'))
-  );
+  /** Keys under `home.focus.` in the i18n files; each has a title and text. */
+  readonly focusAreas = ['api', 'data', 'quality'];
 
-  readonly project = this.projectsService.getLastProject();
+  readonly current$ = inject(ExperienceService).getCurrent();
+  readonly lang$ = this.transloco.langChanges$;
 
-  readonly projectSkills = this.project.pipe(
-    map(project => project?.skills ?? [])
-  );
-
-  readonly resumeUrl = 'assets/resume/Hryhorii_Kyrylchenko_Junior_.NET_Developer_Poznan_Poland.pdf';
-
-  onContactClick() {
-    void this.router.navigate(['/contacts']);
-  }
-
-  onDownloadClick() {
-    const link = document.createElement('a');
-    link.href = this.resumeUrl;
-    link.download = 'Hryhorii_Kyrylchenko_Junior_.NET_Developer_Poznan_Poland.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-
-  onPortfolioClick() {
-    void this.router.navigate(['/experience']);
-  }
-
-  onReadClick() {
-    this.project
-      .pipe(take(1))
-      .subscribe(project => {
-        if (project?.slug) {
-          void this.router.navigate(['/projects', project.slug]);
-        }
-      });
-  }
-
-  onRepoClick() {
-    this.project
-      .pipe(take(1))
-      .subscribe(project => {
-        if (project?.repoUrl && project.repoUrl.trim()) {
-          window.open(project.repoUrl, '_blank');
-        }
-      });
-  }
-
-  onDemoClick() {
-    this.project
-      .pipe(take(1))
-      .subscribe(project => {
-        if (project?.demoUrl && project.demoUrl.trim()) {
-          window.open(project.demoUrl, '_blank');
-        }
-      });
+  formatPeriod(entry: ExperienceFullDto, lang: string): string {
+    return formatPeriod(
+      entry.startDate,
+      entry.endDate,
+      lang,
+      this.transloco.translate('experience.present'),
+    );
   }
 }

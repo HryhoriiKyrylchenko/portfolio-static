@@ -3,9 +3,32 @@
     "title": "Hryhorii Kyrylchenko",
     "button-back-to-top": "Powrót do góry",
     "rights-reserved": "Wszystkie prawa zastrzeżone.",
-    "project": "Ostatni projekt",
-    "subtitle": "Programista C# .NET | Aplikacje internetowe",
-    "description": "Kierowany ciekawością i zaangażowaniem w ciągłe uczenie się, podejmuję wyzwania i tworzę rozwiązania, które mają realny wpływ. Każdy projekt to dla mnie szansa na rozwój, adaptację i dostarczenie rzeczywistej wartości. Moim celem jest tworzenie aplikacji, które wnoszą realną wartość do życia ludzi."
+    "subtitle": "Backend Developer .NET",
+    "description": "Tworzę usługi backendowe, które są bezpieczne, przetestowane i łatwe do zmiany. Wcześniej pracowałem w prawie, logistyce i doradztwie, więc zaczynam od problemu biznesowego, a nie od kodu.",
+    "stack": "ASP.NET Core · Web API · Clean Architecture",
+    "photo_alt": "Portret Hryhoriia Kyrylchenki",
+    "current": "Obecnie",
+    "timeline_link": "Zobacz pełną oś czasu",
+    "focus": {
+      "title": "Czym się zajmuję",
+      "api": {
+        "title": "Backendowe API",
+        "text": "ASP.NET Core Web API w Clean Architecture: bezpieczne endpointy REST, uwierzytelnianie tokenowe, walidacja i przejrzyste kontrakty OpenAPI."
+      },
+      "data": {
+        "title": "Dane i wydajność",
+        "text": "Relacyjne schematy i zapytania z PostgreSQL i Entity Framework Core oraz cache tam, gdzie się opłaca, np. o 40% szybsze pobieranie danych w Forji."
+      },
+      "quality": {
+        "title": "Jakość i dostarczanie",
+        "text": "Testy jednostkowe z xUnit i Moq, kontenery Docker i pipeline’y CI/CD, aby zmiany trafiały na produkcję bezpiecznie i powtarzalnie."
+      }
+    },
+    "cta": {
+      "title": "Porozmawiajmy",
+      "text": "Jestem otwarty na role .NET developera. Mieszkam w Poznaniu.",
+      "email": "Napisz do mnie"
+    }
   },
   "nav": {
     "home": "Strona główna",
@@ -139,10 +162,8 @@
     "social_media_description": "kliknij, aby odwiedzić moje media społecznościowe"
   },
   "button": {
-    "read": "Czytaj",
     "share": "Udostępnij",
     "close": "Zamknij",
-    "read_more": "Czytaj więcej",
     "copied": "Link skopiowany!",
     "repo": "Repozytorium",
     "demo": "Demo",

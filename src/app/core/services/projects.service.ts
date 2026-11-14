@@ -24,10 +24,4 @@ export class ProjectsService {
       )
     );
   }
-
-  getLastProject(): Observable<ProjectFullDto | null> {
-    return this.getProjects().pipe(
-      map(projects => projects.length ? projects[projects.length - 1] : null)
-    );
-  }
 }

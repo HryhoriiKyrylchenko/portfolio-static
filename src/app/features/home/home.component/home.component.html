@@ -1,115 +1,84 @@
 <div class="home-page">
-  <div class="home-content-container">
-    <div
-      class="home-image"
-      [ngStyle]="{ 'background-image': 'url(' + homeImageUrl + ')' }"
-    ></div>
+  <section class="hero">
+    <img
+      class="hero-photo"
+      [src]="homeImageUrl"
+      [alt]="'home.photo_alt' | transloco"
+      width="1100"
+      height="1310"
+      fetchpriority="high"
+    />
 
-    <h2 class="home-name">
-      {{ 'home.title' | transloco }}
-    </h2>
+    <div class="hero-text">
+      <h1 class="hero-name">{{ 'home.title' | transloco }}</h1>
+      <p class="hero-headline">{{ 'home.subtitle' | transloco }}</p>
+      <p class="hero-stack">{{ 'home.stack' | transloco }}</p>
+      <p class="hero-description">{{ 'home.description' | transloco }}</p>
 
-    <h4 class="home-title">
-      {{ 'home.subtitle' | transloco }}
-    </h4>
-
-    <p class="home-description">
-      {{ 'home.description' | transloco }}
-    </p>
-
-    @if (skills | async; as skills) {
-      <div class="home-skills">
-        <h5 class="home-skills-title">
-          {{ 'skill.title' | transloco }}
-        </h5>
-
-        <div class="home-skills-list">
-          @for (skill of skills; track skill.skillKey) {
-            <app-skill [skill]="skill.skill"></app-skill>
-          }
-        </div>
-      </div>
-    }
-
-    <button
-      class="btn btn-primary btn-contact"
-      (click)="onContactClick()"
-    >
-      {{ 'button.contact' | transloco }}
-    </button>
-
-    <button
-      class="btn btn-secondary btn-download"
-      (click)="onDownloadClick()"
-    >
-      {{ 'button.download' | transloco }}
-    </button>
-
-    <button
-      class="btn btn-secondary btn-portfolio"
-      (click)="onPortfolioClick()"
-    >
-      {{ 'button.experience' | transloco }}
-    </button>
-  </div>
-
-  @if (project | async; as project) {
-    <div class="project-data-container">
-      <h4 class="project-data-title">
-        {{ 'home.project' | transloco }}
-      </h4>
-
-      <div class="project-data-container-inner">
-        <div class="project-data">
-          <div
-            class="project-cover-img"
-            [ngStyle]="{ 'background-image': 'url(' + project.coverImage + ')' }"
-          ></div>
-
-          @if (projectSkills | async; as projectSkills) {
-            <div class="project-skills">
-              @for (skill of projectSkills; track skill.key) {
-                <app-skill [skill]="skill"></app-skill>
-              }
-            </div>
-          }
-
-          <h5 class="project-title">
-            {{ project.titleKey | transloco }}
-          </h5>
-
-          <p class="project-description">
-            {{ project.shortDescriptionKey | transloco }}
-          </p>
-        </div>
-
-        <div class="project-buttons-container">
-          <button
-            class="btn btn-primary btn-read"
-            (click)="onReadClick()"
-          >
-            {{ 'button.read_more' | transloco }}
-          </button>
-
-          @if (project.repoUrl && project.repoUrl.length > 0) {
-            <button
-              class="btn btn-secondary btn-repo"
-              (click)="onRepoClick()"
-            >
-              {{ 'button.repo' | transloco }}
-            </button>
-          }
-
-          @if (project.demoUrl && project.demoUrl.length > 0) {
-            <button
-              class="btn btn-secondary btn-demo"
-              (click)="onDemoClick()"
-            >
-              {{ 'button.demo' | transloco }}
-            </button>
-          }
-        </div>
+      <div class="actions">
+        <a class="btn btn-primary" [href]="resume.url" [download]="resume.fileName">
+          {{ 'button.download' | transloco }}
+        </a>
+        <a class="btn btn-secondary" routerLink="/contacts">{{ 'button.contact' | transloco }}</a>
+        <a class="btn btn-secondary" routerLink="/experience">{{ 'button.experience' | transloco }}</a>
       </div>
     </div>
+  </section>
+
+  @if (current$ | async; as current) {
+    <section class="home-section" aria-labelledby="current-title">
+      <h2 id="current-title" class="section-title">{{ 'home.current' | transloco }}</h2>
+
+      <article class="home-card current">
+        <div class="current-meta">
+          @if (current.organization) {
+            <span>{{ current.organization }}</span>
+          }
+          @if (lang$ | async; as lang) {
+            <time>{{ formatPeriod(current, lang) }}</time>
+          }
+        </div>
+        <h3 class="card-title">{{ current.titleKey | transloco }}</h3>
+        <p>{{ current.summaryKey | transloco }}</p>
+
+        <div class="current-skills">
+          @for (skill of current.skills; track skill.key) {
+            <app-skill [skill]="skill"></app-skill>
+          }
+        </div>
+
+        <a class="text-link" routerLink="/experience">{{ 'home.timeline_link' | transloco }} →</a>
+      </article>
+    </section>
   }
+
+  <section class="home-section" aria-labelledby="focus-title">
+    <h2 id="focus-title" class="section-title">{{ 'home.focus.title' | transloco }}</h2>
+
+    <div class="focus-grid">
+      @for (area of focusAreas; track area) {
+        <article class="home-card">
+          <h3 class="card-title">{{ 'home.focus.' + area + '.title' | transloco }}</h3>
+          <p>{{ 'home.focus.' + area + '.text' | transloco }}</p>
+        </article>
+      }
+    </div>
+  </section>
+
+  <section class="home-section cta" aria-labelledby="cta-title">
+    <h2 id="cta-title" class="section-title">{{ 'home.cta.title' | transloco }}</h2>
+    <p class="cta-text">{{ 'home.cta.text' | transloco }}</p>
+
+    <div class="actions">
+      <a class="btn btn-primary" [href]="'mailto:' + email">{{ 'home.cta.email' | transloco }}</a>
+      @if (linkedInUrl) {
+        <a class="btn btn-secondary" [href]="linkedInUrl" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      }
+      <a class="btn btn-secondary" [href]="resume.url" [download]="resume.fileName">
+        {{ 'button.download' | transloco }}
+      </a>
+    </div>
+  </section>
 </div>

@@ -3,9 +3,32 @@
     "title": "Hryhorii Kyrylchenko",
     "button-back-to-top": "Back to top",
     "rights-reserved": "All rights reserved.",
-    "project": "Last Project",
-    "subtitle": "C# .NET Developer | Web Applications",
-    "description": "Driven by curiosity and a commitment to lifelong learning, I embrace challenges and craft solutions that make a difference — every project is an opportunity to grow, adapt, and deliver real value. I’m dedicated to creating applications that bring real value to people’s lives."
+    "subtitle": ".NET Backend Developer",
+    "description": "I build backend services that are secure, tested and easy to change. Before software I worked in law, logistics and consulting, so I start from the business problem, not the code.",
+    "stack": "ASP.NET Core · Web APIs · Clean Architecture",
+    "photo_alt": "Portrait of Hryhorii Kyrylchenko",
+    "current": "Currently",
+    "timeline_link": "See the full timeline",
+    "focus": {
+      "title": "What I do",
+      "api": {
+        "title": "Backend APIs",
+        "text": "ASP.NET Core Web APIs with Clean Architecture: secure REST endpoints, token-based authentication, validation and clear OpenAPI contracts."
+      },
+      "data": {
+        "title": "Data & performance",
+        "text": "Relational schemas and queries with PostgreSQL and Entity Framework Core, plus caching where it pays off, such as the 40% faster data retrieval in Forja."
+      },
+      "quality": {
+        "title": "Quality & delivery",
+        "text": "Unit tests with xUnit and Moq, Docker containers and CI/CD pipelines, so changes ship safely and repeatably."
+      }
+    },
+    "cta": {
+      "title": "Let's talk",
+      "text": "Open to .NET developer roles. Based in Poznań, Poland.",
+      "email": "Email me"
+    }
   },
   "nav": {
     "home": "Home",
@@ -139,10 +162,8 @@
     "social_media_description": "tap to visit my social media"
   },
   "button": {
-    "read": "Read",
     "share": "Share",
     "close": "Close",
-    "read_more": "Read More",
     "copied": "Link copied!",
     "repo": "Repository",
     "demo": "Demo",

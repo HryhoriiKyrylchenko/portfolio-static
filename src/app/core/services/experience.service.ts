@@ -28,8 +28,18 @@ export class ExperienceService {
     );
   }
 
-  /** The most recent entry, used for the "currently" block on the home page. */
+  /**
+   * The current role for the home page: the newest ongoing job or internship,
+   * falling back to the newest entry of any kind.
+   */
   getCurrent(): Observable<ExperienceFullDto | null> {
-    return this.getExperience().pipe(map((entries) => entries[0] ?? null));
+    return this.getExperience().pipe(
+      map(
+        (entries) =>
+          entries.find((e) => !e.endDate && (e.type === 'work' || e.type === 'internship')) ??
+          entries[0] ??
+          null,
+      ),
+    );
   }
 }

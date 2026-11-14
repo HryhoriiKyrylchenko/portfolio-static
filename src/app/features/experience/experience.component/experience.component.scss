@@ -104,6 +104,14 @@ $rail: 2rem;
   margin: 0;
 }
 
+// Body text: the global p/ul size (1.5rem) is too large inside cards.
+.timeline-org,
+.timeline-summary,
+.timeline-highlights {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
 .timeline-title {
   font-size: 1.375rem;
   font-weight: 500;
