@@ -16,6 +16,7 @@
       </ul>
     </nav>
     <div class="header-toggles">
+      <a class="header-cv" [href]="resume.url" [download]="resume.fileName">{{ 'nav.cv' | transloco }}</a>
       <app-theme-toggle></app-theme-toggle>
       <app-language-switcher></app-language-switcher>
     </div>

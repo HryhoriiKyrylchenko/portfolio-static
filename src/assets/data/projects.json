@@ -29,22 +29,22 @@
         "skillKey": "postgresql"
       },
       {
-        "skillKey": "swagger"
-      },
-      {
-        "skillKey": "docker"
-      },
-      {
-        "skillKey": "git"
-      },
-      {
-        "skillKey": "keycloak"
+        "skillKey": "redis"
       },
       {
         "skillKey": "minio"
       },
       {
-        "skillKey": "redis"
+        "skillKey": "keycloak"
+      },
+      {
+        "skillKey": "docker"
+      },
+      {
+        "skillKey": "swagger"
+      },
+      {
+        "skillKey": "git"
       }
     ]
   },
@@ -69,28 +69,40 @@
         "skillKey": "csharp"
       },
       {
-        "skillKey": "typescript"
-      },
-      {
         "skillKey": "aspnetcore"
-      },
-      {
-        "skillKey": "angular"
       },
       {
         "skillKey": "entityframeworkcore"
       },
       {
-        "skillKey": "postman"
+        "skillKey": "cqrs"
       },
       {
         "skillKey": "postgresql"
       },
       {
-        "skillKey": "githubactions"
+        "skillKey": "angular"
+      },
+      {
+        "skillKey": "typescript"
+      },
+      {
+        "skillKey": "docker"
       },
       {
         "skillKey": "aws"
+      },
+      {
+        "skillKey": "githubactions"
+      },
+      {
+        "skillKey": "xunit"
+      },
+      {
+        "skillKey": "moq"
+      },
+      {
+        "skillKey": "html"
       },
       {
         "skillKey": "css"
@@ -99,7 +111,7 @@
         "skillKey": "git"
       },
       {
-        "skillKey": "html"
+        "skillKey": "postman"
       }
     ]
   },

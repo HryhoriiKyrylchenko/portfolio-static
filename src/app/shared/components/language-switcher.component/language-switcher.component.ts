@@ -10,9 +10,11 @@ import {
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs';
-import {DEFAULT_LANG, SUPPORTED_LANG_CODES, SUPPORTED_LANGUAGES} from '../../../config/languages.config';
+import {SUPPORTED_LANG_CODES, SUPPORTED_LANGUAGES} from '../../../config/languages.config';
 import { CustomBreakpoints } from '../../utils/custom-breakpoints';
 import {TranslocoService} from '@jsverse/transloco';
+
+const LEGACY_LANG_KEY = 'preferred-language';
 
 @Component({
   selector: 'app-language-switcher',
@@ -26,7 +28,12 @@ export class LanguageSwitcherComponent implements AfterViewInit {
 
   languages = SUPPORTED_LANGUAGES;
 
-  currentLang = signal<string>(this.getInitialLang());
+  /**
+   * The active language. Transloco picks it at startup (cookie, then browser language, then
+   * English; see app.config.ts) and persist-lang stores every change in the cookie, so this
+   * component only reflects and changes it.
+   */
+  currentLang = toSignal(this.trans.langChanges$, { initialValue: this.trans.getActiveLang() });
   isOpen = signal<boolean>(false);
   buttonWidth = signal<number>(0);
 
@@ -44,20 +51,28 @@ export class LanguageSwitcherComponent implements AfterViewInit {
   )
 
   constructor() {
-    const savedLang = this.getInitialLang();
-    this.trans.setActiveLang(savedLang);
+    this.migrateLegacyPreference();
   }
 
   ngAfterViewInit() {
     this.updateButtonWidth();
   }
 
-  private getInitialLang(): string {
-    const savedLang = localStorage.getItem('preferred-language');
-    if (savedLang && SUPPORTED_LANG_CODES.includes(savedLang)) {
-      return savedLang;
+  /**
+   * Older versions kept the chosen language in localStorage and forced English otherwise,
+   * which overrode browser-language detection. Honor an explicit old choice once; from then
+   * on the persist-lang cookie remembers it.
+   */
+  private migrateLegacyPreference(): void {
+    try {
+      const legacy = localStorage.getItem(LEGACY_LANG_KEY);
+      localStorage.removeItem(LEGACY_LANG_KEY);
+      if (legacy && SUPPORTED_LANG_CODES.includes(legacy) && legacy !== this.trans.getActiveLang()) {
+        this.trans.setActiveLang(legacy);
+      }
+    } catch {
+      // Storage unavailable (e.g. privacy mode): nothing to migrate.
     }
-    return DEFAULT_LANG;
   }
 
   private updateButtonWidth(): void {
@@ -74,10 +89,8 @@ export class LanguageSwitcherComponent implements AfterViewInit {
   }
 
   selectLanguage(langCode: string): void {
+    // persist-lang saves it to the cookie; SeoService updates <html lang>.
     this.trans.setActiveLang(langCode);
-    this.currentLang.set(langCode);
-    localStorage.setItem('preferred-language', langCode);
-    document.documentElement.lang = langCode;
     this.isOpen.set(false);
   }
 

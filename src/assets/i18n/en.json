@@ -34,7 +34,8 @@
     "home": "Home",
     "about": "About",
     "contacts": "Contacts",
-    "experience": "Experience"
+    "experience": "Experience",
+    "cv": "CV"
   },
   "theme": {
     "light": "Light",
@@ -178,37 +179,37 @@
     "back": "Back to experience"
   },
   "project": {
-    "overview": "Project overview",
-    "technologies": "Used technologies",
-    "features": "Main features",
-    "architecture": "Project architecture",
+    "overview": "Context & problem",
+    "features": "What it does",
+    "architecture": "Architecture & key decisions",
     "deployment": "Deployment",
-    "results": "Results",
+    "results": "My role & results",
+    "technologies": "Tech stack",
     "skills": "Skills"
   },
   "projects-list": {
     "forja": {
-      "title": "Forja – Independent Game Studio Platform",
-      "short": "A robust, identity-driven content platform tailored for game development builds, player feedback, and team content management.",
+      "title": "Forja: Game Studio Platform",
+      "short": "Backend for an independent game studio's platform: game builds, player feedback and content. Team diploma project at IT STEP Academy; I owned the backend.",
       "sections": {
-        "results": "Delivered a high-performance backend within a focused 3-month sprint. My role included designing the database schema, structuring and implementing the backend architecture, all backend functionality, and integrating related technologies. Agile teamwork ensured seamless coordination with frontend, design, and security specialists.",
-        "features": "Player feedback mechanisms, bug reporting tools, and an internal content management system for organizing studio projects, and content assets.",
-        "overview": "Forja is a bespoke platform developed for an independent game studio, intentionally steering clear of generic solutions. It offers a streamlined environment for managing game builds, collecting player feedback, and overseeing team content, all within a cohesive ecosystem.",
-        "deployment": "The platform is designed for deployment on cloud infrastructure (e.g., AWS, Azure, or any private cloud). With Docker-based containerization, the system can be easily scaled, orchestrated, and maintained in cloud environments, enabling streamlined release workflows and infrastructure management.",
-        "architecture": "The backend is constructed using ASP.NET Core (C#), serving over 40 dynamic UI pages via controllers and services. Data is managed with PostgreSQL, while Redis is employed for caching to enhance performance. MinIO is utilized for scalable object storage, and Keycloak manages authentication. API documentation is maintained using Swagger, and the entire system is orchestrated through the .NET Aspire Dashboard.",
-        "technologies": "C#, ASP.NET Core, Entity Framework Core, Docker, Git, Keycloak, PostgreSQL, Redis,  MinIO,  Swagger, .NET Aspire Dashboard"
+        "overview": "An independent game studio needed one place to publish game builds, collect player feedback and bug reports, and manage its internal content, instead of stitching together generic tools. Forja was built as a team diploma project at IT STEP Academy, with separate frontend, design and security roles. I owned the backend.",
+        "features": "Player feedback and bug reporting, management of game builds and assets, and an internal content management system for studio projects. The backend serves more than 40 dynamic UI pages.",
+        "architecture": "ASP.NET Core controllers and services over PostgreSQL with Entity Framework Core. Key decisions: Redis caching for frequently read data, which made data retrieval 40% faster; MinIO for S3-compatible object storage, so large build files stay out of the database and the platform is not tied to one cloud; Keycloak for authentication instead of a hand-written identity layer; and Swagger documentation plus the .NET Aspire dashboard, so the frontend team could integrate and debug without waiting on me.",
+        "deployment": "Every service runs in a Docker container and is orchestrated with .NET Aspire. Because storage is S3-compatible and identity is external, the same setup can run on AWS, Azure or a private cloud.",
+        "results": "I designed the database schema and the backend architecture and implemented all server-side functionality, delivering the complete backend in a three-month sprint in step with the frontend and security milestones.",
+        "technologies": "C#, ASP.NET Core, Entity Framework Core, PostgreSQL, Redis, MinIO, Keycloak, Docker, Swagger, .NET Aspire, Git."
       }
     },
     "personal-site": {
-      "title": "Personal Developer Portfolio & Blog",
-      "short": "A modern, multilingual full‑stack site with portfolio, blog, and admin panel, showcasing development projects and professional skills.",
+      "title": "Personal Website: Full-Stack Portfolio & Blog",
+      "short": "Multilingual portfolio and blog with an admin panel: ASP.NET Core backend in Clean Architecture, Angular frontend, Docker on AWS and CI/CD with GitHub Actions.",
       "sections": {
-        "results": "I developed the entire site, including backend, frontend, and database, implementing responsive design and multilingual support, and collaborating with a designer for UX/UI.",
-        "features": "Portfolio with project showcases, blog section, About page, contact form with email notifications, social links, admin panel for content management, and localization via JSON and database translations. Unit tests implemented with xUnit, Moq, and FluentAssertions.",
-        "overview": "This full-stack site features an 'About' section, portfolio pages with detailed projects, a blog with articles, and a contact form. It demonstrates development skills, project showcases, and professional branding with dynamic interaction and multilingual support.",
-        "deployment": "Containerized with Docker, CI/CD implemented via GitHub Actions, deploying to AWS. Includes automated database migrations and infrastructure provisioning for reliable deployment and updates.",
-        "architecture": "Backend uses Domain-Driven Design and Clean Architecture with Vertical Slice patterns. MediatR implements CQRS, separating commands and queries. Each vertical slice contains its own request/handler logic, validation, and endpoint definitions. Frontend is Angular, fully responsive and localized.",
-        "technologies": "C#, TypeScript, ASP.NET Core, Entity Framework Core, Angular, PostgreSQL, Postman, Git, GitHub Actions, AWS, HTML, CSS, Rider, WebStorm."
+        "overview": "I wanted a site I could keep updating myself: a portfolio, a blog and an admin panel for editing content and translations without redeploying. I designed and built it end to end and worked with a UX designer on the interface.",
+        "features": "Nine responsive pages, including About, a portfolio with detailed project pages, a blog and a contact form with email notifications. Content and translations are managed in the admin panel, with localization from JSON files and the database.",
+        "architecture": "The backend follows Domain-Driven Design and Clean Architecture and is organized in vertical slices. Each slice holds its own MediatR request, handler, validation and endpoint, with commands and queries separated (CQRS), so a feature can change without touching the others. Data lives in PostgreSQL through Entity Framework Core. The frontend is Angular, fully responsive and localized.",
+        "deployment": "Containerized with Docker and deployed to AWS. A GitHub Actions pipeline builds and deploys the app and runs database migrations and infrastructure provisioning automatically, which cut deployment time from 15 to 5 minutes.",
+        "results": "I built the whole platform: backend, frontend, database and deployment. I covered the backend with unit tests (xUnit, Moq, FluentAssertions) and maintained the live site. The portfolio part now runs as a static version (this website), while the full-stack code remains available as a reference.",
+        "technologies": "C#, ASP.NET Core, Entity Framework Core, MediatR, PostgreSQL, Angular, TypeScript, Docker, AWS, GitHub Actions, xUnit, Moq, FluentAssertions."
       }
     },
     "portfolio-static": {
@@ -473,5 +474,35 @@
     "ru": "Russian",
     "en": "English",
     "pl": "Polish"
+  },
+  "seo": {
+    "home": {
+      "title": "Hryhorii Kyrylchenko · .NET Backend Developer",
+      "description": ".NET backend developer in Poznań building ASP.NET Core Web APIs with clean architecture, secure endpoints and tested code. Experience, projects and CV."
+    },
+    "about": {
+      "title": "About",
+      "description": "Background, skills by area with where each was used, education, certifications and languages of Hryhorii Kyrylchenko, .NET backend developer."
+    },
+    "experience": {
+      "title": "Experience",
+      "description": "EPAM .NET training, backend projects and IT STEP Academy education: what I built, what I owned and the decisions behind it."
+    },
+    "contacts": {
+      "title": "Contact",
+      "description": "Get in touch with Hryhorii Kyrylchenko, .NET backend developer in Poznań: email, LinkedIn and GitHub."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How this website handles data and protects your privacy."
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "description": "How this website uses cookies and browser storage."
+    },
+    "error": {
+      "title": "Page not found",
+      "description": "The page you are looking for does not exist."
+    }
   }
 }

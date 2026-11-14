@@ -20,42 +20,16 @@
     </h3>
 
     <div class="project-description">
-      <h6 class="project-subtitle">
-        {{ 'project.overview' | transloco }}
-      </h6>
-      <p class="project-content">
-        {{ project.descriptionSectionsKeys['overview'] | transloco }}
-      </p>
-      <h6 class="project-subtitle">
-        {{ 'project.technologies' | transloco }}
-      </h6>
-      <p class="project-content">
-        {{ project.descriptionSectionsKeys['technologies'] | transloco }}
-      </p>
-      <h6 class="project-subtitle">
-        {{ 'project.features' | transloco }}
-      </h6>
-      <p class="project-content">
-        {{ project.descriptionSectionsKeys['features'] | transloco }}
-      </p>
-      <h6 class="project-subtitle">
-        {{ 'project.architecture' | transloco }}
-      </h6>
-      <p class="project-content">
-        {{ project.descriptionSectionsKeys['architecture'] | transloco }}
-      </p>
-      <h6 class="project-subtitle">
-        {{ 'project.deployment' | transloco }}
-      </h6>
-      <p class="project-content">
-        {{ project.descriptionSectionsKeys['deployment'] | transloco }}
-      </p>
-      <h6 class="project-subtitle">
-        {{ 'project.results' | transloco }}
-      </h6>
-      <p class="project-content">
-        {{ project.descriptionSectionsKeys['results'] | transloco }}
-      </p>
+      @for (section of sections; track section) {
+        @if (project.descriptionSectionsKeys[section]) {
+          <h6 class="project-subtitle">
+            {{ 'project.' + section | transloco }}
+          </h6>
+          <p class="project-content">
+            {{ project.descriptionSectionsKeys[section] | transloco }}
+          </p>
+        }
+      }
     </div>
 
     @if (skillsByCategory | async; as skillsByCategory) {

@@ -13,9 +13,9 @@ export const routes: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'about', component: AboutComponent, data: { title: 'About'} },
-      { path: 'experience', component: ExperienceComponent, data: { title: 'Experience'} },
+      { path: '', component: HomeComponent, pathMatch: 'full', data: { seo: 'home' } },
+      { path: 'about', component: AboutComponent, data: { seo: 'about' } },
+      { path: 'experience', component: ExperienceComponent, data: { seo: 'experience' } },
       {
         path: 'projects/:slug',
         loadComponent: () => import('./features/projects/project.component/project.component').then(m => m.ProjectComponent)
@@ -23,10 +23,10 @@ export const routes: Routes = [
       // Old URLs from before the Experience redesign; keep shared links working.
       { path: 'portfolio', redirectTo: 'experience', pathMatch: 'full' },
       { path: 'portfolio/:slug', redirectTo: 'projects/:slug' },
-      { path: 'contacts', component: ContactsComponent, data: { title: 'Contacts'} },
-      { path: 'privacy', component: PrivacyComponent, data: { title: 'Privacy'} },
-      { path: 'cookies', component: CookiesComponent, data: { title: 'Cookies'} },
-      { path: '**', component: ErrorComponent, data: { title: 'Error'} }
+      { path: 'contacts', component: ContactsComponent, data: { seo: 'contacts' } },
+      { path: 'privacy', component: PrivacyComponent, data: { seo: 'privacy' } },
+      { path: 'cookies', component: CookiesComponent, data: { seo: 'cookies' } },
+      { path: '**', component: ErrorComponent, data: { seo: 'error', noindex: true } }
     ]
   },
   { path: '**', redirectTo: '' }

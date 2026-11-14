@@ -34,7 +34,8 @@
     "home": "Strona główna",
     "about": "O mnie",
     "contacts": "Kontakt",
-    "experience": "Doświadczenie"
+    "experience": "Doświadczenie",
+    "cv": "CV"
   },
   "theme": {
     "light": "Jasny",
@@ -178,37 +179,37 @@
     "back": "Wróć do doświadczenia"
   },
   "project": {
-    "overview": "Przegląd projektu",
-    "technologies": "Użyte technologie",
-    "features": "Główne funkcje",
-    "architecture": "Architektura projektu",
+    "overview": "Kontekst i problem",
+    "features": "Co robi",
+    "architecture": "Architektura i kluczowe decyzje",
     "deployment": "Wdrożenie",
-    "results": "Wyniki",
+    "results": "Moja rola i wyniki",
+    "technologies": "Stos technologiczny",
     "skills": "Umiejętności"
   },
   "projects-list": {
     "forja": {
-      "title": "Forja – Platforma niezależnego studia gier",
-      "short": "Solidna platforma do zarządzania treścią, stworzona z myślą o tworzeniu gier, zbieraniu opinii graczy i zarządzaniu zespołowym contentem.",
+      "title": "Forja: platforma dla studia gier",
+      "short": "Backend platformy niezależnego studia gier: buildy, opinie graczy i treści. Zespołowy projekt dyplomowy w IT STEP Academy; odpowiadałem za backend.",
       "sections": {
-        "results": "Dostarczono wydajny backend w ciągu skoncentrowanego, 3-miesięcznego sprintu. Moje zadania obejmowały projektowanie schematu bazy danych, architektury backendu, implementację funkcjonalności oraz integrację technologii. Zespół Agile zapewnił sprawną koordynację z frontendem, projektowaniem i bezpieczeństwem.",
-        "features": "Mechanizmy zbierania opinii graczy, narzędzia do zgłaszania błędów oraz wewnętrzny system zarządzania treścią do organizowania projektów studia i zasobów contentowych.",
-        "overview": "Forja to dedykowana platforma dla niezależnego studia gier, unikająca rozwiązań generycznych. Zapewnia zoptymalizowane środowisko do zarządzania buildami, zbierania opinii graczy i nadzorowania zespołowego contentu w spójnym ekosystemie.",
-        "deployment": "Platforma zaprojektowana do wdrożenia w chmurze (AWS, Azure lub prywatna). Konteneryzacja w Dockerze umożliwia skalowanie, orkiestrację i utrzymanie systemu, usprawniając procesy wdrożeń i zarządzania infrastrukturą.",
-        "architecture": "Backend zbudowany w ASP.NET Core (C#), obsługujący ponad 40 dynamicznych stron UI przez kontrolery i serwisy. PostgreSQL zarządza danymi, Redis przyspiesza cache, MinIO zapewnia skalowalne przechowywanie obiektów, Keycloak obsługuje uwierzytelnianie. Dokumentacja API w Swagger; całość zarządzana przez .NET Aspire Dashboard.",
-        "technologies": "C#, ASP.NET Core, Entity Framework Core, Docker, Git, Keycloak, PostgreSQL, Redis, MinIO, Swagger, .NET Aspire Dashboard"
+        "overview": "Niezależne studio gier potrzebowało jednego miejsca do publikowania buildów, zbierania opinii graczy i zgłoszeń błędów oraz zarządzania treściami wewnętrznymi, zamiast łączyć ogólne narzędzia. Forja powstała jako zespołowy projekt dyplomowy w IT STEP Academy, z osobnymi rolami frontendu, designu i bezpieczeństwa. Ja odpowiadałem za backend.",
+        "features": "Opinie graczy i zgłaszanie błędów, zarządzanie buildami i zasobami gier oraz wewnętrzny system zarządzania treścią dla projektów studia. Backend obsługuje ponad 40 dynamicznych stron interfejsu.",
+        "architecture": "Kontrolery i serwisy ASP.NET Core na PostgreSQL z Entity Framework Core. Kluczowe decyzje: cache w Redis dla często odczytywanych danych, co przyspieszyło pobieranie danych o 40%; MinIO jako magazyn obiektów zgodny z S3, aby duże pliki buildów nie trafiały do bazy, a platforma nie była związana z jedną chmurą; Keycloak do uwierzytelniania zamiast własnej warstwy tożsamości; dokumentacja Swagger i dashboard .NET Aspire, aby zespół frontendowy mógł integrować się i debugować bez czekania na mnie.",
+        "deployment": "Każda usługa działa w kontenerze Docker i jest orkiestrowana przez .NET Aspire. Dzięki magazynowi zgodnemu z S3 i zewnętrznej tożsamości ta sama konfiguracja może działać na AWS, Azure lub w chmurze prywatnej.",
+        "results": "Zaprojektowałem schemat bazy danych i architekturę backendu oraz zaimplementowałem całą logikę serwerową, dostarczając kompletny backend w trzymiesięcznym sprincie, zgodnie z kamieniami milowymi frontendu i bezpieczeństwa.",
+        "technologies": "C#, ASP.NET Core, Entity Framework Core, PostgreSQL, Redis, MinIO, Keycloak, Docker, Swagger, .NET Aspire, Git."
       }
     },
     "personal-site": {
-      "title": "Osobiste Portfolio Dewelopera i Blog",
-      "short": "Wielojęzyczna aplikacja full‑stack prezentująca projekty, wpisy i wybory technologiczne.",
+      "title": "Strona osobista: portfolio i blog full-stack",
+      "short": "Wielojęzyczne portfolio i blog z panelem administracyjnym: backend ASP.NET Core w Clean Architecture, frontend Angular, Docker na AWS i CI/CD z GitHub Actions.",
       "sections": {
-        "results": "Osobiście opracowałem cały serwis — backend, frontend i strukturę bazy danych — we współpracy z projektantem UX/UI. Strona jest wdrożona i dostępna online.",
-        "features": "Obsługa wielojęzycznych postów (pl/ru/uk/en), filtrowanie po tagach i chmura tagów, panel administracyjny do zarządzania treścią, logowanie administratorów przez AWS Cognito, przechowywanie zasobów w AWS S3 oraz SEO-przyjazne routingi i metadane.",
-        "overview": "Ta strona to pełnostackowa platforma portfolio i blog, która prezentuje mnie jako programistę. Zawiera sekcję „O mnie”, listę projektów z dedykowanymi stronami projektów oraz sekcję blogową z pojedynczymi wpisami. Serwis pokazuje moje umiejętności i markę za pomocą aktualnych treści i interaktywnych elementów.",
-        "deployment": "Konteneryzacja z użyciem Docker; CI/CD oparte na GitHub Actions wdrażające na AWS. Zautomatyzowane migracje bazy danych i provisioning infrastruktury zapewniają płynne wdrożenia i aktualizacje.",
-        "architecture": "Architektura backendu opiera się na zasadach Domain-Driven Design (DDD) i Clean Architecture, zorganizowana według wzorca Vertical Slice. System wykorzystuje MediatR do implementacji wzorca Mediator i CQRS, co umożliwia rozdzielenie komend i zapytań oraz minimalizuje logikę w kontrolerach. Każdy vertical slice zawiera własne żądanie/handler (komendę lub zapytanie), walidację i definicję endpointu.",
-        "technologies": "C#, ASP.NET Core, Entity Framework Core, PostgreSQL, Angular, Docker, AWS S3, AWS Cognito, Postman, GitHub Actions, AWS"
+        "overview": "Chciałem mieć stronę, którą mogę sam aktualizować: portfolio, blog i panel administracyjny do edycji treści i tłumaczeń bez ponownego wdrażania. Zaprojektowałem i zbudowałem ją od początku do końca, współpracując z projektantem UX przy interfejsie.",
+        "features": "Dziewięć responsywnych stron, w tym O mnie, portfolio ze szczegółowymi stronami projektów, blog i formularz kontaktowy z powiadomieniami e-mail. Treści i tłumaczenia są zarządzane w panelu administracyjnym, z lokalizacją z plików JSON i bazy danych.",
+        "architecture": "Backend jest oparty na Domain-Driven Design i Clean Architecture oraz podzielony na vertical slices. Każdy slice ma własne żądanie MediatR, handler, walidację i endpoint, a komendy są oddzielone od zapytań (CQRS), więc funkcję można zmienić bez naruszania pozostałych. Dane są w PostgreSQL przez Entity Framework Core. Frontend to Angular, w pełni responsywny i zlokalizowany.",
+        "deployment": "Konteneryzacja w Dockerze i wdrożenie na AWS. Pipeline GitHub Actions buduje i wdraża aplikację oraz automatycznie uruchamia migracje bazy danych i provisioning infrastruktury, co skróciło czas wdrożenia z 15 do 5 minut.",
+        "results": "Zbudowałem całą platformę: backend, frontend, bazę danych i wdrożenie. Pokryłem backend testami jednostkowymi (xUnit, Moq, FluentAssertions) i utrzymywałem działającą stronę. Część portfolio działa teraz jako wersja statyczna (ta strona), a kod full-stack pozostaje dostępny jako referencja.",
+        "technologies": "C#, ASP.NET Core, Entity Framework Core, MediatR, PostgreSQL, Angular, TypeScript, Docker, AWS, GitHub Actions, xUnit, Moq, FluentAssertions."
       }
     },
     "portfolio-static": {
@@ -473,5 +474,35 @@
     "ru": "Rosyjski",
     "en": "Angielski",
     "pl": "Polski"
+  },
+  "seo": {
+    "home": {
+      "title": "Hryhorii Kyrylchenko · Backend Developer .NET",
+      "description": "Backend developer .NET z Poznania, tworzący ASP.NET Core Web API w oparciu o clean architecture, bezpieczne endpointy i przetestowany kod. Doświadczenie, projekty i CV."
+    },
+    "about": {
+      "title": "O mnie",
+      "description": "Doświadczenie, umiejętności według obszarów wraz z miejscem ich użycia, edukacja, certyfikaty i języki Hryhoriia Kyrylchenki, backend developera .NET."
+    },
+    "experience": {
+      "title": "Doświadczenie",
+      "description": "Szkolenia .NET w EPAM, projekty backendowe i edukacja w IT STEP Academy: co zbudowałem, za co odpowiadałem i jakie decyzje za tym stały."
+    },
+    "contacts": {
+      "title": "Kontakt",
+      "description": "Skontaktuj się z Hryhoriim Kyrylchenką, backend developerem .NET z Poznania: e-mail, LinkedIn i GitHub."
+    },
+    "privacy": {
+      "title": "Polityka prywatności",
+      "description": "Jak ta strona przetwarza dane i chroni Twoją prywatność."
+    },
+    "cookies": {
+      "title": "Polityka cookies",
+      "description": "Jak ta strona wykorzystuje pliki cookie i pamięć przeglądarki."
+    },
+    "error": {
+      "title": "Nie znaleziono strony",
+      "description": "Strona, której szukasz, nie istnieje."
+    }
   }
 }

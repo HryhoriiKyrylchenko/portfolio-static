@@ -25,7 +25,7 @@ export class HomeComponent {
   readonly linkedInUrl = SOCIAL_LINKS.find((l) => l.platform === 'LinkedIn')?.url;
 
   /** Keys under `home.focus.` in the i18n files; each has a title and text. */
-  readonly focusAreas = ['api', 'data', 'quality'];
+  readonly focusAreas: readonly string[] = ['api', 'data', 'quality'];
 
   readonly current$ = inject(ExperienceService).getCurrent();
   readonly lang$ = this.transloco.langChanges$;

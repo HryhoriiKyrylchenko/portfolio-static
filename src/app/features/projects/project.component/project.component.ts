@@ -1,13 +1,13 @@
 import {Component, inject} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
-import {Title} from '@angular/platform-browser';
 import {switchMap, tap} from 'rxjs/operators';
 import {map, of} from 'rxjs';
 import {AsyncPipe, NgStyle} from '@angular/common';
 import {ProjectsService} from '../../../core/services/projects.service';
+import {SeoService} from '../../../core/services/seo.service';
 import {SkillCategoryDto, SkillFullDto} from '../../../shared/models/skill-dtos';
 import {SkillComponent} from '../../../shared/components/skill.component/skill.component';
-import {TranslocoPipe, TranslocoService} from '@jsverse/transloco';
+import {TranslocoPipe} from '@jsverse/transloco';
 
 @Component({
   selector: 'app-project',
@@ -24,8 +24,10 @@ import {TranslocoPipe, TranslocoService} from '@jsverse/transloco';
 export class ProjectComponent {
   private route = inject(ActivatedRoute);
   private router = inject(Router);
-  private titleService = inject(Title);
-  private transloco = inject(TranslocoService);
+  private seo = inject(SeoService);
+
+  /** Case-study sections in reading order: problem first, stack last. */
+  readonly sections: readonly string[] = ['overview', 'features', 'architecture', 'deployment', 'results', 'technologies'];
 
   readonly projects = inject(ProjectsService).getProjects();
 
@@ -38,8 +40,7 @@ export class ProjectComponent {
         map(projects => projects.find(p => p.slug === slug) ?? null),
         tap(project => {
           if (project) {
-            const translatedTitle = this.transloco.translate(project.titleKey);
-            this.titleService.setTitle(translatedTitle);
+            this.seo.setPage(project.titleKey, project.shortDescriptionKey);
           }
         })
       );
