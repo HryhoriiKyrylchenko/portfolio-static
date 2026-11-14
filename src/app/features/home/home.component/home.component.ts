@@ -30,13 +30,9 @@ export class HomeComponent {
 
   readonly homeImageUrl = "assets/images/home_image.jpg";
 
+  // Already sorted by area and tier; the home page shows only the stronger tiers.
   readonly skills = this.userSkillsService.getUserSkills().pipe(
-    map(skills => skills.sort((a, b) => {
-      const orderDiff = a.category.displayOrder - b.category.displayOrder;
-      return orderDiff !== 0
-        ? orderDiff
-        : a.skill.nameKey.localeCompare(b.skill.nameKey);
-    }))
+    map(skills => skills.filter(s => s.tier !== 'familiar'))
   );
 
   readonly project = this.projectsService.getLastProject();

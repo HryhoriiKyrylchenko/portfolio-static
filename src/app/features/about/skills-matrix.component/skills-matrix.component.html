@@ -1,0 +1,33 @@
+<section class="skills-section" aria-labelledby="skills-title">
+  <h3 id="skills-title" class="section-title">{{ 'skill.title' | transloco }}</h3>
+  <p class="section-intro">{{ 'skill.intro' | transloco }}</p>
+
+  @if (areas$ | async; as areas) {
+    <div class="skill-areas">
+      @for (area of areas; track area.category.key) {
+        <div class="skill-area">
+          <h4 class="area-title">{{ area.category.nameKey | transloco }}</h4>
+
+          <ul class="area-skills">
+            @for (row of area.skills; track row.skillKey) {
+              <li class="skill-row">
+                <div class="skill-row-head">
+                  <app-skill [skill]="row.skill"></app-skill>
+                  <span class="tier tier-{{ row.tier }}">{{ 'skill.tier.' + row.tier | transloco }}</span>
+                </div>
+                @if (row.usedInKeys.length) {
+                  <p class="used-in">
+                    {{ 'skill.used_in' | transloco }}:
+                    @for (key of row.usedInKeys; track key; let last = $last) {
+                      {{ key | transloco }}{{ last ? '' : ', ' }}
+                    }
+                  </p>
+                }
+              </li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  }
+</section>

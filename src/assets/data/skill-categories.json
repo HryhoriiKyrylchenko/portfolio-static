@@ -1,19 +1,37 @@
 [
   {
-    "key": "languages",
+    "key": "backend",
     "displayOrder": 1,
-    "nameKey": "skillCategories.languages.name",
-    "descriptionKey": "skillCategories.languages.description"
+    "nameKey": "skillCategories.backend.name",
+    "descriptionKey": "skillCategories.backend.description"
   },
   {
-    "key": "frameworks",
+    "key": "data",
     "displayOrder": 2,
-    "nameKey": "skillCategories.frameworks.name",
-    "descriptionKey": "skillCategories.frameworks.description"
+    "nameKey": "skillCategories.data.name",
+    "descriptionKey": "skillCategories.data.description"
+  },
+  {
+    "key": "testing",
+    "displayOrder": 3,
+    "nameKey": "skillCategories.testing.name",
+    "descriptionKey": "skillCategories.testing.description"
+  },
+  {
+    "key": "frontend",
+    "displayOrder": 4,
+    "nameKey": "skillCategories.frontend.name",
+    "descriptionKey": "skillCategories.frontend.description"
+  },
+  {
+    "key": "devops",
+    "displayOrder": 5,
+    "nameKey": "skillCategories.devops.name",
+    "descriptionKey": "skillCategories.devops.description"
   },
   {
     "key": "tools",
-    "displayOrder": 3,
+    "displayOrder": 6,
     "nameKey": "skillCategories.tools.name",
     "descriptionKey": "skillCategories.tools.description"
   }

@@ -29,9 +29,6 @@
         "skillKey": "postgresql"
       },
       {
-        "skillKey": "rider"
-      },
-      {
         "skillKey": "swagger"
       },
       {
@@ -90,12 +87,6 @@
         "skillKey": "postgresql"
       },
       {
-        "skillKey": "rider"
-      },
-      {
-        "skillKey": "webstorm"
-      },
-      {
         "skillKey": "githubactions"
       },
       {
@@ -129,15 +120,11 @@
       "technologies": "projects-list.portfolio-static.sections.technologies"
     },
     "skills": [
-
       {
         "skillKey": "typescript"
       },
       {
         "skillKey": "angular"
-      },
-      {
-        "skillKey": "webstorm"
       },
       {
         "skillKey": "githubactions"

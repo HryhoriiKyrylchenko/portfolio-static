@@ -6,6 +6,7 @@
     "startDate": "2026-07",
     "endDate": null,
     "titleKey": "experience-list.epam-specialization.title",
+    "shortTitleKey": "experience-list.epam-specialization.short",
     "summaryKey": "experience-list.epam-specialization.summary",
     "highlightKeys": [
       "experience-list.epam-specialization.highlights.api",
@@ -13,11 +14,33 @@
       "experience-list.epam-specialization.highlights.quality"
     ],
     "skills": [
-      { "skillKey": "csharp" },
-      { "skillKey": "aspnetcore" },
-      { "skillKey": "docker" },
-      { "skillKey": "swagger" },
-      { "skillKey": "git" }
+      {
+        "skillKey": "csharp"
+      },
+      {
+        "skillKey": "aspnetcore"
+      },
+      {
+        "skillKey": "restapi"
+      },
+      {
+        "skillKey": "tdd"
+      },
+      {
+        "skillKey": "docker"
+      },
+      {
+        "skillKey": "swagger"
+      },
+      {
+        "skillKey": "nosql"
+      },
+      {
+        "skillKey": "aiassisted"
+      },
+      {
+        "skillKey": "git"
+      }
     ]
   },
   {
@@ -27,6 +50,7 @@
     "startDate": "2026-02",
     "endDate": null,
     "titleKey": "experience-list.portfolio-static.title",
+    "shortTitleKey": "experience-list.portfolio-static.short",
     "summaryKey": "experience-list.portfolio-static.summary",
     "highlightKeys": [
       "experience-list.portfolio-static.highlights.content",
@@ -35,11 +59,24 @@
     ],
     "projectSlug": "portfolio-static",
     "skills": [
-      { "skillKey": "angular" },
-      { "skillKey": "typescript" },
-      { "skillKey": "githubactions" },
-      { "skillKey": "html" },
-      { "skillKey": "css" }
+      {
+        "skillKey": "angular"
+      },
+      {
+        "skillKey": "typescript"
+      },
+      {
+        "skillKey": "githubactions"
+      },
+      {
+        "skillKey": "html"
+      },
+      {
+        "skillKey": "css"
+      },
+      {
+        "skillKey": "git"
+      }
     ]
   },
   {
@@ -49,6 +86,7 @@
     "startDate": "2026-02",
     "endDate": "2026-06",
     "titleKey": "experience-list.epam-fundamentals.title",
+    "shortTitleKey": "experience-list.epam-fundamentals.short",
     "summaryKey": "experience-list.epam-fundamentals.summary",
     "highlightKeys": [
       "experience-list.epam-fundamentals.highlights.csharp",
@@ -56,9 +94,24 @@
       "experience-list.epam-fundamentals.highlights.quality"
     ],
     "skills": [
-      { "skillKey": "csharp" },
-      { "skillKey": "aspnetcore" },
-      { "skillKey": "entityframeworkcore" }
+      {
+        "skillKey": "csharp"
+      },
+      {
+        "skillKey": "async"
+      },
+      {
+        "skillKey": "sql"
+      },
+      {
+        "skillKey": "adonet"
+      },
+      {
+        "skillKey": "entityframeworkcore"
+      },
+      {
+        "skillKey": "aspnetcore"
+      }
     ]
   },
   {
@@ -68,6 +121,7 @@
     "startDate": "2025-06",
     "endDate": "2026-02",
     "titleKey": "experience-list.personal-site.title",
+    "shortTitleKey": "experience-list.personal-site.short",
     "summaryKey": "experience-list.personal-site.summary",
     "highlightKeys": [
       "experience-list.personal-site.highlights.architecture",
@@ -76,15 +130,42 @@
     ],
     "projectSlug": "personal-site",
     "skills": [
-      { "skillKey": "csharp" },
-      { "skillKey": "aspnetcore" },
-      { "skillKey": "entityframeworkcore" },
-      { "skillKey": "postgresql" },
-      { "skillKey": "angular" },
-      { "skillKey": "typescript" },
-      { "skillKey": "docker" },
-      { "skillKey": "githubactions" },
-      { "skillKey": "aws" }
+      {
+        "skillKey": "csharp"
+      },
+      {
+        "skillKey": "aspnetcore"
+      },
+      {
+        "skillKey": "cqrs"
+      },
+      {
+        "skillKey": "entityframeworkcore"
+      },
+      {
+        "skillKey": "postgresql"
+      },
+      {
+        "skillKey": "xunit"
+      },
+      {
+        "skillKey": "moq"
+      },
+      {
+        "skillKey": "angular"
+      },
+      {
+        "skillKey": "typescript"
+      },
+      {
+        "skillKey": "docker"
+      },
+      {
+        "skillKey": "githubactions"
+      },
+      {
+        "skillKey": "aws"
+      }
     ]
   },
   {
@@ -94,6 +175,7 @@
     "startDate": "2025-01",
     "endDate": "2025-04",
     "titleKey": "experience-list.forja.title",
+    "shortTitleKey": "experience-list.forja.short",
     "summaryKey": "experience-list.forja.summary",
     "highlightKeys": [
       "experience-list.forja.highlights.ownership",
@@ -102,15 +184,33 @@
     ],
     "projectSlug": "forja-platform",
     "skills": [
-      { "skillKey": "csharp" },
-      { "skillKey": "aspnetcore" },
-      { "skillKey": "entityframeworkcore" },
-      { "skillKey": "postgresql" },
-      { "skillKey": "redis" },
-      { "skillKey": "keycloak" },
-      { "skillKey": "minio" },
-      { "skillKey": "docker" },
-      { "skillKey": "swagger" }
+      {
+        "skillKey": "csharp"
+      },
+      {
+        "skillKey": "aspnetcore"
+      },
+      {
+        "skillKey": "entityframeworkcore"
+      },
+      {
+        "skillKey": "postgresql"
+      },
+      {
+        "skillKey": "redis"
+      },
+      {
+        "skillKey": "keycloak"
+      },
+      {
+        "skillKey": "minio"
+      },
+      {
+        "skillKey": "docker"
+      },
+      {
+        "skillKey": "swagger"
+      }
     ]
   },
   {
@@ -120,19 +220,37 @@
     "startDate": "2021-12",
     "endDate": "2025-05",
     "titleKey": "experience-list.itstep.title",
+    "shortTitleKey": "experience-list.itstep.short",
     "summaryKey": "experience-list.itstep.summary",
     "highlightKeys": [
       "experience-list.itstep.highlights.curriculum",
       "experience-list.itstep.highlights.diploma"
     ],
     "skills": [
-      { "skillKey": "csharp" },
-      { "skillKey": "aspnetcore" },
-      { "skillKey": "entityframeworkcore" },
-      { "skillKey": "html" },
-      { "skillKey": "css" },
-      { "skillKey": "javascript" },
-      { "skillKey": "git" }
+      {
+        "skillKey": "csharp"
+      },
+      {
+        "skillKey": "aspnetcore"
+      },
+      {
+        "skillKey": "entityframeworkcore"
+      },
+      {
+        "skillKey": "sql"
+      },
+      {
+        "skillKey": "html"
+      },
+      {
+        "skillKey": "css"
+      },
+      {
+        "skillKey": "javascript"
+      },
+      {
+        "skillKey": "git"
+      }
     ]
   }
 ]

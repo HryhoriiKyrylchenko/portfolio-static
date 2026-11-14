@@ -64,38 +64,18 @@
       </h4>
 
       <div class="project-skills">
-        <div class="skills-category-section">
-          <h5 class="skill-category">
-            {{ 'skill.category.languages' | transloco }}
-          </h5>
-          <div class="category-skills">
-            @for (skill of skillsByCategory['languages']; track skill.key)  {
-              <app-skill [skill]="skill"></app-skill>
-            }
+        @for (group of skillsByCategory; track group.category.key) {
+          <div class="skills-category-section">
+            <h5 class="skill-category">
+              {{ group.category.nameKey | transloco }}
+            </h5>
+            <div class="category-skills">
+              @for (skill of group.skills; track skill.key) {
+                <app-skill [skill]="skill"></app-skill>
+              }
+            </div>
           </div>
-        </div>
-
-        <div class="skills-category-section">
-          <h5 class="skill-category">
-            {{ 'skill.category.frameworks' | transloco }}
-          </h5>
-          <div class="category-skills">
-            @for (skill of skillsByCategory['frameworks']; track skill.key)  {
-              <app-skill [skill]="skill"></app-skill>
-            }
-          </div>
-        </div>
-
-        <div class="skills-category-section">
-          <h5 class="skill-category">
-            {{ 'skill.category.tools' | transloco }}
-          </h5>
-          <div class="category-skills">
-            @for (skill of skillsByCategory['tools']; track skill.key)  {
-              <app-skill [skill]="skill"></app-skill>
-            }
-          </div>
-        </div>
+        }
       </div>
     }
 

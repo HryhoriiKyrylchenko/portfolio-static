@@ -5,7 +5,7 @@ import {switchMap, tap} from 'rxjs/operators';
 import {map, of} from 'rxjs';
 import {AsyncPipe, NgStyle} from '@angular/common';
 import {ProjectsService} from '../../../core/services/projects.service';
-import {SkillFullDto} from '../../../shared/models/skill-dtos';
+import {SkillCategoryDto, SkillFullDto} from '../../../shared/models/skill-dtos';
 import {SkillComponent} from '../../../shared/components/skill.component/skill.component';
 import {TranslocoPipe, TranslocoService} from '@jsverse/transloco';
 
@@ -57,22 +57,18 @@ export class ProjectComponent {
     )
   );
 
+  /** Skills grouped by area, in area display order (skills are already sorted by it). */
   readonly skillsByCategory = this.skills.pipe(
     map(skills => {
-      const grouped: Record<string, SkillFullDto[]> = {
-        languages: [],
-        tools: [],
-        frameworks: []
-      };
+      const groups = new Map<string, { category: SkillCategoryDto; skills: SkillFullDto[] }>();
 
       for (const skill of skills) {
-        const key = skill.categoryKey;
-        if (grouped[key]) {
-          grouped[key].push(skill);
-        }
+        const group = groups.get(skill.category.key) ?? { category: skill.category, skills: [] };
+        group.skills.push(skill);
+        groups.set(skill.category.key, group);
       }
 
-      return grouped;
+      return [...groups.values()];
     })
   );
 

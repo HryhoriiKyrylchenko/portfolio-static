@@ -12,6 +12,8 @@ export interface ExperienceDto {
   /** "YYYY-MM", or null while ongoing. */
   endDate: string | null;
   titleKey: string;
+  /** Short label used where space is tight, e.g. "used in" on the skills list. */
+  shortTitleKey: string;
   summaryKey: string;
   highlightKeys: string[];
   /** Slug in projects.json; links the entry to its case study page. */

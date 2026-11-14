@@ -19,8 +19,8 @@
   },
   "about": {
     "title": "Hi, I'm Hryhorii Kyrylchenko",
-    "description": "Aspiring .NET developer with a diverse professional background in law, logistics, sales, and consulting. Completed training at IT STEP Academy in Poland, proficient in C#, ASP.NET Core, SQL, and more. Seeking new challenges in .NET development.",
-    "content": "I am a beginner .NET developer with an unconventional professional background in areas such as law, logistics, sales, and consulting. This rich experience has shaped skills like analytical thinking, adaptability, and communication—valuable additions to my technical knowledge.\n\nAfter moving to Poland, I successfully completed my studies at IT STEP Academy, where I mastered C#, ASP.NET Core, Web API, SQL, EF Core, LINQ, as well as HTML, CSS, and JavaScript. This provided me with a solid foundation for transitioning into web development.\n\nCurrently, I am open to interesting projects and positions in the .NET development field—aiming to apply my skills effectively and grow together with a team."
+    "description": ".NET backend developer building ASP.NET Core Web APIs with clean architecture, secure endpoints and tested code.",
+    "content": "I'm a .NET backend developer focused on ASP.NET Core Web APIs: clean architecture, secure REST endpoints and code that is tested and easy to change. I'm currently a Trainee .NET Developer at EPAM Systems in the .NET Specialization program.\n\nI came to software from law, logistics, sales and consulting. That background taught me to understand the business problem before writing code, to explain technical decisions to non-technical people, and to take ownership of results.\n\nI studied software development at IT STEP Academy, starting in Ukraine and finishing remotely after moving to Poland. In my diploma project, Forja, I owned the backend: database design, architecture and all server-side functionality.\n\nI'm based in Poznań and open to .NET developer roles where I can keep growing within a strong engineering team."
   },
   "policy": {
     "cookies": "Cookie Policy",
@@ -206,39 +206,44 @@
   },
   "skill": {
     "title": "Skills",
-    "learning": "Learning Roadmap",
-    "category": {
-      "languages": "Languages",
-      "frameworks": "Frameworks",
-      "tools": "Tools"
-    }
+    "intro": "Grouped by area. Core: what I use daily and know in depth. Proficient: used in real projects. Familiar: worked with, less depth.",
+    "tier": {
+      "core": "Core",
+      "proficient": "Proficient",
+      "familiar": "Familiar"
+    },
+    "used_in": "Used in"
   },
   "skillCategories": {
-    "languages": {
-      "name": "Languages",
-      "description": "Programming languages I use"
+    "backend": {
+      "name": "Backend",
+      "description": ".NET and API development"
     },
-    "frameworks": {
-      "name": "Frameworks",
-      "description": "Frameworks and libraries I work with"
+    "data": {
+      "name": "Data",
+      "description": "Databases, caching and storage"
+    },
+    "testing": {
+      "name": "Testing",
+      "description": "Automated testing and practices"
+    },
+    "frontend": {
+      "name": "Frontend",
+      "description": "Web UI development"
+    },
+    "devops": {
+      "name": "Cloud & DevOps",
+      "description": "Containers, CI/CD and cloud"
     },
     "tools": {
-      "name": "Tools",
-      "description": "Developer tools and utilities"
+      "name": "Tools & practices",
+      "description": "Everyday engineering tools"
     }
   },
   "skills-list": {
     "csharp": {
       "name": "C#",
       "description": "A modern, general-purpose, object-oriented programming language by Microsoft, running on .NET and used for web, desktop, mobile, and game development."
-    },
-    "typescript": {
-      "name": "TypeScript",
-      "description": "A statically typed superset of JavaScript by Microsoft, adds optional types and tooling for scalable, maintainable applications; compiles to plain JavaScript."
-    },
-    "javascript": {
-      "name": "JavaScript",
-      "description": "A high-level, multi-paradigm, dynamically typed scripting language that powers interactivity on the web, running in browsers and on servers like Node.js."
     },
     "aspnetcore": {
       "name": "ASP.NET Core",
@@ -248,73 +253,113 @@
       "name": "Entity Framework Core",
       "description": "A lightweight, cross-platform ORM by Microsoft enabling data access via .NET objects instead of raw SQL; supports migrations, LINQ, and multiple database providers like PostgreSQL."
     },
-    "angular": {
-      "name": "Angular",
-      "description": "An open-source, TypeScript-based framework by Google for building scalable single-page applications with integrated routing, forms, HTTP, and modular architecture."
+    "restapi": {
+      "name": "REST API design",
+      "description": "Designing resource-oriented HTTP APIs: routing, status codes, versioning, validation and authorization."
     },
-    "blazor": {
-      "name": "Blazor",
-      "description": "Declarative web UI framework from Microsoft using C# and Razor components to build SPA and interactive applications running on Server or WebAssembly."
+    "cqrs": {
+      "name": "CQRS / MediatR",
+      "description": "Separating commands from queries, implemented with MediatR handlers and pipeline behaviors."
     },
-    "grpc": {
-      "name": "gRPC",
-      "description": "Open-source RPC framework using HTTP/2 and Protocol Buffers for efficient, strongly-typed service communication."
+    "async": {
+      "name": "Async & multithreading",
+      "description": "async/await, the Task Parallel Library and thread-safe code in .NET."
     },
-    "aws": {
-      "name": "AWS",
-      "description": "Cloud platform by Amazon offering on-demand compute, storage, databases, analytics, and over 200 services."
-    },
-    "css": {
-      "name": "CSS",
-      "description": "Style sheet language defining presentation of HTML documents including layout, colors, fonts, and responsive design."
-    },
-    "docker": {
-      "name": "Docker",
-      "description": "Open-source platform for automating application deployment inside lightweight containers across environments."
-    },
-    "git": {
-      "name": "Git",
-      "description": "Distributed version control system tracking source code changes and enabling collaborative development."
-    },
-    "html": {
-      "name": "HTML",
-      "description": "Standard markup language for structuring web pages using elements like headings, paragraphs, links, and images."
+    "adonet": {
+      "name": "ADO.NET",
+      "description": "Low-level .NET data access with connections, commands and data readers."
     },
     "keycloak": {
       "name": "Keycloak",
       "description": "Open-source identity and access management solution providing single sign-on, user federation, and fine-grained authorization."
     },
-    "minio": {
-      "name": "MinIO",
-      "description": "High-performance open-source object storage system compatible with AWS S3 for cloud-native and scalable environments."
-    },
-    "postman": {
-      "name": "Postman",
-      "description": "Comprehensive API platform for designing, testing, and managing APIs."
-    },
     "postgresql": {
       "name": "PostgreSQL",
       "description": "Open-source object-relational database known for reliability, extensibility, and SQL standards compliance."
     },
-    "rider": {
-      "name": "Rider",
-      "description": "Cross-platform .NET IDE by JetBrains based on IntelliJ and ReSharper, supporting C#, ASP.NET, JavaScript, TypeScript, SQL, and more."
+    "sql": {
+      "name": "SQL",
+      "description": "Relational schema design and querying: joins, indexes, transactions."
     },
-    "swagger": {
-      "name": "Swagger",
-      "description": "Suite of open-source tools for designing, documenting, and consuming REST APIs based on the OpenAPI specification."
+    "mssql": {
+      "name": "Microsoft SQL Server",
+      "description": "Relational database engine by Microsoft."
     },
-    "webstorm": {
-      "name": "WebStorm",
-      "description": "Cross-platform IDE by JetBrains for JavaScript and TypeScript with advanced code intelligence and debugging tools."
+    "redis": {
+      "name": "Redis",
+      "description": "An in-memory data structure store used as a database, cache, and message broker for fast data access and real-time processing."
+    },
+    "nosql": {
+      "name": "NoSQL databases",
+      "description": "Document and key-value data stores."
+    },
+    "minio": {
+      "name": "MinIO",
+      "description": "High-performance open-source object storage system compatible with AWS S3 for cloud-native and scalable environments."
+    },
+    "xunit": {
+      "name": "xUnit",
+      "description": "Unit testing framework for .NET."
+    },
+    "moq": {
+      "name": "Moq",
+      "description": "Mocking library for isolating dependencies in .NET unit tests."
+    },
+    "nunit": {
+      "name": "NUnit",
+      "description": "Unit testing framework for .NET."
+    },
+    "tdd": {
+      "name": "TDD",
+      "description": "Test-driven development: write a failing test, make it pass, refactor."
+    },
+    "angular": {
+      "name": "Angular",
+      "description": "An open-source, TypeScript-based framework by Google for building scalable single-page applications with integrated routing, forms, HTTP, and modular architecture."
+    },
+    "typescript": {
+      "name": "TypeScript",
+      "description": "A statically typed superset of JavaScript by Microsoft, adds optional types and tooling for scalable, maintainable applications; compiles to plain JavaScript."
+    },
+    "html": {
+      "name": "HTML",
+      "description": "Standard markup language for structuring web pages using elements like headings, paragraphs, links, and images."
+    },
+    "css": {
+      "name": "CSS",
+      "description": "Style sheet language defining presentation of HTML documents including layout, colors, fonts, and responsive design."
+    },
+    "javascript": {
+      "name": "JavaScript",
+      "description": "A high-level, multi-paradigm, dynamically typed scripting language that powers interactivity on the web, running in browsers and on servers like Node.js."
+    },
+    "docker": {
+      "name": "Docker",
+      "description": "Open-source platform for automating application deployment inside lightweight containers across environments."
     },
     "githubactions": {
       "name": "GitHub Actions",
       "description": "Integrated CI/CD platform in GitHub enabling automated build, test, and deployment workflows triggered by repository events."
     },
-    "redis": {
-      "name": "Redis",
-      "description": "An in-memory data structure store used as a database, cache, and message broker for fast data access and real-time processing."
+    "aws": {
+      "name": "AWS",
+      "description": "Cloud platform by Amazon offering on-demand compute, storage, databases, analytics, and over 200 services."
+    },
+    "git": {
+      "name": "Git",
+      "description": "Distributed version control system tracking source code changes and enabling collaborative development."
+    },
+    "swagger": {
+      "name": "Swagger / OpenAPI",
+      "description": "API documentation and contracts with the OpenAPI specification."
+    },
+    "postman": {
+      "name": "Postman",
+      "description": "Comprehensive API platform for designing, testing, and managing APIs."
+    },
+    "aiassisted": {
+      "name": "AI-assisted development",
+      "description": "Using generative AI tools and prompt engineering for coding, refactoring and reviews."
     }
   },
   "experience": {
@@ -336,7 +381,8 @@
         "api": "Building an ASP.NET Core Web API end to end with Clean Architecture, delivered incrementally through epic milestones.",
         "security": "Designing secure REST endpoints with token-based authentication and granular authorization, plus logging and Swagger/OpenAPI documentation.",
         "quality": "Working test-first (TDD) with Docker-based deployments and EPAM EngX clean-code and Git practices; using generative AI tools for refactoring and productivity."
-      }
+      },
+      "short": "EPAM .NET Specialization"
     },
     "portfolio-static": {
       "title": "This website: static portfolio",
@@ -345,7 +391,8 @@
         "content": "Content as data: structure in JSON and text in translation files, so a new job or project is a content edit, not a code change.",
         "delivery": "Every push to main is built and deployed by GitHub Actions; a post-build step generates per-route pages so deep links return HTTP 200 and unknown URLs a real 404.",
         "maintenance": "Kept up to date with the current Angular release, dependency security updates and English/Polish localization."
-      }
+      },
+      "short": "This website"
     },
     "epam-fundamentals": {
       "title": "Trainee .NET Developer: .NET Fundamentals",
@@ -354,7 +401,8 @@
         "csharp": "Advanced C#: reflection, serialization, multithreading, the Task Parallel Library and asynchronous programming.",
         "data": "Relational database design and querying with SQL, ADO.NET and Entity Framework Core.",
         "quality": "Unit testing and design patterns applied to ASP.NET Core backend components."
-      }
+      },
+      "short": "EPAM .NET Fundamentals"
     },
     "personal-site": {
       "title": "Personal website: full-stack platform",
@@ -363,7 +411,8 @@
         "architecture": "Structured the backend with Domain-Driven Design, Clean Architecture and vertical slices; CQRS via MediatR keeps each feature's request, validation and endpoint together.",
         "delivery": "Containerized with Docker and deployed to AWS; GitHub Actions CI/CD with automated migrations cut deployment time from 15 to 5 minutes.",
         "quality": "Covered the backend with unit tests (xUnit, Moq, FluentAssertions) and worked with a UX designer on nine responsive, multilingual pages."
-      }
+      },
+      "short": "Personal website"
     },
     "forja": {
       "title": "Forja: game studio platform (diploma project)",
@@ -372,7 +421,8 @@
         "ownership": "Owned the backend: database schema, architecture and all server-side functionality, delivered in a three-month sprint.",
         "performance": "Designed the PostgreSQL and Redis stack; caching improved data retrieval speed by 40%.",
         "integrations": "Integrated MinIO object storage and Keycloak authentication; Swagger docs and a .NET Aspire dashboard simplified API integration for the frontend team."
-      }
+      },
+      "short": "Forja"
     },
     "itstep": {
       "title": "Software Development Program",
@@ -380,7 +430,28 @@
       "highlights": {
         "curriculum": "C#, ASP.NET Core Web API, SQL, Entity Framework Core and LINQ, plus HTML, CSS and JavaScript.",
         "diploma": "Diploma project: Forja, a backend platform for a game studio."
-      }
+      },
+      "short": "IT STEP Academy"
     }
+  },
+  "credentials": {
+    "title": "Education & certifications",
+    "education": "Education",
+    "certification": "Certification",
+    "verify": "Verify",
+    "itstep": {
+      "title": "Software Development"
+    },
+    "fcc-csharp": {
+      "title": "Foundational C# with Microsoft"
+    }
+  },
+  "spoken": {
+    "title": "Languages",
+    "native": "Native",
+    "uk": "Ukrainian",
+    "ru": "Russian",
+    "en": "English",
+    "pl": "Polish"
   }
 }
