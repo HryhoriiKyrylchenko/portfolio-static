@@ -61,34 +61,36 @@
     "content": {
       "introduction": {
         "title": "Wprowadzenie",
-        "p1": "Ta witryna hyrhoriikyrylchenko.dev (dalej \\\"Serwis\\\") wykorzystuje pliki cookie i podobne technologie, aby zapewnić prawidłowe działanie. Wszystkie przechowywane dane — takie jak pliki cookie i local storage — są niezbędne do funkcjonowania tej deweloperskiej strony portfolio."
+        "p1": "Niniejsza Polityka cookies wyjaśnia, jakich plików cookie i podobnych technologii używa strona hryhoriikyrylchenko.dev (dalej: „Strona”). Strona używa wyłącznie tego, co jest niezbędne do działania funkcji, z których korzystasz, i niczego do analityki, reklam ani śledzenia."
       },
       "what-are": {
         "title": "Czym są pliki cookie?",
-        "p1": "Pliki cookie to niewielkie pliki tekstowe zapisywane w przeglądarce, które umożliwiają kluczowe funkcje, takie jak sesje oraz zapamiętywanie ustawień języka czy motywu. Local storage również przechowuje preferencje, takie jak \\\"theme\\\" (jasny/ciemny)."
+        "p1": "Pliki cookie to małe pliki tekstowe zapisywane przez stronę w przeglądarce. Pamięć lokalna (local storage) to podobna funkcja przeglądarki służąca do zapisywania ustawień na Twoim urządzeniu. Żadne z nich nie są wysyłane nikomu poza tą Stroną."
       },
-      "usage": {
-        "title": "Jak korzystamy z plików cookie",
-        "p1": "Korzystamy tylko z minimalnych, niezbędnych mechanizmów przechowywania."
+      "list": {
+        "title": "Co zapisuje Strona",
+        "p1": "„translocoLang” (cookie): język wybrany w przełączniku języków. Jest zapisywany tylko wtedy, gdy wybierzesz język, i wygasa po roku.",
+        "p2": "„cookie_consent” (cookie): informacja, że zamknięto komunikat o plikach cookie, aby nie wyświetlał się ponownie. Wygasa po roku.",
+        "p3": "„theme” (pamięć lokalna): wybrany motyw jasny lub ciemny. Pozostaje do czasu wyczyszczenia danych przeglądarki."
       },
-      "types": {
-        "title": "Rodzaje plików cookie",
-        "p1": "Niezbędne pliki cookie i storage: Konieczne do działania serwisu. Obejmuje pliki cookie ustawiane przez przeglądarkę: “translocoLang”, a także “cookie_consent” oraz klucz local storage “theme”. Bez nich strona nie będzie działać poprawnie. Zgoda jest domniemana poprzez korzystanie z serwisu."
+      "consent": {
+        "title": "Dlaczego zgoda nie jest wymagana",
+        "p1": "Wszystkie powyższe mechanizmy są niezbędne do świadczenia funkcji, o które prosisz, takich jak zapamiętanie języka i motywu, dlatego zgodnie z prawem UE nie wymagają Twojej zgody. Komunikat o cookies jedynie o nich informuje; jego zamknięcie nie włącza żadnych dodatkowych plików cookie."
       },
       "manage": {
-        "title": "Jak zarządzać plikami cookie",
-        "p1": "Nie można wyłączyć tych niezbędnych plików cookie i ustawień bez wpływu na funkcjonowanie strony. Możesz je usunąć w ustawieniach przeglądarki, ale strona może działać nieprawidłowo."
+        "title": "Zarządzanie plikami cookie",
+        "p1": "Pliki cookie i pamięć lokalną możesz przeglądać i usuwać w ustawieniach przeglądarki. Wtedy Strona ponownie użyje języka przeglądarki i domyślnego motywu, a komunikat o cookies pojawi się znowu."
       },
       "changes": {
         "title": "Zmiany",
-        "p1": "Polityka może zostać zaktualizowana. Prosimy o regularne odwiedzanie tej strony."
+        "p1": "Jeśli Strona zacznie zapisywać cokolwiek innego, ta polityka zostanie najpierw zaktualizowana. Ostatnia aktualizacja: 14 listopada 2026 r."
       }
     },
-    "accept_button": "Akceptuj",
-    "learn_more": "Dowiedz Się Więcej O Ciasteczkach",
-    "title": "Używamy ciasteczek",
-    "start": "aby poprawić Twoje doświadczenia na naszej stronie.",
-    "end": "Korzystając dalej z naszej strony, wyrażasz na to zgodę."
+    "accept_button": "Rozumiem",
+    "learn_more": "Polityka cookies",
+    "title": "Pliki cookie",
+    "start": "Ta strona używa wyłącznie niezbędnych plików cookie i pamięci przeglądarki, aby zapamiętać Twój język, motyw i ten komunikat.",
+    "end": "Bez analityki, reklam i śledzenia."
   },
   "privacy": {
     "page_title": "Polityka Prywatności",
@@ -96,65 +98,52 @@
     "content": {
       "introduction": {
         "title": "Wprowadzenie",
-        "p1": "Niniejsza Polityka Prywatności wyjaśnia, w jaki sposób strona internetowa hyrhoriikyrylchenko.dev (dalej: „Strona”) przetwarza informacje podczas jej odwiedzania. Strona stanowi statyczne portfolio deweloperskie i nie zbiera aktywnie danych osobowych użytkowników."
+        "p1": "Niniejsza Polityka prywatności wyjaśnia, jak strona hryhoriikyrylchenko.dev (dalej: „Strona”) postępuje z informacjami podczas jej odwiedzania. Strona jest statycznym portfolio programisty: nie ma kont użytkowników, formularzy kontaktowych, newslettera, analityki ani reklam.",
+        "p2": "Ostatnia aktualizacja: 14 listopada 2026 r."
       },
       "data_controller": {
-        "title": "Administrator Danych",
-        "p1": "Administratorem danych w odniesieniu do niniejszej Strony jest właściciel domeny hyrhoriikyrylchenko.dev. W przypadku pytań dotyczących niniejszej Polityki Prywatności można skontaktować się z właścicielem Strony za pomocą danych kontaktowych dostępnych na Stronie."
+        "title": "Administrator danych",
+        "p1": "Administratorem danych osobowych przetwarzanych w związku ze Stroną jest Hryhorii Kyrylchenko, Poznań, Polska. Kontakt: contact@hryhoriikyrylchenko.dev."
       },
-      "personal_data_collection": {
-        "title": "Zbieranie Danych Osobowych",
-        "p1": "Strona nie udostępnia kont użytkowników, formularzy kontaktowych, newsletterów ani innych funkcji wymagających podania danych osobowych.",
-        "p2": "Strona nie zbiera, nie przechowuje ani nie przetwarza celowo danych osobowych takich jak imię i nazwisko, adres e-mail, numer telefonu czy dane płatnicze."
+      "hosting": {
+        "title": "Hosting i logi serwera",
+        "p1": "Strona jest hostowana w usłudze GitHub Pages firmy GitHub, Inc. Podczas wizyty GitHub zapisuje Twój adres IP w celach bezpieczeństwa wraz z technicznymi informacjami o żądaniu, takimi jak czas i dane przeglądarki.",
+        "p2": "Podstawą tego przetwarzania jest prawnie uzasadniony interes polegający na bezpiecznym działaniu Strony i zapobieganiu nadużyciom (art. 6 ust. 1 lit. f RODO). Nie mam dostępu do tych logów i nie używam ich do śledzenia ani profilowania. GitHub może przetwarzać te dane w Stanach Zjednoczonych; szczegóły i okres przechowywania opisuje GitHub Privacy Statement.",
+        "p3": "Połączenie ze Stroną jest szyfrowane (HTTPS)."
       },
-      "technical_data": {
-        "title": "Automatycznie Przetwarzane Dane Techniczne",
-        "p1": "Podczas korzystania ze Strony pewne informacje techniczne mogą być automatycznie przetwarzane przez dostawcę hostingu. Mogą one obejmować adres IP, typ przeglądarki, informacje o urządzeniu oraz datę i godzinę dostępu.",
-        "p2": "Dane te są przetwarzane wyłącznie w celu zapewnienia bezpieczeństwa serwera, zapobiegania nadużyciom oraz utrzymania prawidłowego działania Strony. Właściciel Strony nie wykorzystuje tych informacji do śledzenia użytkowników ani profilowania."
+      "correspondence": {
+        "title": "Kontakt ze mną",
+        "p1": "Jeśli napiszesz do mnie e-mail lub wiadomość przez LinkedIn albo GitHub, przetwarzam przesłane dane, takie jak imię i nazwisko, adres e-mail i treść wiadomości, wyłącznie w celu odpowiedzi oraz, w odpowiednich przypadkach, rozmowy o ofercie pracy. Podstawą prawną jest mój prawnie uzasadniony interes w odpowiadaniu na zapytania, a w przypadku rekrutacji działania podejmowane na Twoje żądanie przed zawarciem umowy (art. 6 ust. 1 lit. b i f RODO).",
+        "p2": "Korespondencję przechowuję tylko tak długo, jak jest to potrzebne do rozmowy lub procesu rekrutacji, a następnie ją usuwam, chyba że poprosisz o jej zachowanie."
       },
       "cookies_storage": {
-        "title": "Pliki Cookies i Pamięć Lokalna",
-        "p1": "Strona wykorzystuje wyłącznie niezbędne pliki cookies oraz mechanizmy pamięci przeglądarki konieczne do jej prawidłowego działania.",
-        "p2": "Mogą one obejmować plik cookie preferencji językowych (np. „translocoLang”), plik potwierdzenia zgody na cookies („cookie_consent”) oraz klucz pamięci lokalnej odpowiadający za ustawienie motywu („theme”).",
-        "p3": "Mechanizmy te nie służą do śledzenia użytkowników, nie są wykorzystywane do celów reklamowych ani nie przekazują danych podmiotom trzecim."
+        "title": "Pliki cookie i pamięć lokalna",
+        "p1": "Strona używa wyłącznie niezbędnych mechanizmów: pliku cookie z wybranym językiem („translocoLang”), pliku cookie zapamiętującego zamknięcie komunikatu o cookies („cookie_consent”) oraz wpisu w pamięci lokalnej z wybranym motywem („theme”).",
+        "p2": "Nie służą one do śledzenia ani reklam i nie są nikomu udostępniane. Każdy z nich opisuje Polityka cookies."
       },
       "third_parties": {
-        "title": "Podmioty Trzecie",
-        "p1": "Strona nie korzysta z narzędzi analitycznych, sieci reklamowych, pikseli śledzących ani integracji marketingowych podmiotów trzecich.",
-        "p2": "Strona może być hostowana przez zewnętrznego dostawcę usług hostingowych, który przetwarza dane techniczne w ramach świadczenia usług infrastrukturalnych."
+        "title": "Usługi zewnętrzne i linki",
+        "p1": "Strona nie używa analityki, sieci reklamowych, pikseli śledzących, wtyczek mediów społecznościowych ani zewnętrznie hostowanych czcionek czy skryptów. Wszystkie pliki, w tym CV do pobrania, są serwowane bezpośrednio ze Strony.",
+        "p2": "Strona zawiera linki do moich profili na GitHub i LinkedIn. Po przejściu pod te linki obowiązują polityki prywatności tych serwisów."
       },
       "data_sharing": {
-        "title": "Udostępnianie Danych",
-        "p1": "Właściciel Strony nie sprzedaje, nie wymienia ani nie przekazuje danych osobowych osobom trzecim.",
-        "p2": "Żadne dane osobowe nie są udostępniane w celach marketingowych, profilowania ani komercyjnych."
-      },
-      "data_retention": {
-        "title": "Okres Przechowywania Danych",
-        "p1": "Ponieważ Strona nie zbiera danych osobowych bezpośrednio, właściciel Strony nie przechowuje danych osobowych użytkowników.",
-        "p2": "Ewentualne techniczne logi serwera generowane przez dostawcę hostingu są przechowywane zgodnie z jego wewnętrznymi politykami."
+        "title": "Udostępnianie danych",
+        "p1": "Nie sprzedaję, nie wynajmuję ani nie udostępniam danych osobowych osobom trzecim w celach marketingowych ani żadnych innych."
       },
       "user_rights": {
-        "title": "Prawa Użytkownika",
-        "p1": "Zgodnie z obowiązującymi przepisami o ochronie danych osobowych, w tym z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO), użytkownikom mogą przysługiwać określone prawa dotyczące ich danych osobowych.",
-        "p2": "Ponieważ Strona nie przetwarza bezpośrednio danych osobowych, większość praw wynikających z przepisów o ochronie danych może nie mieć praktycznego zastosowania. W przypadku pytań dotyczących prywatności można skontaktować się z właścicielem Strony."
-      },
-      "security": {
-        "title": "Bezpieczeństwo Danych",
-        "p1": "Strona korzysta ze standardowych środków bezpieczeństwa zapewnianych przez dostawcę hostingu w celu ochrony przed nieuprawnionym dostępem, modyfikacją, ujawnieniem lub zniszczeniem danych."
+        "title": "Twoje prawa",
+        "p1": "Zgodnie z RODO masz prawo dostępu do swoich danych, ich sprostowania lub usunięcia, ograniczenia przetwarzania oraz sprzeciwu wobec przetwarzania opartego na prawnie uzasadnionym interesie. Aby skorzystać z tych praw, napisz na contact@hryhoriikyrylchenko.dev. W sprawie logów serwera możesz też skontaktować się bezpośrednio z GitHub.",
+        "p2": "Przysługuje Ci również prawo wniesienia skargi do organu nadzorczego, którym w Polsce jest Prezes Urzędu Ochrony Danych Osobowych (uodo.gov.pl)."
       },
       "changes": {
-        "title": "Zmiany w Polityce Prywatności",
-        "p1": "Niniejsza Polityka Prywatności może być okresowo aktualizowana w celu odzwierciedlenia zmian prawnych lub technicznych. Wszelkie aktualizacje będą publikowane na tej stronie."
-      },
-      "contact": {
-        "title": "Kontakt",
-        "p1": "W przypadku pytań dotyczących niniejszej Polityki Prywatności można skontaktować się z właścicielem Strony za pomocą danych kontaktowych dostępnych na Stronie."
+        "title": "Zmiany polityki",
+        "p1": "Mogę aktualizować tę politykę, gdy zmieni się Strona lub przepisy. Aktualna wersja wraz z datą jest zawsze publikowana na tej stronie."
       }
     }
   },
   "contacts": {
     "name": "Hryhorii Kyrylchenko",
-    "address": "Polska, Poznań",
+    "address": "Poznań, Polska",
     "data_title": "Kontakt",
     "data_name": "Imię i nazwisko:",
     "data_email": "Email:",

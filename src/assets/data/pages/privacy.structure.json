@@ -4,7 +4,8 @@
       {
         "title": "privacy.content.introduction.title",
         "paragraphs": [
-          "privacy.content.introduction.p1"
+          "privacy.content.introduction.p1",
+          "privacy.content.introduction.p2"
         ]
       },
       {
@@ -14,25 +15,25 @@
         ]
       },
       {
-        "title": "privacy.content.personal_data_collection.title",
+        "title": "privacy.content.hosting.title",
         "paragraphs": [
-          "privacy.content.personal_data_collection.p1",
-          "privacy.content.personal_data_collection.p2"
+          "privacy.content.hosting.p1",
+          "privacy.content.hosting.p2",
+          "privacy.content.hosting.p3"
         ]
       },
       {
-        "title": "privacy.content.technical_data.title",
+        "title": "privacy.content.correspondence.title",
         "paragraphs": [
-          "privacy.content.technical_data.p1",
-          "privacy.content.technical_data.p2"
+          "privacy.content.correspondence.p1",
+          "privacy.content.correspondence.p2"
         ]
       },
       {
         "title": "privacy.content.cookies_storage.title",
         "paragraphs": [
           "privacy.content.cookies_storage.p1",
-          "privacy.content.cookies_storage.p2",
-          "privacy.content.cookies_storage.p3"
+          "privacy.content.cookies_storage.p2"
         ]
       },
       {
@@ -45,15 +46,7 @@
       {
         "title": "privacy.content.data_sharing.title",
         "paragraphs": [
-          "privacy.content.data_sharing.p1",
-          "privacy.content.data_sharing.p2"
-        ]
-      },
-      {
-        "title": "privacy.content.data_retention.title",
-        "paragraphs": [
-          "privacy.content.data_retention.p1",
-          "privacy.content.data_retention.p2"
+          "privacy.content.data_sharing.p1"
         ]
       },
       {
@@ -64,21 +57,9 @@
         ]
       },
       {
-        "title": "privacy.content.security.title",
-        "paragraphs": [
-          "privacy.content.security.p1"
-        ]
-      },
-      {
         "title": "privacy.content.changes.title",
         "paragraphs": [
           "privacy.content.changes.p1"
-        ]
-      },
-      {
-        "title": "privacy.content.contact.title",
-        "paragraphs": [
-          "privacy.content.contact.p1"
         ]
       }
     ]

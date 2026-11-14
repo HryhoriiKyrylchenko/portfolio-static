@@ -57,7 +57,15 @@ h4 {
   }
 
   .contact-data-list dd:last-child {
-    margin: 0;
+    margin-bottom: 0;
+  }
+
+  // Icon stays inline so the text keeps the same baseline as its label and the other rows.
+  .location svg {
+    width: auto;
+    height: 1em;
+    margin-right: 0.4em;
+    vertical-align: -0.125em;
   }
 }
 

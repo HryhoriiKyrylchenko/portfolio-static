@@ -14,15 +14,17 @@
         ]
       },
       {
-        "title": "cookies.content.usage.title",
+        "title": "cookies.content.list.title",
         "paragraphs": [
-          "cookies.content.usage.p1"
+          "cookies.content.list.p1",
+          "cookies.content.list.p2",
+          "cookies.content.list.p3"
         ]
       },
       {
-        "title": "cookies.content.types.title",
+        "title": "cookies.content.consent.title",
         "paragraphs": [
-          "cookies.content.types.p1"
+          "cookies.content.consent.p1"
         ]
       },
       {

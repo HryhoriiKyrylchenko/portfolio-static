@@ -61,34 +61,36 @@
     "content": {
       "introduction": {
         "title": "Introduction",
-        "p1": "This website hyrhoriikyrylchenko.dev (the \"Site\") uses cookies and similar technologies to ensure proper functioning. All data stored—such as cookies and local storage—is strictly necessary for the operation of this developer portfolio site."
+        "p1": "This Cookie Policy explains which cookies and similar technologies hryhoriikyrylchenko.dev (the \"Site\") uses. The Site uses only what is strictly necessary for the features you use, and nothing for analytics, advertising or tracking."
       },
       "what-are": {
-        "title": "What are Cookies?",
-        "p1": "Cookies are small text files stored in your browser to enable key functionalities like sessions and language or theme settings. Local storage also preserves preferences such as \"theme\" (light/dark)."
+        "title": "What are cookies?",
+        "p1": "Cookies are small text files that a website stores in your browser. Local storage is a similar browser feature for saving settings on your device. Neither is sent to anyone other than this Site."
       },
-      "usage": {
-        "title": "How We Use Cookies",
-        "p1": "We use minimal, essential storage mechanisms only."
+      "list": {
+        "title": "What the Site stores",
+        "p1": "\"translocoLang\" (cookie): the language you chose with the language switcher. It is set only when you choose a language and expires after one year.",
+        "p2": "\"cookie_consent\" (cookie): records that you closed the cookie notice, so it is not shown again. It expires after one year.",
+        "p3": "\"theme\" (local storage): your light or dark theme setting. It stays until you clear your browser data."
       },
-      "types": {
-        "title": "Cookie Types",
-        "p1": "Essential cookies and storage: Necessary for site operation. These include browser-set cookies like “translocoLang”, as well as “cookie_consent” and local storage key “theme”. Without them, the site would not function properly. Consent is assumed through use of the site."
+      "consent": {
+        "title": "Why no consent is needed",
+        "p1": "All of the above are strictly necessary to provide features you ask for, such as keeping your language and theme, so under EU law they do not require your consent. The cookie notice informs you about them; closing it does not enable any additional cookies."
       },
       "manage": {
-        "title": "How to Manage Cookies",
-        "p1": "These essential cookies and settings cannot be disabled without impacting the site's functionality. You may clear them via your browser settings, but the site may not work correctly afterward."
+        "title": "How to manage cookies",
+        "p1": "You can view and delete cookies and local storage in your browser settings. If you do, the Site will use your browser language and default theme again, and the cookie notice will reappear."
       },
       "changes": {
         "title": "Changes",
-        "p1": "This policy may be updated. Please revisit this page for any changes."
+        "p1": "If the Site starts storing anything else, this policy will be updated first. Last updated: 14 November 2026."
       }
     },
-    "accept_button": "Accept",
-    "learn_more": "Learn More About Cookies",
-    "title": "We use cookies",
-    "start": "to improve your experience on our site.",
-    "end": "By continuing to use our site, you agree to this."
+    "accept_button": "Got it",
+    "learn_more": "Cookie Policy",
+    "title": "Cookies",
+    "start": "This site uses only essential cookies and browser storage to remember your language, theme and this notice.",
+    "end": "No analytics, advertising or tracking."
   },
   "privacy": {
     "page_title": "Privacy Policy",
@@ -96,65 +98,52 @@
     "content": {
       "introduction": {
         "title": "Introduction",
-        "p1": "This Privacy Policy explains how the website hyrhoriikyrylchenko.dev (the \"Site\") handles information when you visit it. This Site is a static developer portfolio and does not actively collect personal data from users."
+        "p1": "This Privacy Policy explains how hryhoriikyrylchenko.dev (the \"Site\") handles information when you visit it. The Site is a static developer portfolio: it has no user accounts, contact forms, newsletters, analytics or advertising.",
+        "p2": "Last updated: 14 November 2026."
       },
       "data_controller": {
-        "title": "Data Controller",
-        "p1": "The data controller for this website is the owner of hyrhoriikyrylchenko.dev. If you have any questions regarding this Privacy Policy, you may contact the website owner using the contact information provided on the Site."
+        "title": "Data controller",
+        "p1": "The controller of personal data processed in connection with the Site is Hryhorii Kyrylchenko, Poznań, Poland. You can reach me at contact@hryhoriikyrylchenko.dev."
       },
-      "personal_data_collection": {
-        "title": "Personal Data Collection",
-        "p1": "This Site does not provide user accounts, contact forms, newsletters, or any interactive features that would require the submission of personal information.",
-        "p2": "The Site does not intentionally collect, store, or process personal data such as names, email addresses, phone numbers, or payment information."
+      "hosting": {
+        "title": "Hosting and server logs",
+        "p1": "The Site is hosted on GitHub Pages, a service of GitHub, Inc. When you visit the Site, GitHub logs your IP address for security purposes, together with technical details of the request such as the time and browser information.",
+        "p2": "This processing is based on a legitimate interest in operating the Site securely and preventing abuse (Art. 6(1)(f) GDPR). I do not have access to these logs and do not use them for tracking or profiling. GitHub may process this data in the United States; see the GitHub Privacy Statement for details and retention.",
+        "p3": "The connection to the Site is encrypted (HTTPS)."
       },
-      "technical_data": {
-        "title": "Automatically Processed Technical Data",
-        "p1": "When you access the Site, certain technical information may be processed automatically by the hosting provider. This may include IP address, browser type, device information, and access timestamps.",
-        "p2": "Such data is processed solely for the purpose of ensuring server security, preventing abuse, and maintaining proper website operation. The website owner does not directly access or use this information for tracking or profiling purposes."
+      "correspondence": {
+        "title": "When you contact me",
+        "p1": "If you email me or message me through LinkedIn or GitHub, I process the data you send, such as your name, email address and message, only to reply to you and, where relevant, to discuss a job opportunity. The legal basis is my legitimate interest in answering inquiries and, for recruitment, steps taken at your request before entering into a contract (Art. 6(1)(b) and (f) GDPR).",
+        "p2": "I keep this correspondence only as long as needed for the conversation or recruitment process, and then delete it unless you ask me to keep it."
       },
       "cookies_storage": {
-        "title": "Cookies and Local Storage",
-        "p1": "The Site uses only essential cookies and browser storage mechanisms necessary for its operation.",
-        "p2": "These may include a language preference cookie (such as \"translocoLang\"), a cookie consent indicator (\"cookie_consent\"), and a local storage key for theme preference (\"theme\").",
-        "p3": "These storage mechanisms do not track users, are not used for advertising purposes, and do not share data with third parties."
+        "title": "Cookies and local storage",
+        "p1": "The Site uses only strictly necessary storage: a cookie with your chosen language (\"translocoLang\"), a cookie remembering that you closed the cookie notice (\"cookie_consent\") and a local storage entry with your theme (\"theme\").",
+        "p2": "They are not used for tracking or advertising and are not shared with anyone. The Cookie Policy describes each of them."
       },
       "third_parties": {
-        "title": "Third-Party Services",
-        "p1": "The Site does not use third-party analytics tools, advertising networks, tracking pixels, or marketing integrations.",
-        "p2": "The website may be hosted by a third-party hosting provider, which may process technical data as part of its infrastructure services."
+        "title": "Third-party services and links",
+        "p1": "The Site does not use analytics, advertising networks, tracking pixels, social media plugins or externally hosted fonts or scripts. All files, including the downloadable CV, are served from the Site itself.",
+        "p2": "The Site links to my GitHub and LinkedIn profiles. When you follow these links, the privacy policies of those services apply."
       },
       "data_sharing": {
-        "title": "Data Sharing",
-        "p1": "The website owner does not sell, trade, or otherwise transfer personal data to third parties.",
-        "p2": "No personal data is shared for marketing, profiling, or commercial purposes."
-      },
-      "data_retention": {
-        "title": "Data Retention",
-        "p1": "Because the Site does not collect personal data directly, no personal data is stored or retained by the website owner.",
-        "p2": "Technical server logs, if generated by the hosting provider, are retained according to the hosting provider’s internal policies."
+        "title": "Data sharing",
+        "p1": "I do not sell, rent or share personal data with third parties for marketing or any other purpose."
       },
       "user_rights": {
-        "title": "User Rights",
-        "p1": "Under applicable data protection laws, including the General Data Protection Regulation (GDPR), users may have rights regarding their personal data.",
-        "p2": "Since this Site does not directly collect or process personal data, most data protection rights may not apply in practice. However, users may contact the website owner with any privacy-related inquiries."
-      },
-      "security": {
-        "title": "Data Security",
-        "p1": "The Site uses standard security practices provided by the hosting provider to protect against unauthorized access, alteration, disclosure, or destruction of data."
+        "title": "Your rights",
+        "p1": "Under the GDPR you have the right to access your personal data, to have it corrected or erased, to restrict its processing and to object to processing based on legitimate interest. To exercise these rights, email contact@hryhoriikyrylchenko.dev. For server logs, you can also contact GitHub directly.",
+        "p2": "You also have the right to lodge a complaint with a supervisory authority. In Poland this is the President of the Personal Data Protection Office (Prezes Urzędu Ochrony Danych Osobowych, uodo.gov.pl)."
       },
       "changes": {
-        "title": "Changes to This Privacy Policy",
-        "p1": "This Privacy Policy may be updated from time to time to reflect legal or technical changes. Any updates will be published on this page."
-      },
-      "contact": {
-        "title": "Contact",
-        "p1": "If you have any questions about this Privacy Policy, you may contact the website owner using the contact details provided on the Site."
+        "title": "Changes to this policy",
+        "p1": "I may update this policy when the Site or the law changes. The current version is always published on this page with its date."
       }
     }
   },
   "contacts": {
     "name": "Hryhorii Kyrylchenko",
-    "address": "Poland, Poznan",
+    "address": "Poznań, Poland",
     "data_title": "Contacts",
     "data_name": "Name:",
     "data_email": "Email:",
