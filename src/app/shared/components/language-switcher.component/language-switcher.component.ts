@@ -12,13 +12,14 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs';
 import {SUPPORTED_LANG_CODES, SUPPORTED_LANGUAGES} from '../../../config/languages.config';
 import { CustomBreakpoints } from '../../utils/custom-breakpoints';
-import {TranslocoService} from '@jsverse/transloco';
+import {TranslocoPipe, TranslocoService} from '@jsverse/transloco';
 
 const LEGACY_LANG_KEY = 'preferred-language';
 
 @Component({
   selector: 'app-language-switcher',
   standalone: true,
+  imports: [TranslocoPipe],
   templateUrl: './language-switcher.component.html',
   styleUrls: ['./language-switcher.component.scss'],
 })

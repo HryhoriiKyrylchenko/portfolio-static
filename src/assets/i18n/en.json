@@ -43,7 +43,6 @@
   },
   "about": {
     "title": "Hi, I'm Hryhorii Kyrylchenko",
-    "description": ".NET backend developer building ASP.NET Core Web APIs with clean architecture, secure endpoints and tested code.",
     "content": "I'm a .NET backend developer focused on ASP.NET Core Web APIs: clean architecture, secure REST endpoints and code that is tested and easy to change. I'm currently a Trainee .NET Developer at EPAM Systems in the .NET Specialization program.\n\nI came to software from law, logistics, sales and consulting. That background taught me to understand the business problem before writing code, to explain technical decisions to non-technical people, and to take ownership of results.\n\nI studied software development at IT STEP Academy, starting in Ukraine and finishing remotely after moving to Poland. In my diploma project, Forja, I owned the backend: database design, architecture and all server-side functionality.\n\nI'm based in Poznań and open to .NET developer roles where I can keep growing within a strong engineering team."
   },
   "policy": {
@@ -57,7 +56,6 @@
   },
   "cookies": {
     "page_title": "Cookie Policy",
-    "page_description": "This policy explains how cookies are used on this site.",
     "content": {
       "introduction": {
         "title": "Introduction",
@@ -94,7 +92,6 @@
   },
   "privacy": {
     "page_title": "Privacy Policy",
-    "page_description": "This policy explains how this website processes data and protects user privacy.",
     "content": {
       "introduction": {
         "title": "Introduction",
@@ -152,17 +149,10 @@
     "social_media_description": "tap to visit my social media"
   },
   "button": {
-    "share": "Share",
-    "close": "Close",
-    "copied": "Link copied!",
     "repo": "Repository",
     "demo": "Demo",
     "contact": "Contact me",
     "download": "Download CV",
-    "tooltip": {
-      "linkedin": "Share on LinkedIn",
-      "copy_link": "Copy link"
-    },
     "experience": "View experience",
     "case_study": "Read case study",
     "back": "Back to experience"
@@ -493,5 +483,12 @@
       "title": "Page not found",
       "description": "The page you are looking for does not exist."
     }
+  },
+  "a11y": {
+    "home": "Home",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu",
+    "theme": "Switch theme",
+    "language": "Change language"
   }
 }

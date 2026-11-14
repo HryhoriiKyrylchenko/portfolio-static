@@ -1,4 +1,4 @@
-<button class="theme-toggle" (click)="toggleTheme()">
+<button class="theme-toggle" (click)="toggleTheme()" [attr.aria-label]="'a11y.theme' | transloco">
   @if (!isMobile()) {
     {{ labelKey | transloco }}
   } @else {

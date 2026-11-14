@@ -2,7 +2,7 @@
   {
     "id": 1,
     "slug": "forja-platform",
-    "coverImage": "assets/images/projects/forja_cover.png",
+    "coverImage": "assets/images/projects/forja_cover.jpg",
     "demoUrl": "",
     "repoUrl": "https://github.com/HryhoriiKyrylchenko/forja-platform",
     "titleKey": "projects-list.forja.title",
@@ -118,7 +118,7 @@
   {
     "id": 3,
     "slug": "portfolio-static",
-    "coverImage": "assets/images/projects/portfolio-static_cover.png",
+    "coverImage": "assets/images/projects/portfolio-static_cover.jpg",
     "demoUrl": "https://hryhoriikyrylchenko.dev",
     "repoUrl": "https://github.com/HryhoriiKyrylchenko/portfolio-static",
     "titleKey": "projects-list.portfolio-static.title",

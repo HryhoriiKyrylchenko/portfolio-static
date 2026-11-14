@@ -43,7 +43,6 @@
   },
   "about": {
     "title": "Cześć, jestem Hryhorii Kyrylchenko",
-    "description": "Backend developer .NET tworzący ASP.NET Core Web API w oparciu o clean architecture, bezpieczne endpointy i przetestowany kod.",
     "content": "Jestem backend developerem .NET skupionym na ASP.NET Core Web API: clean architecture, bezpieczne endpointy REST i kod, który jest przetestowany i łatwy do zmiany. Obecnie jestem Trainee .NET Developerem w EPAM Systems w programie .NET Specialization.\n\nDo IT przyszedłem z prawa, logistyki, sprzedaży i doradztwa. To doświadczenie nauczyło mnie najpierw rozumieć problem biznesowy, a dopiero potem pisać kod, tłumaczyć decyzje techniczne osobom nietechnicznym i brać odpowiedzialność za wyniki.\n\nProgramowania uczyłem się w IT STEP Academy: zacząłem na Ukrainie, a po przeprowadzce do Polski ukończyłem naukę zdalnie. W projekcie dyplomowym Forja odpowiadałem za backend: projekt bazy danych, architekturę i całą logikę serwerową.\n\nMieszkam w Poznaniu i jestem otwarty na role .NET developera, w których mogę dalej rozwijać się w silnym zespole inżynierskim."
   },
   "policy": {
@@ -57,7 +56,6 @@
   },
   "cookies": {
     "page_title": "Polityka plików cookie",
-    "page_description": "Niniejsza polityka wyjaśnia, jak używamy plików cookie na tej stronie.",
     "content": {
       "introduction": {
         "title": "Wprowadzenie",
@@ -94,7 +92,6 @@
   },
   "privacy": {
     "page_title": "Polityka Prywatności",
-    "page_description": "Niniejsza polityka wyjaśnia, w jaki sposób ta strona internetowa przetwarza dane oraz chroni prywatność użytkowników.",
     "content": {
       "introduction": {
         "title": "Wprowadzenie",
@@ -152,17 +149,10 @@
     "social_media_description": "kliknij, aby odwiedzić moje media społecznościowe"
   },
   "button": {
-    "share": "Udostępnij",
-    "close": "Zamknij",
-    "copied": "Link skopiowany!",
     "repo": "Repozytorium",
     "demo": "Demo",
     "contact": "Skontaktuj się ze mną",
     "download": "Pobierz CV",
-    "tooltip": {
-      "linkedin": "Udostępnij na LinkedIn",
-      "copy_link": "Skopiuj link"
-    },
     "experience": "Zobacz doświadczenie",
     "case_study": "Zobacz case study",
     "back": "Wróć do doświadczenia"
@@ -493,5 +483,12 @@
       "title": "Nie znaleziono strony",
       "description": "Strona, której szukasz, nie istnieje."
     }
+  },
+  "a11y": {
+    "home": "Strona główna",
+    "open_menu": "Otwórz menu",
+    "close_menu": "Zamknij menu",
+    "theme": "Zmień motyw",
+    "language": "Zmień język"
   }
 }
