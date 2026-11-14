@@ -48,12 +48,24 @@ There is no backend API in this version.
 
 ## 🚀 Deployment
 
-The project is deployed using:
+The site is deployed automatically by GitHub Actions (`.github/workflows/deploy-pages.yml`) on every push to `main`.
+
+To build the same output locally:
 
 ```bash
-ng build --configuration production
-npx gh-pages -d dist/portfolio-static
+npm run build:pages
 ```
+
+Output: `dist/portfolio-static/browser`
+
+### Deep links and page refresh
+
+GitHub Pages has no server-side routing, so `build:pages` runs `scripts/spa-fallback.mjs` after the Angular build. The script copies `index.html` to:
+
+- every known route (`about.html`, `portfolio/forja-platform/index.html`, …) so direct links and page refreshes return **HTTP 200**
+- `404.html`, so unknown URLs still load the app (which shows its error page) with an **HTTP 404** status
+
+Project routes come from `src/assets/data/projects.json`. When adding a new top-level page, add it to `STATIC_ROUTES` in `scripts/spa-fallback.mjs` as well as in `app.routes.ts`.
 
 
 ---
