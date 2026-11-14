@@ -5,9 +5,7 @@ export interface Language {
 
 export const SUPPORTED_LANGUAGES: Language[] = [
   { code: 'en', name: 'English' },
-  { code: 'pl', name: 'Polski' },
-  { code: 'ru', name: 'Русский' },
-  { code: 'uk', name: 'Українська' }
+  { code: 'pl', name: 'Polski' }
 ];
 
 export const SUPPORTED_LANG_CODES = SUPPORTED_LANGUAGES.map(l => l.code);

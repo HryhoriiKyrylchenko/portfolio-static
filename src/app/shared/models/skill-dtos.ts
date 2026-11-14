@@ -12,15 +12,13 @@ export interface SkillCategoryDto {
   descriptionKey: string;
 }
 
+/** Self-assessed depth, in display order. */
+export const SKILL_TIERS = ['core', 'proficient', 'familiar'] as const;
+export type SkillTier = (typeof SKILL_TIERS)[number];
+
 export interface UserSkillDto {
   skillKey: string;
-  proficiency: number;
-}
-
-export interface LearningSkillDto {
-  skillKey: string;
-  learningStatus: string;
-  displayOrder: number;
+  tier: SkillTier;
 }
 
 export interface SkillRefDto {
@@ -34,11 +32,4 @@ export interface SkillFullDto extends SkillDto {
 export interface UserSkillFullDto extends UserSkillDto {
   skill: SkillDto;
   category: SkillCategoryDto;
-}
-
-export interface LearningSkillFullDto {
-  skill: SkillDto;
-  category: SkillCategoryDto;
-  learningStatus: string;
-  displayOrder: number;
 }

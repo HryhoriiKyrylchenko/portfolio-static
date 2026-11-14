@@ -3,24 +3,47 @@
     "title": "Hryhorii Kyrylchenko",
     "button-back-to-top": "Powrót do góry",
     "rights-reserved": "Wszystkie prawa zastrzeżone.",
-    "project": "Ostatni projekt",
-    "subtitle": "Programista C# .NET | Aplikacje internetowe",
-    "description": "Kierowany ciekawością i zaangażowaniem w ciągłe uczenie się, podejmuję wyzwania i tworzę rozwiązania, które mają realny wpływ. Każdy projekt to dla mnie szansa na rozwój, adaptację i dostarczenie rzeczywistej wartości. Moim celem jest tworzenie aplikacji, które wnoszą realną wartość do życia ludzi."
+    "subtitle": "Backend Developer .NET",
+    "description": "Tworzę usługi backendowe, które są bezpieczne, przetestowane i łatwe do zmiany. Wcześniej pracowałem w prawie, logistyce i doradztwie, więc zaczynam od problemu biznesowego, a nie od kodu.",
+    "stack": "ASP.NET Core · Web API · Clean Architecture",
+    "photo_alt": "Portret Hryhoriia Kyrylchenki",
+    "current": "Obecnie",
+    "timeline_link": "Zobacz pełną oś czasu",
+    "focus": {
+      "title": "Czym się zajmuję",
+      "api": {
+        "title": "Backendowe API",
+        "text": "ASP.NET Core Web API w Clean Architecture: bezpieczne endpointy REST, uwierzytelnianie tokenowe, walidacja i przejrzyste kontrakty OpenAPI."
+      },
+      "data": {
+        "title": "Dane i wydajność",
+        "text": "Relacyjne schematy i zapytania z PostgreSQL i Entity Framework Core oraz cache tam, gdzie się opłaca, np. o 40% szybsze pobieranie danych w Forji."
+      },
+      "quality": {
+        "title": "Jakość i dostarczanie",
+        "text": "Testy jednostkowe z xUnit i Moq, kontenery Docker i pipeline’y CI/CD, aby zmiany trafiały na produkcję bezpiecznie i powtarzalnie."
+      }
+    },
+    "cta": {
+      "title": "Porozmawiajmy",
+      "text": "Jestem otwarty na role .NET developera. Mieszkam w Poznaniu.",
+      "email": "Napisz do mnie"
+    }
   },
   "nav": {
     "home": "Strona główna",
     "about": "O mnie",
-    "portfolio": "Portfolio",
-    "contacts": "Kontakt"
+    "contacts": "Kontakt",
+    "experience": "Doświadczenie",
+    "cv": "CV"
   },
   "theme": {
     "light": "Jasny",
     "dark": "Ciemny"
   },
-  "about":{
-    "title": "Cześć, jestem Hryhorii Kyrylchenko.",
-    "description": "Aspirujący programista .NET z różnorodnym doświadczeniem zawodowym w dziedzinie prawa, logistyki, sprzedaży i konsultingu. Ukończyłem szkolenie w IT STEP Academy w Polsce, posiadam umiejętności w zakresie C#, ASP.NET Core, SQL i innych technologii. Poszukuję nowych wyzwań w obszarze programowania .NET.",
-    "content": "Jestem początkującym programistą .NET z nietypowym doświadczeniem zawodowym w takich dziedzinach jak prawo, logistyka, sprzedaż i doradztwo. To bogate doświadczenie pozwoliło mi rozwinąć umiejętności takie jak myślenie analityczne, elastyczność i komunikatywność – cenne uzupełnienie mojej wiedzy technicznej.\n\nPo przeprowadzce do Polski ukończyłem z sukcesem kurs w IT STEP Academy, gdzie opanowałem C#, ASP.NET Core, Web API, SQL, EF Core, LINQ, a także HTML, CSS i JavaScript. Dało mi to solidną podstawę do przejścia do branży tworzenia aplikacji internetowych.\n\nObecnie jestem otwarty na ciekawe projekty i stanowiska w obszarze .NET – dążę do efektywnego wykorzystania moich umiejętności i wspólnego rozwoju z zespołem."
+  "about": {
+    "title": "Cześć, jestem Hryhorii Kyrylchenko",
+    "content": "Jestem backend developerem .NET skupionym na ASP.NET Core Web API: clean architecture, bezpieczne endpointy REST i kod, który jest przetestowany i łatwy do zmiany. Obecnie jestem Trainee .NET Developerem w EPAM Systems w programie .NET Specialization.\n\nDo IT przyszedłem z prawa, logistyki, sprzedaży i doradztwa. To doświadczenie nauczyło mnie najpierw rozumieć problem biznesowy, a dopiero potem pisać kod, tłumaczyć decyzje techniczne osobom nietechnicznym i brać odpowiedzialność za wyniki.\n\nProgramowania uczyłem się w IT STEP Academy: zacząłem na Ukrainie, a po przeprowadzce do Polski ukończyłem naukę zdalnie. W projekcie dyplomowym Forja odpowiadałem za backend: projekt bazy danych, architekturę i całą logikę serwerową.\n\nMieszkam w Poznaniu i jestem otwarty na role .NET developera, w których mogę dalej rozwijać się w silnym zespole inżynierskim."
   },
   "policy": {
     "cookies": "Polityka plików cookie",
@@ -28,109 +51,96 @@
   },
   "error": {
     "title": "Błąd 404",
-    "text": "Wygląda na to, że ta strona się... pogubiła. \u2028Próbowaliśmy ją odnaleźć, przepisać, a nawet stworzyć nową — ale nic z tego.",
+    "text": "Wygląda na to, że ta strona się... pogubiła.  Próbowaliśmy ją odnaleźć, przepisać, a nawet stworzyć nową — ale nic z tego.",
     "button": "Odśwież stronę"
   },
   "cookies": {
     "page_title": "Polityka plików cookie",
-    "page_description": "Niniejsza polityka wyjaśnia, jak używamy plików cookie na tej stronie.",
     "content": {
       "introduction": {
         "title": "Wprowadzenie",
-        "p1": "Ta witryna hyrhoriikyrylchenko.dev (dalej \\\"Serwis\\\") wykorzystuje pliki cookie i podobne technologie, aby zapewnić prawidłowe działanie. Wszystkie przechowywane dane — takie jak pliki cookie i local storage — są niezbędne do funkcjonowania tej deweloperskiej strony portfolio."
+        "p1": "Niniejsza Polityka cookies wyjaśnia, jakich plików cookie i podobnych technologii używa strona hryhoriikyrylchenko.dev (dalej: „Strona”). Strona używa wyłącznie tego, co jest niezbędne do działania funkcji, z których korzystasz, i niczego do analityki, reklam ani śledzenia."
       },
       "what-are": {
         "title": "Czym są pliki cookie?",
-        "p1": "Pliki cookie to niewielkie pliki tekstowe zapisywane w przeglądarce, które umożliwiają kluczowe funkcje, takie jak sesje oraz zapamiętywanie ustawień języka czy motywu. Local storage również przechowuje preferencje, takie jak \\\"theme\\\" (jasny/ciemny)."
+        "p1": "Pliki cookie to małe pliki tekstowe zapisywane przez stronę w przeglądarce. Pamięć lokalna (local storage) to podobna funkcja przeglądarki służąca do zapisywania ustawień na Twoim urządzeniu. Żadne z nich nie są wysyłane nikomu poza tą Stroną."
       },
-      "usage": {
-        "title": "Jak korzystamy z plików cookie",
-        "p1": "Korzystamy tylko z minimalnych, niezbędnych mechanizmów przechowywania."
+      "list": {
+        "title": "Co zapisuje Strona",
+        "p1": "„translocoLang” (cookie): język wybrany w przełączniku języków. Jest zapisywany tylko wtedy, gdy wybierzesz język, i wygasa po roku.",
+        "p2": "„cookie_consent” (cookie): informacja, że zamknięto komunikat o plikach cookie, aby nie wyświetlał się ponownie. Wygasa po roku.",
+        "p3": "„theme” (pamięć lokalna): wybrany motyw jasny lub ciemny. Pozostaje do czasu wyczyszczenia danych przeglądarki."
       },
-      "types": {
-        "title": "Rodzaje plików cookie",
-        "p1": "Niezbędne pliki cookie i storage: Konieczne do działania serwisu. Obejmuje pliki cookie ustawiane przez przeglądarkę: “translocoLang”, a także “cookie_consent” oraz klucz local storage “theme”. Bez nich strona nie będzie działać poprawnie. Zgoda jest domniemana poprzez korzystanie z serwisu."
+      "consent": {
+        "title": "Dlaczego zgoda nie jest wymagana",
+        "p1": "Wszystkie powyższe mechanizmy są niezbędne do świadczenia funkcji, o które prosisz, takich jak zapamiętanie języka i motywu, dlatego zgodnie z prawem UE nie wymagają Twojej zgody. Komunikat o cookies jedynie o nich informuje; jego zamknięcie nie włącza żadnych dodatkowych plików cookie."
       },
       "manage": {
-        "title": "Jak zarządzać plikami cookie",
-        "p1": "Nie można wyłączyć tych niezbędnych plików cookie i ustawień bez wpływu na funkcjonowanie strony. Możesz je usunąć w ustawieniach przeglądarki, ale strona może działać nieprawidłowo."
+        "title": "Zarządzanie plikami cookie",
+        "p1": "Pliki cookie i pamięć lokalną możesz przeglądać i usuwać w ustawieniach przeglądarki. Wtedy Strona ponownie użyje języka przeglądarki i domyślnego motywu, a komunikat o cookies pojawi się znowu."
       },
       "changes": {
         "title": "Zmiany",
-        "p1": "Polityka może zostać zaktualizowana. Prosimy o regularne odwiedzanie tej strony."
+        "p1": "Jeśli Strona zacznie zapisywać cokolwiek innego, ta polityka zostanie najpierw zaktualizowana. Ostatnia aktualizacja: 14 listopada 2026 r."
       }
     },
-    "accept_button": "Akceptuj",
-    "learn_more": "Dowiedz Się Więcej O Ciasteczkach",
-    "title": "Używamy ciasteczek",
-    "start": "aby poprawić Twoje doświadczenia na naszej stronie.",
-    "end": "Korzystając dalej z naszej strony, wyrażasz na to zgodę."
+    "accept_button": "Rozumiem",
+    "learn_more": "Polityka cookies",
+    "title": "Pliki cookie",
+    "start": "Ta strona używa wyłącznie niezbędnych plików cookie i pamięci przeglądarki, aby zapamiętać Twój język, motyw i ten komunikat.",
+    "end": "Bez analityki, reklam i śledzenia."
   },
   "privacy": {
     "page_title": "Polityka Prywatności",
-    "page_description": "Niniejsza polityka wyjaśnia, w jaki sposób ta strona internetowa przetwarza dane oraz chroni prywatność użytkowników.",
     "content": {
       "introduction": {
         "title": "Wprowadzenie",
-        "p1": "Niniejsza Polityka Prywatności wyjaśnia, w jaki sposób strona internetowa hyrhoriikyrylchenko.dev (dalej: „Strona”) przetwarza informacje podczas jej odwiedzania. Strona stanowi statyczne portfolio deweloperskie i nie zbiera aktywnie danych osobowych użytkowników."
+        "p1": "Niniejsza Polityka prywatności wyjaśnia, jak strona hryhoriikyrylchenko.dev (dalej: „Strona”) postępuje z informacjami podczas jej odwiedzania. Strona jest statycznym portfolio programisty: nie ma kont użytkowników, formularzy kontaktowych, newslettera, analityki ani reklam.",
+        "p2": "Ostatnia aktualizacja: 14 listopada 2026 r."
       },
       "data_controller": {
-        "title": "Administrator Danych",
-        "p1": "Administratorem danych w odniesieniu do niniejszej Strony jest właściciel domeny hyrhoriikyrylchenko.dev. W przypadku pytań dotyczących niniejszej Polityki Prywatności można skontaktować się z właścicielem Strony za pomocą danych kontaktowych dostępnych na Stronie."
+        "title": "Administrator danych",
+        "p1": "Administratorem danych osobowych przetwarzanych w związku ze Stroną jest Hryhorii Kyrylchenko, Poznań, Polska. Kontakt: contact@hryhoriikyrylchenko.dev."
       },
-      "personal_data_collection": {
-        "title": "Zbieranie Danych Osobowych",
-        "p1": "Strona nie udostępnia kont użytkowników, formularzy kontaktowych, newsletterów ani innych funkcji wymagających podania danych osobowych.",
-        "p2": "Strona nie zbiera, nie przechowuje ani nie przetwarza celowo danych osobowych takich jak imię i nazwisko, adres e-mail, numer telefonu czy dane płatnicze."
+      "hosting": {
+        "title": "Hosting i logi serwera",
+        "p1": "Strona jest hostowana w usłudze GitHub Pages firmy GitHub, Inc. Podczas wizyty GitHub zapisuje Twój adres IP w celach bezpieczeństwa wraz z technicznymi informacjami o żądaniu, takimi jak czas i dane przeglądarki.",
+        "p2": "Podstawą tego przetwarzania jest prawnie uzasadniony interes polegający na bezpiecznym działaniu Strony i zapobieganiu nadużyciom (art. 6 ust. 1 lit. f RODO). Nie mam dostępu do tych logów i nie używam ich do śledzenia ani profilowania. GitHub może przetwarzać te dane w Stanach Zjednoczonych; szczegóły i okres przechowywania opisuje GitHub Privacy Statement.",
+        "p3": "Połączenie ze Stroną jest szyfrowane (HTTPS)."
       },
-      "technical_data": {
-        "title": "Automatycznie Przetwarzane Dane Techniczne",
-        "p1": "Podczas korzystania ze Strony pewne informacje techniczne mogą być automatycznie przetwarzane przez dostawcę hostingu. Mogą one obejmować adres IP, typ przeglądarki, informacje o urządzeniu oraz datę i godzinę dostępu.",
-        "p2": "Dane te są przetwarzane wyłącznie w celu zapewnienia bezpieczeństwa serwera, zapobiegania nadużyciom oraz utrzymania prawidłowego działania Strony. Właściciel Strony nie wykorzystuje tych informacji do śledzenia użytkowników ani profilowania."
+      "correspondence": {
+        "title": "Kontakt ze mną",
+        "p1": "Jeśli napiszesz do mnie e-mail lub wiadomość przez LinkedIn albo GitHub, przetwarzam przesłane dane, takie jak imię i nazwisko, adres e-mail i treść wiadomości, wyłącznie w celu odpowiedzi oraz, w odpowiednich przypadkach, rozmowy o ofercie pracy. Podstawą prawną jest mój prawnie uzasadniony interes w odpowiadaniu na zapytania, a w przypadku rekrutacji działania podejmowane na Twoje żądanie przed zawarciem umowy (art. 6 ust. 1 lit. b i f RODO).",
+        "p2": "Korespondencję przechowuję tylko tak długo, jak jest to potrzebne do rozmowy lub procesu rekrutacji, a następnie ją usuwam, chyba że poprosisz o jej zachowanie."
       },
       "cookies_storage": {
-        "title": "Pliki Cookies i Pamięć Lokalna",
-        "p1": "Strona wykorzystuje wyłącznie niezbędne pliki cookies oraz mechanizmy pamięci przeglądarki konieczne do jej prawidłowego działania.",
-        "p2": "Mogą one obejmować plik cookie preferencji językowych (np. „translocoLang”), plik potwierdzenia zgody na cookies („cookie_consent”) oraz klucz pamięci lokalnej odpowiadający za ustawienie motywu („theme”).",
-        "p3": "Mechanizmy te nie służą do śledzenia użytkowników, nie są wykorzystywane do celów reklamowych ani nie przekazują danych podmiotom trzecim."
+        "title": "Pliki cookie i pamięć lokalna",
+        "p1": "Strona używa wyłącznie niezbędnych mechanizmów: pliku cookie z wybranym językiem („translocoLang”), pliku cookie zapamiętującego zamknięcie komunikatu o cookies („cookie_consent”) oraz wpisu w pamięci lokalnej z wybranym motywem („theme”).",
+        "p2": "Nie służą one do śledzenia ani reklam i nie są nikomu udostępniane. Każdy z nich opisuje Polityka cookies."
       },
       "third_parties": {
-        "title": "Podmioty Trzecie",
-        "p1": "Strona nie korzysta z narzędzi analitycznych, sieci reklamowych, pikseli śledzących ani integracji marketingowych podmiotów trzecich.",
-        "p2": "Strona może być hostowana przez zewnętrznego dostawcę usług hostingowych, który przetwarza dane techniczne w ramach świadczenia usług infrastrukturalnych."
+        "title": "Usługi zewnętrzne i linki",
+        "p1": "Strona nie używa analityki, sieci reklamowych, pikseli śledzących, wtyczek mediów społecznościowych ani zewnętrznie hostowanych czcionek czy skryptów. Wszystkie pliki, w tym CV do pobrania, są serwowane bezpośrednio ze Strony.",
+        "p2": "Strona zawiera linki do moich profili na GitHub i LinkedIn. Po przejściu pod te linki obowiązują polityki prywatności tych serwisów."
       },
       "data_sharing": {
-        "title": "Udostępnianie Danych",
-        "p1": "Właściciel Strony nie sprzedaje, nie wymienia ani nie przekazuje danych osobowych osobom trzecim.",
-        "p2": "Żadne dane osobowe nie są udostępniane w celach marketingowych, profilowania ani komercyjnych."
-      },
-      "data_retention": {
-        "title": "Okres Przechowywania Danych",
-        "p1": "Ponieważ Strona nie zbiera danych osobowych bezpośrednio, właściciel Strony nie przechowuje danych osobowych użytkowników.",
-        "p2": "Ewentualne techniczne logi serwera generowane przez dostawcę hostingu są przechowywane zgodnie z jego wewnętrznymi politykami."
+        "title": "Udostępnianie danych",
+        "p1": "Nie sprzedaję, nie wynajmuję ani nie udostępniam danych osobowych osobom trzecim w celach marketingowych ani żadnych innych."
       },
       "user_rights": {
-        "title": "Prawa Użytkownika",
-        "p1": "Zgodnie z obowiązującymi przepisami o ochronie danych osobowych, w tym z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO), użytkownikom mogą przysługiwać określone prawa dotyczące ich danych osobowych.",
-        "p2": "Ponieważ Strona nie przetwarza bezpośrednio danych osobowych, większość praw wynikających z przepisów o ochronie danych może nie mieć praktycznego zastosowania. W przypadku pytań dotyczących prywatności można skontaktować się z właścicielem Strony."
-      },
-      "security": {
-        "title": "Bezpieczeństwo Danych",
-        "p1": "Strona korzysta ze standardowych środków bezpieczeństwa zapewnianych przez dostawcę hostingu w celu ochrony przed nieuprawnionym dostępem, modyfikacją, ujawnieniem lub zniszczeniem danych."
+        "title": "Twoje prawa",
+        "p1": "Zgodnie z RODO masz prawo dostępu do swoich danych, ich sprostowania lub usunięcia, ograniczenia przetwarzania oraz sprzeciwu wobec przetwarzania opartego na prawnie uzasadnionym interesie. Aby skorzystać z tych praw, napisz na contact@hryhoriikyrylchenko.dev. W sprawie logów serwera możesz też skontaktować się bezpośrednio z GitHub.",
+        "p2": "Przysługuje Ci również prawo wniesienia skargi do organu nadzorczego, którym w Polsce jest Prezes Urzędu Ochrony Danych Osobowych (uodo.gov.pl)."
       },
       "changes": {
-        "title": "Zmiany w Polityce Prywatności",
-        "p1": "Niniejsza Polityka Prywatności może być okresowo aktualizowana w celu odzwierciedlenia zmian prawnych lub technicznych. Wszelkie aktualizacje będą publikowane na tej stronie."
-      },
-      "contact": {
-        "title": "Kontakt",
-        "p1": "W przypadku pytań dotyczących niniejszej Polityki Prywatności można skontaktować się z właścicielem Strony za pomocą danych kontaktowych dostępnych na Stronie."
+        "title": "Zmiany polityki",
+        "p1": "Mogę aktualizować tę politykę, gdy zmieni się Strona lub przepisy. Aktualna wersja wraz z datą jest zawsze publikowana na tej stronie."
       }
     }
   },
   "contacts": {
     "name": "Hryhorii Kyrylchenko",
-    "address": "Polska, Poznań",
+    "address": "Poznań, Polska",
     "data_title": "Kontakt",
     "data_name": "Imię i nazwisko:",
     "data_email": "Email:",
@@ -139,104 +149,101 @@
     "social_media_description": "kliknij, aby odwiedzić moje media społecznościowe"
   },
   "button": {
-    "read": "Czytaj",
-    "share": "Udostępnij",
-    "close": "Zamknij",
-    "read_more": "Czytaj więcej",
-    "copied": "Link skopiowany!",
     "repo": "Repozytorium",
     "demo": "Demo",
     "contact": "Skontaktuj się ze mną",
     "download": "Pobierz CV",
-    "portfolio": "Zobacz portfolio",
-    "tooltip": {
-      "linkedin": "Udostępnij na LinkedIn",
-      "facebook": "Udostępnij na Facebooku",
-      "copy_link": "Skopiuj link"
-    }
+    "experience": "Zobacz doświadczenie",
+    "case_study": "Zobacz case study",
+    "back": "Wróć do doświadczenia"
   },
   "project": {
-    "overview": "Przegląd projektu",
-    "technologies": "Użyte technologie",
-    "features": "Główne funkcje",
-    "architecture": "Architektura projektu",
+    "overview": "Kontekst i problem",
+    "features": "Co robi",
+    "architecture": "Architektura i kluczowe decyzje",
     "deployment": "Wdrożenie",
-    "results": "Wyniki",
+    "results": "Moja rola i wyniki",
+    "technologies": "Stos technologiczny",
     "skills": "Umiejętności"
   },
   "projects-list": {
     "forja": {
-      "title": "Forja – Platforma niezależnego studia gier",
-      "short": "Solidna platforma do zarządzania treścią, stworzona z myślą o tworzeniu gier, zbieraniu opinii graczy i zarządzaniu zespołowym contentem.",
+      "title": "Forja: platforma dla studia gier",
+      "short": "Backend platformy niezależnego studia gier: buildy, opinie graczy i treści. Zespołowy projekt dyplomowy w IT STEP Academy; odpowiadałem za backend.",
       "sections": {
-        "results": "Dostarczono wydajny backend w ciągu skoncentrowanego, 3-miesięcznego sprintu. Moje zadania obejmowały projektowanie schematu bazy danych, architektury backendu, implementację funkcjonalności oraz integrację technologii. Zespół Agile zapewnił sprawną koordynację z frontendem, projektowaniem i bezpieczeństwem.",
-        "features": "Mechanizmy zbierania opinii graczy, narzędzia do zgłaszania błędów oraz wewnętrzny system zarządzania treścią do organizowania projektów studia i zasobów contentowych.",
-        "overview": "Forja to dedykowana platforma dla niezależnego studia gier, unikająca rozwiązań generycznych. Zapewnia zoptymalizowane środowisko do zarządzania buildami, zbierania opinii graczy i nadzorowania zespołowego contentu w spójnym ekosystemie.",
-        "deployment": "Platforma zaprojektowana do wdrożenia w chmurze (AWS, Azure lub prywatna). Konteneryzacja w Dockerze umożliwia skalowanie, orkiestrację i utrzymanie systemu, usprawniając procesy wdrożeń i zarządzania infrastrukturą.",
-        "architecture": "Backend zbudowany w ASP.NET Core (C#), obsługujący ponad 40 dynamicznych stron UI przez kontrolery i serwisy. PostgreSQL zarządza danymi, Redis przyspiesza cache, MinIO zapewnia skalowalne przechowywanie obiektów, Keycloak obsługuje uwierzytelnianie. Dokumentacja API w Swagger; całość zarządzana przez .NET Aspire Dashboard.",
-        "technologies": "C#, ASP.NET Core, Entity Framework Core, Docker, Git, Keycloak, PostgreSQL, Redis, MinIO, Swagger, .NET Aspire Dashboard"
+        "overview": "Niezależne studio gier potrzebowało jednego miejsca do publikowania buildów, zbierania opinii graczy i zgłoszeń błędów oraz zarządzania treściami wewnętrznymi, zamiast łączyć ogólne narzędzia. Forja powstała jako zespołowy projekt dyplomowy w IT STEP Academy, z osobnymi rolami frontendu, designu i bezpieczeństwa. Ja odpowiadałem za backend.",
+        "features": "Opinie graczy i zgłaszanie błędów, zarządzanie buildami i zasobami gier oraz wewnętrzny system zarządzania treścią dla projektów studia. Backend obsługuje ponad 40 dynamicznych stron interfejsu.",
+        "architecture": "Kontrolery i serwisy ASP.NET Core na PostgreSQL z Entity Framework Core. Kluczowe decyzje: cache w Redis dla często odczytywanych danych, co przyspieszyło pobieranie danych o 40%; MinIO jako magazyn obiektów zgodny z S3, aby duże pliki buildów nie trafiały do bazy, a platforma nie była związana z jedną chmurą; Keycloak do uwierzytelniania zamiast własnej warstwy tożsamości; dokumentacja Swagger i dashboard .NET Aspire, aby zespół frontendowy mógł integrować się i debugować bez czekania na mnie.",
+        "deployment": "Każda usługa działa w kontenerze Docker i jest orkiestrowana przez .NET Aspire. Dzięki magazynowi zgodnemu z S3 i zewnętrznej tożsamości ta sama konfiguracja może działać na AWS, Azure lub w chmurze prywatnej.",
+        "results": "Zaprojektowałem schemat bazy danych i architekturę backendu oraz zaimplementowałem całą logikę serwerową, dostarczając kompletny backend w trzymiesięcznym sprincie, zgodnie z kamieniami milowymi frontendu i bezpieczeństwa.",
+        "technologies": "C#, ASP.NET Core, Entity Framework Core, PostgreSQL, Redis, MinIO, Keycloak, Docker, Swagger, .NET Aspire, Git."
       }
     },
     "personal-site": {
-      "title": "Osobiste Portfolio Dewelopera i Blog",
-      "short": "Wielojęzyczna aplikacja full‑stack prezentująca projekty, wpisy i wybory technologiczne.",
+      "title": "Strona osobista: portfolio i blog full-stack",
+      "short": "Wielojęzyczne portfolio i blog z panelem administracyjnym: backend ASP.NET Core w Clean Architecture, frontend Angular, Docker na AWS i CI/CD z GitHub Actions.",
       "sections": {
-        "results": "Osobiście opracowałem cały serwis — backend, frontend i strukturę bazy danych — we współpracy z projektantem UX/UI. Strona jest wdrożona i dostępna online.",
-        "features": "Obsługa wielojęzycznych postów (pl/ru/uk/en), filtrowanie po tagach i chmura tagów, panel administracyjny do zarządzania treścią, logowanie administratorów przez AWS Cognito, przechowywanie zasobów w AWS S3 oraz SEO-przyjazne routingi i metadane.",
-        "overview": "Ta strona to pełnostackowa platforma portfolio i blog, która prezentuje mnie jako programistę. Zawiera sekcję „O mnie”, listę projektów z dedykowanymi stronami projektów oraz sekcję blogową z pojedynczymi wpisami. Serwis pokazuje moje umiejętności i markę za pomocą aktualnych treści i interaktywnych elementów.",
-        "deployment": "Konteneryzacja z użyciem Docker; CI/CD oparte na GitHub Actions wdrażające na AWS. Zautomatyzowane migracje bazy danych i provisioning infrastruktury zapewniają płynne wdrożenia i aktualizacje.",
-        "architecture": "Architektura backendu opiera się na zasadach Domain-Driven Design (DDD) i Clean Architecture, zorganizowana według wzorca Vertical Slice. System wykorzystuje MediatR do implementacji wzorca Mediator i CQRS, co umożliwia rozdzielenie komend i zapytań oraz minimalizuje logikę w kontrolerach. Każdy vertical slice zawiera własne żądanie/handler (komendę lub zapytanie), walidację i definicję endpointu.",
-        "technologies": "C#, ASP.NET Core, Entity Framework Core, PostgreSQL, Angular, Docker, AWS S3, AWS Cognito, Postman, GitHub Actions, AWS"
+        "overview": "Chciałem mieć stronę, którą mogę sam aktualizować: portfolio, blog i panel administracyjny do edycji treści i tłumaczeń bez ponownego wdrażania. Zaprojektowałem i zbudowałem ją od początku do końca, współpracując z projektantem UX przy interfejsie.",
+        "features": "Dziewięć responsywnych stron, w tym O mnie, portfolio ze szczegółowymi stronami projektów, blog i formularz kontaktowy z powiadomieniami e-mail. Treści i tłumaczenia są zarządzane w panelu administracyjnym, z lokalizacją z plików JSON i bazy danych.",
+        "architecture": "Backend jest oparty na Domain-Driven Design i Clean Architecture oraz podzielony na vertical slices. Każdy slice ma własne żądanie MediatR, handler, walidację i endpoint, a komendy są oddzielone od zapytań (CQRS), więc funkcję można zmienić bez naruszania pozostałych. Dane są w PostgreSQL przez Entity Framework Core. Frontend to Angular, w pełni responsywny i zlokalizowany.",
+        "deployment": "Konteneryzacja w Dockerze i wdrożenie na AWS. Pipeline GitHub Actions buduje i wdraża aplikację oraz automatycznie uruchamia migracje bazy danych i provisioning infrastruktury, co skróciło czas wdrożenia z 15 do 5 minut.",
+        "results": "Zbudowałem całą platformę: backend, frontend, bazę danych i wdrożenie. Pokryłem backend testami jednostkowymi (xUnit, Moq, FluentAssertions) i utrzymywałem działającą stronę. Część portfolio działa teraz jako wersja statyczna (ta strona), a kod full-stack pozostaje dostępny jako referencja.",
+        "technologies": "C#, ASP.NET Core, Entity Framework Core, MediatR, PostgreSQL, Angular, TypeScript, Docker, AWS, GitHub Actions, xUnit, Moq, FluentAssertions."
       }
     },
     "portfolio-static": {
-      "title": "Osobiste Portfolio (Wersja Statyczna)",
-      "short": "Statyczna wersja osobistej strony portfolio, prezentująca projekty i umiejętności.",
+      "title": "Statyczna strona portfolio",
+      "short": "Ta strona: SPA w Angularze bez backendu na GitHub Pages, z treścią w JSON i lokalizacją angielską/polską.",
       "sections": {
-        "results": "Jest to statyczna kopia mojego pełnego portfolio. Prezentuje projekty, umiejętności i możliwości frontendowe. Backend, dynamiczny blog i panel administracyjny nie są uwzględnione.",
-        "features": "Obsługa statycznych list projektów, wielojęzyczna (en/pl/ru/uk) i podstawowa nawigacja po stronie. Cała zawartość ładowana jest z lokalnych plików JSON. Brak API backendu, uwierzytelniania lub dynamicznej zawartości.",
-        "overview": "Strona statyczna zbudowana w Angular i wdrożona na GitHub Pages jako Single Page Application (SPA). Prezentuje umiejętności frontendowe, portfolio projektów oraz osobistą markę.",
-        "deployment": "Wdrożona przy użyciu `ng build --configuration production` i `npx gh-pages -d dist/portfolio-static`. Nie wymaga serwera ani backendu.",
-        "architecture": "SPA frontendowe oparte wyłącznie na komponentach Angular standalone. Brak SSR, backendu lub panelu administracyjnego. Skupia się na lekkim, statycznym pokazie oryginalnego projektu.",
-        "technologies": "Angular, TypeScript, SCSS, GitHub Pages, JSON do statycznej zawartości."
+        "overview": "Statyczna wersja mojej strony full-stack. Celem było utrzymanie portfolio online bez płacenia za serwery: nie ma backendu, a cała strona jest serwowana z GitHub Pages.",
+        "features": "Oś czasu doświadczenia, case studies projektów, umiejętności, certyfikaty, CV do pobrania, jasny i ciemny motyw oraz lokalizacja angielska/polska z zapamiętaniem wybranego języka w cookie.",
+        "architecture": "Komponenty standalone Angulara z leniwie ładowaną stroną case study. Serwisy łączą po stronie klienta kilka plików JSON (doświadczenie, projekty, umiejętności, kategorie), odtwarzając działanie oryginalnego API, więc treść edytuje się jako dane i klucze tłumaczeń.",
+        "deployment": "GitHub Actions buduje i wdraża stronę przy każdym pushu do main. Skrypt po buildzie kopiuje powłokę aplikacji na każdą znaną trasę, więc bezpośrednie linki i odświeżenia zwracają HTTP 200, a nieznane adresy prawdziwy 404.",
+        "results": "Koszty hostingu spadły do zera, a strona na żywo zawsze odpowiada repozytorium. Nowe prace i projekty dodaje się jako wpisy JSON bez zmian w kodzie.",
+        "technologies": "Angular, TypeScript, RxJS, Transloco, SCSS, GitHub Actions, GitHub Pages."
       }
     }
   },
   "skill": {
     "title": "Umiejętności",
-    "learning": "Plan nauki",
-    "category": {
-      "languages": "Języki",
-      "frameworks": "Frameworki",
-      "tools": "Narzędzia"
-    }
+    "intro": "Pogrupowane według obszarów. Główne: używam na co dzień i znam dogłębnie. Zaawansowane: używane w prawdziwych projektach. Znajomość: pracowałem z nimi, mniej dogłębnie.",
+    "tier": {
+      "core": "Główne",
+      "proficient": "Zaawansowane",
+      "familiar": "Znajomość"
+    },
+    "used_in": "Użyte w"
   },
   "skillCategories": {
-    "languages": {
-      "name": "Języki",
-      "description": "Języki programowania, których używam"
+    "backend": {
+      "name": "Backend",
+      "description": "Programowanie .NET i API"
     },
-    "frameworks": {
-      "name": "Frameworki",
-      "description": "Frameworki i biblioteki, z którymi pracuję"
+    "data": {
+      "name": "Dane",
+      "description": "Bazy danych, cache i magazyny"
+    },
+    "testing": {
+      "name": "Testowanie",
+      "description": "Testy automatyczne i praktyki"
+    },
+    "frontend": {
+      "name": "Frontend",
+      "description": "Tworzenie interfejsów webowych"
+    },
+    "devops": {
+      "name": "Chmura i DevOps",
+      "description": "Kontenery, CI/CD i chmura"
     },
     "tools": {
-      "name": "Narzędzia",
-      "description": "Narzędzia i pomocnicze technologie deweloperskie"
+      "name": "Narzędzia i praktyki",
+      "description": "Codzienne narzędzia inżynierskie"
     }
   },
   "skills-list": {
     "csharp": {
       "name": "C#",
       "description": "Nowoczesny, ogólnego zastosowania język programowania firmy Microsoft, oparty na paradygmacie obiektowym (.NET), używany w aplikacjach webowych, desktopowych, mobilnych i grach."
-    },
-    "typescript": {
-      "name": "TypeScript",
-      "description": "Superset JavaScript z opcjonalnym statycznym typowaniem, stworzony przez Microsoft; wspiera skalowalność i lepsze narzędzia programistyczne; kompiluje do standardowego JavaScript."
-    },
-    "javascript": {
-      "name": "JavaScript",
-      "description": "Wieloparadygmatyczny, dynamicznie typowany język skryptowy, który ożywia strony internetowe; działa w przeglądarkach i na serwerach (np. Node.js)."
     },
     "aspnetcore": {
       "name": "ASP.NET Core",
@@ -246,74 +253,242 @@
       "name": "Entity Framework Core",
       "description": "Lekki, wieloplatformowy ORM od Microsoft, pozwalający na dostęp do danych przez obiekty .NET zamiast SQL; wspiera migracje, LINQ i różne bazy danych (np. PostgreSQL)."
     },
-    "angular": {
-      "name": "Angular",
-      "description": "Open-source framework od Google’a napisany w TypeScript do tworzenia skalowalnych aplikacji SPA; zawiera narzędzia do routingu, formularzy, HTTP i modularnej architektury."
+    "restapi": {
+      "name": "Projektowanie REST API",
+      "description": "Projektowanie zasobowych API HTTP: routing, kody statusu, wersjonowanie, walidacja i autoryzacja."
     },
-    "blazor": {
-      "name": "Blazor",
-      "description": "Framework UI od Microsoft, używający C# i Razor do tworzenia SPA i interaktywnych aplikacji działających po stronie serwera lub WebAssembly."
+    "cqrs": {
+      "name": "CQRS / MediatR",
+      "description": "Rozdzielenie komend i zapytań, zaimplementowane za pomocą handlerów i pipeline behaviors MediatR."
     },
-    "grpc": {
-      "name": "gRPC",
-      "description": "Open-source framework RPC oparty na HTTP/2 i Protocol Buffers do wydajnej i typowanej komunikacji między usługami."
+    "async": {
+      "name": "Asynchroniczność i wielowątkowość",
+      "description": "async/await, Task Parallel Library i kod bezpieczny wątkowo w .NET."
     },
-    "aws": {
-      "name": "AWS",
-      "description": "Chmurowa platforma Amazon udostępniająca na żądanie ponad 200 usług: obliczenia, bazę danych, przechowywanie, analitykę."
-    },
-    "css": {
-      "name": "CSS",
-      "description": "Język arkuszy stylów opisujący wygląd dokumentów HTML — układ, kolory, czcionki i responsywność."
-    },
-    "docker": {
-      "name": "Docker",
-      "description": "Platforma open-source do automatyzacji wdrażania aplikacji w lekkich kontenerach, zapewniająca spójność w różnych środowiskach."
-    },
-    "git": {
-      "name": "Git",
-      "description": "Rozproszony system kontroli wersji, który śledzi zmiany w kodzie źródłowym podczas rozwoju oprogramowania, umożliwiając współpracę i historię wersji."
-    },
-    "html": {
-      "name": "HTML",
-      "description": "Standardowy język znaczników do tworzenia stron internetowych, strukturalizujący treść za pomocą elementów takich jak nagłówki, akapity, linki i obrazy."
+    "adonet": {
+      "name": "ADO.NET",
+      "description": "Niskopoziomowy dostęp do danych w .NET: połączenia, komendy i data readery."
     },
     "keycloak": {
       "name": "Keycloak",
       "description": "Open-source'owe rozwiązanie do zarządzania tożsamościami i dostępem, służące do zabezpieczania aplikacji i usług. Oferuje jednolity system logowania, federację użytkowników oraz precyzyjne zarządzanie uprawnieniami."
     },
-    "minio": {
-      "name": "MinIO",
-      "description": "Wydajny system przechowywania obiektów open-source kompatybilny z AWS S3, zaprojektowany z myślą o aplikacjach chmurowych i skalowalnym zarządzaniu danymi."
-    },
-    "postman": {
-      "name": "Postman",
-      "description": "Kompleksowa platforma API do projektowania, testowania i zarządzania interfejsami API."
-    },
     "postgresql": {
       "name": "PostgreSQL",
       "description": "System baz danych open-source o charakterze obiektowo-relacyjnym, ceniony za niezawodność, rozszerzalność i zgodność z SQL."
     },
-    "rider": {
-      "name": "Rider",
-      "description": "Wieloplatformowe IDE .NET oparte na IntelliJ i ReSharper, wspierające C#, F#, VB.NET, ASP.NET, XAML, JavaScript, TypeScript, HTML, CSS, SQL i inne."
+    "sql": {
+      "name": "SQL",
+      "description": "Projektowanie schematów relacyjnych i zapytania: złączenia, indeksy, transakcje."
     },
-    "swagger": {
-      "name": "Swagger",
-      "description": "Zestaw narzędzi open-source do projektowania, budowania, dokumentowania i korzystania z REST API, oparty na specyfikacji OpenAPI."
+    "mssql": {
+      "name": "Microsoft SQL Server",
+      "description": "Relacyjny silnik bazodanowy firmy Microsoft."
     },
-    "webstorm": {
-      "name": "WebStorm",
-      "description": "Wieloplatformowe IDE od JetBrains dla JavaScript, TypeScript i pokrewnych technologii, oferujące inteligentne uzupełnianie kodu, debugowanie i zintegrowane narzędzia deweloperskie."
+    "redis": {
+      "name": "Redis",
+      "description": "Pamięciowy magazyn struktur danych używany jako baza danych, pamięć podręczna i broker komunikatów do szybkiego dostępu do danych i przetwarzania w czasie rzeczywistym."
+    },
+    "nosql": {
+      "name": "Bazy NoSQL",
+      "description": "Bazy dokumentowe i typu klucz-wartość."
+    },
+    "minio": {
+      "name": "MinIO",
+      "description": "Wydajny system przechowywania obiektów open-source kompatybilny z AWS S3, zaprojektowany z myślą o aplikacjach chmurowych i skalowalnym zarządzaniu danymi."
+    },
+    "xunit": {
+      "name": "xUnit",
+      "description": "Framework do testów jednostkowych w .NET."
+    },
+    "moq": {
+      "name": "Moq",
+      "description": "Biblioteka do mockowania zależności w testach jednostkowych .NET."
+    },
+    "nunit": {
+      "name": "NUnit",
+      "description": "Framework do testów jednostkowych w .NET."
+    },
+    "tdd": {
+      "name": "TDD",
+      "description": "Test-driven development: najpierw test, potem implementacja i refaktoryzacja."
+    },
+    "angular": {
+      "name": "Angular",
+      "description": "Open-source framework od Google’a napisany w TypeScript do tworzenia skalowalnych aplikacji SPA; zawiera narzędzia do routingu, formularzy, HTTP i modularnej architektury."
+    },
+    "typescript": {
+      "name": "TypeScript",
+      "description": "Superset JavaScript z opcjonalnym statycznym typowaniem, stworzony przez Microsoft; wspiera skalowalność i lepsze narzędzia programistyczne; kompiluje do standardowego JavaScript."
+    },
+    "html": {
+      "name": "HTML",
+      "description": "Standardowy język znaczników do tworzenia stron internetowych, strukturalizujący treść za pomocą elementów takich jak nagłówki, akapity, linki i obrazy."
+    },
+    "css": {
+      "name": "CSS",
+      "description": "Język arkuszy stylów opisujący wygląd dokumentów HTML — układ, kolory, czcionki i responsywność."
+    },
+    "javascript": {
+      "name": "JavaScript",
+      "description": "Wieloparadygmatyczny, dynamicznie typowany język skryptowy, który ożywia strony internetowe; działa w przeglądarkach i na serwerach (np. Node.js)."
+    },
+    "docker": {
+      "name": "Docker",
+      "description": "Platforma open-source do automatyzacji wdrażania aplikacji w lekkich kontenerach, zapewniająca spójność w różnych środowiskach."
     },
     "githubactions": {
       "name": "GitHub Actions",
       "description": "Wbudowana platforma CI/CD w GitHub. Umożliwia definiowanie workflow w YAML do budowania, testowania i wdrażania kodu po zdarzeniach repozytorium."
     },
-    "redis": {
-      "name": "Redis",
-      "description": "Pamięciowy magazyn struktur danych używany jako baza danych, pamięć podręczna i broker komunikatów do szybkiego dostępu do danych i przetwarzania w czasie rzeczywistym."
+    "aws": {
+      "name": "AWS",
+      "description": "Chmurowa platforma Amazon udostępniająca na żądanie ponad 200 usług: obliczenia, bazę danych, przechowywanie, analitykę."
+    },
+    "git": {
+      "name": "Git",
+      "description": "Rozproszony system kontroli wersji, który śledzi zmiany w kodzie źródłowym podczas rozwoju oprogramowania, umożliwiając współpracę i historię wersji."
+    },
+    "swagger": {
+      "name": "Swagger / OpenAPI",
+      "description": "Dokumentacja i kontrakty API zgodne ze specyfikacją OpenAPI."
+    },
+    "postman": {
+      "name": "Postman",
+      "description": "Kompleksowa platforma API do projektowania, testowania i zarządzania interfejsami API."
+    },
+    "aiassisted": {
+      "name": "Programowanie wspomagane AI",
+      "description": "Wykorzystanie narzędzi generatywnej AI i prompt engineeringu do pisania kodu, refaktoryzacji i przeglądów."
     }
+  },
+  "experience": {
+    "title": "Doświadczenie",
+    "intro": "Edukacja, staż i projekty: co zbudowałem, za co odpowiadałem i jakie decyzje za tym stały.",
+    "present": "obecnie",
+    "type": {
+      "work": "Praca",
+      "internship": "Staż",
+      "project": "Projekt",
+      "education": "Edukacja"
+    }
+  },
+  "experience-list": {
+    "epam-specialization": {
+      "title": "Trainee .NET Developer: .NET Specialization",
+      "summary": "Zaawansowany program .NET w EPAM: budowa produkcyjnego ASP.NET Core Web API w etapach (epikach), zgodnie z praktykami enterprise i cloud-native.",
+      "highlights": {
+        "api": "Budowa ASP.NET Core Web API od początku do końca w Clean Architecture, dostarczanego przyrostowo w kolejnych epikach.",
+        "security": "Projektowanie bezpiecznych endpointów REST z uwierzytelnianiem tokenowym i szczegółową autoryzacją, wraz z logowaniem i dokumentacją Swagger/OpenAPI.",
+        "quality": "Praca w podejściu TDD, wdrożenia oparte na Dockerze, praktyki clean code i Git według EPAM EngX; wykorzystanie narzędzi generatywnej AI do refaktoryzacji i zwiększenia produktywności."
+      },
+      "short": "EPAM .NET Specialization"
+    },
+    "portfolio-static": {
+      "title": "Ta strona: statyczne portfolio",
+      "summary": "Wersja mojej strony osobistej w Angularze bez backendu, hostowana bezpłatnie na GitHub Pages. To strona, którą właśnie czytasz.",
+      "highlights": {
+        "content": "Treść jako dane: struktura w JSON, teksty w plikach tłumaczeń, więc nowa praca czy projekt to zmiana treści, a nie kodu.",
+        "delivery": "Każdy push do main jest budowany i wdrażany przez GitHub Actions; krok po buildzie generuje strony dla każdej trasy, więc bezpośrednie linki zwracają HTTP 200, a nieznane adresy prawdziwy 404.",
+        "maintenance": "Utrzymywana na aktualnej wersji Angulara, z aktualizacjami bezpieczeństwa zależności i lokalizacją angielską/polską."
+      },
+      "short": "Ta strona"
+    },
+    "epam-fundamentals": {
+      "title": "Trainee .NET Developer: .NET Fundamentals",
+      "summary": "Ukończony intensywny program .NET Fundamentals w EPAM, z praktycznymi zadaniami programistycznymi na platformie AutoCode.",
+      "highlights": {
+        "csharp": "Zaawansowany C#: refleksja, serializacja, wielowątkowość, Task Parallel Library i programowanie asynchroniczne.",
+        "data": "Projektowanie relacyjnych baz danych i zapytania w SQL, ADO.NET oraz Entity Framework Core.",
+        "quality": "Testy jednostkowe i wzorce projektowe zastosowane w komponentach backendowych ASP.NET Core."
+      },
+      "short": "EPAM .NET Fundamentals"
+    },
+    "personal-site": {
+      "title": "Strona osobista: platforma full-stack",
+      "summary": "Zaprojektowałem i zbudowałem od podstaw wielojęzyczną platformę z portfolio i blogiem: backend .NET, frontend Angular, panel administracyjny i wdrożenie w chmurze.",
+      "highlights": {
+        "architecture": "Backend oparty na Domain-Driven Design, Clean Architecture i vertical slices; CQRS z MediatR trzyma żądanie, walidację i endpoint każdej funkcji w jednym miejscu.",
+        "delivery": "Konteneryzacja w Dockerze i wdrożenie na AWS; CI/CD w GitHub Actions z automatycznymi migracjami skróciło czas wdrożenia z 15 do 5 minut.",
+        "quality": "Backend pokryty testami jednostkowymi (xUnit, Moq, FluentAssertions); współpraca z projektantem UX przy dziewięciu responsywnych, wielojęzycznych stronach."
+      },
+      "short": "Strona osobista"
+    },
+    "forja": {
+      "title": "Forja: platforma dla studia gier (projekt dyplomowy)",
+      "summary": "Zespołowy projekt dyplomowy w IT STEP Academy: dedykowana platforma dla niezależnego studia gier do zarządzania buildami, opiniami graczy i treściami wewnętrznymi.",
+      "highlights": {
+        "ownership": "Odpowiadałem za cały backend: schemat bazy danych, architekturę i całą logikę serwerową, dostarczone w trzymiesięcznym sprincie.",
+        "performance": "Zaprojektowałem stos PostgreSQL i Redis; cache przyspieszył pobieranie danych o 40%.",
+        "integrations": "Integracja magazynu obiektów MinIO i uwierzytelniania Keycloak; dokumentacja Swagger i dashboard .NET Aspire ułatwiły integrację API zespołowi frontendowemu."
+      },
+      "short": "Forja"
+    },
+    "itstep": {
+      "title": "Program Software Development",
+      "summary": "Szkolenie full-stack .NET w IT STEP Academy na Ukrainie.",
+      "highlights": {
+        "curriculum": "C#, ASP.NET Core Web API, SQL, Entity Framework Core i LINQ, a także HTML, CSS i JavaScript.",
+        "diploma": "Projekt dyplomowy: Forja, platforma backendowa dla studia gier."
+      },
+      "short": "IT STEP Academy"
+    }
+  },
+  "credentials": {
+    "title": "Edukacja i certyfikaty",
+    "education": "Edukacja",
+    "certification": "Certyfikat",
+    "verify": "Zweryfikuj",
+    "itstep": {
+      "title": "Software Development"
+    },
+    "fcc-csharp": {
+      "title": "Foundational C# with Microsoft"
+    }
+  },
+  "spoken": {
+    "title": "Języki",
+    "native": "Ojczysty",
+    "uk": "Ukraiński",
+    "ru": "Rosyjski",
+    "en": "Angielski",
+    "pl": "Polski"
+  },
+  "seo": {
+    "home": {
+      "title": "Hryhorii Kyrylchenko · Backend Developer .NET",
+      "description": "Backend developer .NET z Poznania, tworzący ASP.NET Core Web API w oparciu o clean architecture, bezpieczne endpointy i przetestowany kod. Doświadczenie, projekty i CV."
+    },
+    "about": {
+      "title": "O mnie",
+      "description": "Doświadczenie, umiejętności według obszarów wraz z miejscem ich użycia, edukacja, certyfikaty i języki Hryhoriia Kyrylchenki, backend developera .NET."
+    },
+    "experience": {
+      "title": "Doświadczenie",
+      "description": "Szkolenia .NET w EPAM, projekty backendowe i edukacja w IT STEP Academy: co zbudowałem, za co odpowiadałem i jakie decyzje za tym stały."
+    },
+    "contacts": {
+      "title": "Kontakt",
+      "description": "Skontaktuj się z Hryhoriim Kyrylchenką, backend developerem .NET z Poznania: e-mail, LinkedIn i GitHub."
+    },
+    "privacy": {
+      "title": "Polityka prywatności",
+      "description": "Jak ta strona przetwarza dane i chroni Twoją prywatność."
+    },
+    "cookies": {
+      "title": "Polityka cookies",
+      "description": "Jak ta strona wykorzystuje pliki cookie i pamięć przeglądarki."
+    },
+    "error": {
+      "title": "Nie znaleziono strony",
+      "description": "Strona, której szukasz, nie istnieje."
+    }
+  },
+  "a11y": {
+    "home": "Strona główna",
+    "open_menu": "Otwórz menu",
+    "close_menu": "Zamknij menu",
+    "theme": "Zmień motyw",
+    "language": "Zmień język"
   }
 }
-

@@ -3,68 +3,162 @@
     "key": "csharp",
     "nameKey": "skills-list.csharp.name",
     "descriptionKey": "skills-list.csharp.description",
-    "categoryKey": "languages"
-  },
-  {
-    "key": "typescript",
-    "nameKey": "skills-list.typescript.name",
-    "descriptionKey": "skills-list.typescript.description",
-    "categoryKey": "languages"
-  },
-  {
-    "key": "javascript",
-    "nameKey": "skills-list.javascript.name",
-    "descriptionKey": "skills-list.javascript.description",
-    "categoryKey": "languages"
-  },
-
-  {
-    "key": "blazor",
-    "nameKey": "skills-list.blazor.name",
-    "descriptionKey": "skills-list.blazor.description",
-    "categoryKey": "frameworks"
-  },
-  {
-    "key": "grpc",
-    "nameKey": "skills-list.grpc.name",
-    "descriptionKey": "skills-list.grpc.description",
-    "categoryKey": "frameworks"
+    "categoryKey": "backend"
   },
   {
     "key": "aspnetcore",
     "nameKey": "skills-list.aspnetcore.name",
     "descriptionKey": "skills-list.aspnetcore.description",
-    "categoryKey": "frameworks"
-  },
-  {
-    "key": "angular",
-    "nameKey": "skills-list.angular.name",
-    "descriptionKey": "skills-list.angular.description",
-    "categoryKey": "frameworks"
+    "categoryKey": "backend"
   },
   {
     "key": "entityframeworkcore",
     "nameKey": "skills-list.entityframeworkcore.name",
     "descriptionKey": "skills-list.entityframeworkcore.description",
-    "categoryKey": "frameworks"
+    "categoryKey": "backend"
   },
-
   {
-    "key": "postman",
-    "nameKey": "skills-list.postman.name",
-    "descriptionKey": "skills-list.postman.description",
-    "categoryKey": "tools"
+    "key": "restapi",
+    "nameKey": "skills-list.restapi.name",
+    "descriptionKey": "skills-list.restapi.description",
+    "categoryKey": "backend"
+  },
+  {
+    "key": "cqrs",
+    "nameKey": "skills-list.cqrs.name",
+    "descriptionKey": "skills-list.cqrs.description",
+    "categoryKey": "backend"
+  },
+  {
+    "key": "async",
+    "nameKey": "skills-list.async.name",
+    "descriptionKey": "skills-list.async.description",
+    "categoryKey": "backend"
+  },
+  {
+    "key": "adonet",
+    "nameKey": "skills-list.adonet.name",
+    "descriptionKey": "skills-list.adonet.description",
+    "categoryKey": "backend"
+  },
+  {
+    "key": "keycloak",
+    "nameKey": "skills-list.keycloak.name",
+    "descriptionKey": "skills-list.keycloak.description",
+    "categoryKey": "backend"
   },
   {
     "key": "postgresql",
     "nameKey": "skills-list.postgresql.name",
     "descriptionKey": "skills-list.postgresql.description",
-    "categoryKey": "tools"
+    "categoryKey": "data"
   },
   {
-    "key": "rider",
-    "nameKey": "skills-list.rider.name",
-    "descriptionKey": "skills-list.rider.description",
+    "key": "sql",
+    "nameKey": "skills-list.sql.name",
+    "descriptionKey": "skills-list.sql.description",
+    "categoryKey": "data"
+  },
+  {
+    "key": "mssql",
+    "nameKey": "skills-list.mssql.name",
+    "descriptionKey": "skills-list.mssql.description",
+    "categoryKey": "data"
+  },
+  {
+    "key": "redis",
+    "nameKey": "skills-list.redis.name",
+    "descriptionKey": "skills-list.redis.description",
+    "categoryKey": "data"
+  },
+  {
+    "key": "nosql",
+    "nameKey": "skills-list.nosql.name",
+    "descriptionKey": "skills-list.nosql.description",
+    "categoryKey": "data"
+  },
+  {
+    "key": "minio",
+    "nameKey": "skills-list.minio.name",
+    "descriptionKey": "skills-list.minio.description",
+    "categoryKey": "data"
+  },
+  {
+    "key": "xunit",
+    "nameKey": "skills-list.xunit.name",
+    "descriptionKey": "skills-list.xunit.description",
+    "categoryKey": "testing"
+  },
+  {
+    "key": "moq",
+    "nameKey": "skills-list.moq.name",
+    "descriptionKey": "skills-list.moq.description",
+    "categoryKey": "testing"
+  },
+  {
+    "key": "nunit",
+    "nameKey": "skills-list.nunit.name",
+    "descriptionKey": "skills-list.nunit.description",
+    "categoryKey": "testing"
+  },
+  {
+    "key": "tdd",
+    "nameKey": "skills-list.tdd.name",
+    "descriptionKey": "skills-list.tdd.description",
+    "categoryKey": "testing"
+  },
+  {
+    "key": "angular",
+    "nameKey": "skills-list.angular.name",
+    "descriptionKey": "skills-list.angular.description",
+    "categoryKey": "frontend"
+  },
+  {
+    "key": "typescript",
+    "nameKey": "skills-list.typescript.name",
+    "descriptionKey": "skills-list.typescript.description",
+    "categoryKey": "frontend"
+  },
+  {
+    "key": "html",
+    "nameKey": "skills-list.html.name",
+    "descriptionKey": "skills-list.html.description",
+    "categoryKey": "frontend"
+  },
+  {
+    "key": "css",
+    "nameKey": "skills-list.css.name",
+    "descriptionKey": "skills-list.css.description",
+    "categoryKey": "frontend"
+  },
+  {
+    "key": "javascript",
+    "nameKey": "skills-list.javascript.name",
+    "descriptionKey": "skills-list.javascript.description",
+    "categoryKey": "frontend"
+  },
+  {
+    "key": "docker",
+    "nameKey": "skills-list.docker.name",
+    "descriptionKey": "skills-list.docker.description",
+    "categoryKey": "devops"
+  },
+  {
+    "key": "githubactions",
+    "nameKey": "skills-list.githubactions.name",
+    "descriptionKey": "skills-list.githubactions.description",
+    "categoryKey": "devops"
+  },
+  {
+    "key": "aws",
+    "nameKey": "skills-list.aws.name",
+    "descriptionKey": "skills-list.aws.description",
+    "categoryKey": "devops"
+  },
+  {
+    "key": "git",
+    "nameKey": "skills-list.git.name",
+    "descriptionKey": "skills-list.git.description",
     "categoryKey": "tools"
   },
   {
@@ -74,63 +168,15 @@
     "categoryKey": "tools"
   },
   {
-    "key": "webstorm",
-    "nameKey": "skills-list.webstorm.name",
-    "descriptionKey": "skills-list.webstorm.description",
+    "key": "postman",
+    "nameKey": "skills-list.postman.name",
+    "descriptionKey": "skills-list.postman.description",
     "categoryKey": "tools"
   },
   {
-    "key": "githubactions",
-    "nameKey": "skills-list.githubactions.name",
-    "descriptionKey": "skills-list.githubactions.description",
-    "categoryKey": "tools"
-  },
-  {
-    "key": "aws",
-    "nameKey": "skills-list.aws.name",
-    "descriptionKey": "skills-list.aws.description",
-    "categoryKey": "tools"
-  },
-  {
-    "key": "css",
-    "nameKey": "skills-list.css.name",
-    "descriptionKey": "skills-list.css.description",
-    "categoryKey": "tools"
-  },
-  {
-    "key": "docker",
-    "nameKey": "skills-list.docker.name",
-    "descriptionKey": "skills-list.docker.description",
-    "categoryKey": "tools"
-  },
-  {
-    "key": "git",
-    "nameKey": "skills-list.git.name",
-    "descriptionKey": "skills-list.git.description",
-    "categoryKey": "tools"
-  },
-  {
-    "key": "html",
-    "nameKey": "skills-list.html.name",
-    "descriptionKey": "skills-list.html.description",
-    "categoryKey": "tools"
-  },
-  {
-    "key": "keycloak",
-    "nameKey": "skills-list.keycloak.name",
-    "descriptionKey": "skills-list.keycloak.description",
-    "categoryKey": "tools"
-  },
-  {
-    "key": "minio",
-    "nameKey": "skills-list.minio.name",
-    "descriptionKey": "skills-list.minio.description",
-    "categoryKey": "tools"
-  },
-  {
-    "key": "redis",
-    "nameKey": "skills-list.redis.name",
-    "descriptionKey": "skills-list.redis.description",
+    "key": "aiassisted",
+    "nameKey": "skills-list.aiassisted.name",
+    "descriptionKey": "skills-list.aiassisted.description",
     "categoryKey": "tools"
   }
 ]

@@ -1,78 +1,118 @@
 [
   {
-    "skillKey": "typescript",
-    "proficiency": 2
-  },
-  {
-    "skillKey": "javascript",
-    "proficiency": 2
-  },
-  {
-    "skillKey": "entityframeworkcore",
-    "proficiency": 2
-  },
-  {
-    "skillKey": "angular",
-    "proficiency": 1
-  },
-  {
-    "skillKey": "aws",
-    "proficiency": 1
-  },
-  {
-    "skillKey": "css",
-    "proficiency": 2
-  },
-  {
-    "skillKey": "docker",
-    "proficiency": 1
-  },
-  {
-    "skillKey": "git",
-    "proficiency": 2
-  },
-  {
-    "skillKey": "html",
-    "proficiency": 2
-  },
-  {
-    "skillKey": "keycloak",
-    "proficiency": 1
-  },
-  {
-    "skillKey": "minio",
-    "proficiency": 2
-  },
-  {
-    "skillKey": "postman",
-    "proficiency": 2
-  },
-  {
-    "skillKey": "postgresql",
-    "proficiency": 1
-  },
-  {
-    "skillKey": "swagger",
-    "proficiency": 2
-  },
-  {
-    "skillKey": "webstorm",
-    "proficiency": 2
+    "skillKey": "csharp",
+    "tier": "core"
   },
   {
     "skillKey": "aspnetcore",
-    "proficiency": 2
+    "tier": "core"
   },
   {
-    "skillKey": "rider",
-    "proficiency": 2
+    "skillKey": "entityframeworkcore",
+    "tier": "core"
   },
   {
-    "skillKey": "csharp",
-    "proficiency": 3
+    "skillKey": "git",
+    "tier": "core"
+  },
+  {
+    "skillKey": "restapi",
+    "tier": "proficient"
+  },
+  {
+    "skillKey": "cqrs",
+    "tier": "proficient"
+  },
+  {
+    "skillKey": "async",
+    "tier": "proficient"
+  },
+  {
+    "skillKey": "postgresql",
+    "tier": "proficient"
+  },
+  {
+    "skillKey": "sql",
+    "tier": "proficient"
+  },
+  {
+    "skillKey": "xunit",
+    "tier": "proficient"
+  },
+  {
+    "skillKey": "moq",
+    "tier": "proficient"
+  },
+  {
+    "skillKey": "angular",
+    "tier": "proficient"
+  },
+  {
+    "skillKey": "typescript",
+    "tier": "proficient"
+  },
+  {
+    "skillKey": "html",
+    "tier": "proficient"
+  },
+  {
+    "skillKey": "css",
+    "tier": "proficient"
+  },
+  {
+    "skillKey": "docker",
+    "tier": "proficient"
+  },
+  {
+    "skillKey": "swagger",
+    "tier": "proficient"
+  },
+  {
+    "skillKey": "postman",
+    "tier": "proficient"
+  },
+  {
+    "skillKey": "aiassisted",
+    "tier": "proficient"
+  },
+  {
+    "skillKey": "adonet",
+    "tier": "familiar"
+  },
+  {
+    "skillKey": "keycloak",
+    "tier": "familiar"
+  },
+  {
+    "skillKey": "mssql",
+    "tier": "familiar"
   },
   {
     "skillKey": "redis",
-    "proficiency": 2
+    "tier": "familiar"
+  },
+  {
+    "skillKey": "nosql",
+    "tier": "familiar"
+  },
+  {
+    "skillKey": "nunit",
+    "tier": "familiar"
+  },
+  {
+    "skillKey": "tdd",
+    "tier": "familiar"
+  },
+  {
+    "skillKey": "javascript",
+    "tier": "familiar"
+  },
+  {
+    "skillKey": "githubactions",
+    "tier": "familiar"
+  },
+  {
+    "skillKey": "aws",
+    "tier": "familiar"
   }
 ]

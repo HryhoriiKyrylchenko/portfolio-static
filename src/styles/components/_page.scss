@@ -1,0 +1,35 @@
+// Shared centered column for standalone content pages (e.g. project case studies).
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 20rem;
+  margin: 2rem auto;
+
+  @media (min-width: 700px) {
+    max-width: 38rem;
+  }
+
+  @media (min-width: 1400px) {
+    max-width: 62rem;
+  }
+}
+
+// Section headings shared by page sub-sections (About: skills, credentials, languages).
+.section-title {
+  margin: 0 0 0.5rem;
+  color: var(--color-title);
+  font-size: 1.75rem;
+
+  @media (min-width: 700px) {
+    font-size: 2.5rem;
+  }
+}
+
+.section-intro {
+  margin: 0 0 1.5rem;
+  color: var(--color-text-primary);
+  font-size: 1.125rem;
+}

@@ -1,6 +1,7 @@
 import {Component, HostListener} from '@angular/core';
 import {SocialLinksComponent} from '../../../shared/components/social-links.component/social-links.component';
 import {TranslocoPipe} from '@jsverse/transloco';
+import {CONTACT_EMAIL} from '../../../config/contact.config';
 
 @Component({
   selector: 'app-contacts',
@@ -14,7 +15,7 @@ import {TranslocoPipe} from '@jsverse/transloco';
 })
 export class ContactsComponent {
   iconSize = '5.875rem';
-  readonly email = "contact@hryhoriikyrylchenko.dev"
+  readonly email = CONTACT_EMAIL;
 
   @HostListener('window:resize')
   onResize(): void {

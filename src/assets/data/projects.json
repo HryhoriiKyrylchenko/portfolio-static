@@ -2,7 +2,7 @@
   {
     "id": 1,
     "slug": "forja-platform",
-    "coverImage": "assets/images/projects/forja_cover.png",
+    "coverImage": "assets/images/projects/forja_cover.jpg",
     "demoUrl": "",
     "repoUrl": "https://github.com/HryhoriiKyrylchenko/forja-platform",
     "titleKey": "projects-list.forja.title",
@@ -29,25 +29,22 @@
         "skillKey": "postgresql"
       },
       {
-        "skillKey": "rider"
-      },
-      {
-        "skillKey": "swagger"
-      },
-      {
-        "skillKey": "docker"
-      },
-      {
-        "skillKey": "git"
-      },
-      {
-        "skillKey": "keycloak"
+        "skillKey": "redis"
       },
       {
         "skillKey": "minio"
       },
       {
-        "skillKey": "redis"
+        "skillKey": "keycloak"
+      },
+      {
+        "skillKey": "docker"
+      },
+      {
+        "skillKey": "swagger"
+      },
+      {
+        "skillKey": "git"
       }
     ]
   },
@@ -72,34 +69,40 @@
         "skillKey": "csharp"
       },
       {
-        "skillKey": "typescript"
-      },
-      {
         "skillKey": "aspnetcore"
-      },
-      {
-        "skillKey": "angular"
       },
       {
         "skillKey": "entityframeworkcore"
       },
       {
-        "skillKey": "postman"
+        "skillKey": "cqrs"
       },
       {
         "skillKey": "postgresql"
       },
       {
-        "skillKey": "rider"
+        "skillKey": "angular"
       },
       {
-        "skillKey": "webstorm"
+        "skillKey": "typescript"
+      },
+      {
+        "skillKey": "docker"
+      },
+      {
+        "skillKey": "aws"
       },
       {
         "skillKey": "githubactions"
       },
       {
-        "skillKey": "aws"
+        "skillKey": "xunit"
+      },
+      {
+        "skillKey": "moq"
+      },
+      {
+        "skillKey": "html"
       },
       {
         "skillKey": "css"
@@ -108,14 +111,14 @@
         "skillKey": "git"
       },
       {
-        "skillKey": "html"
+        "skillKey": "postman"
       }
     ]
   },
   {
     "id": 3,
     "slug": "portfolio-static",
-    "coverImage": "assets/images/projects/portfolio-static_cover.png",
+    "coverImage": "assets/images/projects/portfolio-static_cover.jpg",
     "demoUrl": "https://hryhoriikyrylchenko.dev",
     "repoUrl": "https://github.com/HryhoriiKyrylchenko/portfolio-static",
     "titleKey": "projects-list.portfolio-static.title",
@@ -129,15 +132,11 @@
       "technologies": "projects-list.portfolio-static.sections.technologies"
     },
     "skills": [
-
       {
         "skillKey": "typescript"
       },
       {
         "skillKey": "angular"
-      },
-      {
-        "skillKey": "webstorm"
       },
       {
         "skillKey": "githubactions"

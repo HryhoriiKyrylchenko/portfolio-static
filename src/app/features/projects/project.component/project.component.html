@@ -1,0 +1,80 @@
+<div class="page-container">
+@if (project$ | async; as project) {
+  <div class="project-dialog">
+    <button
+      type="button"
+      class="btn btn-secondary"
+      (click)="onCloseClick()"
+    >
+      {{ 'button.back' | transloco }}
+    </button>
+
+    <div
+      class="project-cover-img"
+      [ngStyle]="{ 'background-image': 'url(' + project.coverImage + ')' }"
+      aria-hidden="true"
+    ></div>
+
+    <h3 class="project-title">
+      {{ project.titleKey | transloco }}
+    </h3>
+
+    <div class="project-description">
+      @for (section of sections; track section) {
+        @if (project.descriptionSectionsKeys[section]) {
+          <h6 class="project-subtitle">
+            {{ 'project.' + section | transloco }}
+          </h6>
+          <p class="project-content">
+            {{ project.descriptionSectionsKeys[section] | transloco }}
+          </p>
+        }
+      }
+    </div>
+
+    @if (skillsByCategory | async; as skillsByCategory) {
+      <h4 class="project-skills-title">
+        {{ 'project.skills' | transloco }}
+      </h4>
+
+      <div class="project-skills">
+        @for (group of skillsByCategory; track group.category.key) {
+          <div class="skills-category-section">
+            <h5 class="skill-category">
+              {{ group.category.nameKey | transloco }}
+            </h5>
+            <div class="category-skills">
+              @for (skill of group.skills; track skill.key) {
+                <app-skill [skill]="skill"></app-skill>
+              }
+            </div>
+          </div>
+        }
+      </div>
+    }
+
+    <div class="project-links">
+      @if (project.repoUrl && project.repoUrl.length > 0) {
+        <a
+          class="btn project-link link-primary"
+          href="{{ project.repoUrl }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ 'button.repo' | transloco }}
+        </a>
+      }
+      @if (project.demoUrl && project.demoUrl.length > 0) {
+        <a
+          class="btn project-link link-secondary"
+          href="{{ project.demoUrl }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ 'button.demo' | transloco }}
+        </a>
+      }
+    </div>
+  </div>
+}
+</div>

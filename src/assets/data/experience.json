@@ -1,0 +1,256 @@
+[
+  {
+    "id": "epam-specialization",
+    "type": "internship",
+    "organization": "EPAM Systems",
+    "startDate": "2026-07",
+    "endDate": null,
+    "titleKey": "experience-list.epam-specialization.title",
+    "shortTitleKey": "experience-list.epam-specialization.short",
+    "summaryKey": "experience-list.epam-specialization.summary",
+    "highlightKeys": [
+      "experience-list.epam-specialization.highlights.api",
+      "experience-list.epam-specialization.highlights.security",
+      "experience-list.epam-specialization.highlights.quality"
+    ],
+    "skills": [
+      {
+        "skillKey": "csharp"
+      },
+      {
+        "skillKey": "aspnetcore"
+      },
+      {
+        "skillKey": "restapi"
+      },
+      {
+        "skillKey": "tdd"
+      },
+      {
+        "skillKey": "docker"
+      },
+      {
+        "skillKey": "swagger"
+      },
+      {
+        "skillKey": "nosql"
+      },
+      {
+        "skillKey": "aiassisted"
+      },
+      {
+        "skillKey": "git"
+      }
+    ]
+  },
+  {
+    "id": "portfolio-static",
+    "type": "project",
+    "organization": null,
+    "startDate": "2026-02",
+    "endDate": null,
+    "titleKey": "experience-list.portfolio-static.title",
+    "shortTitleKey": "experience-list.portfolio-static.short",
+    "summaryKey": "experience-list.portfolio-static.summary",
+    "highlightKeys": [
+      "experience-list.portfolio-static.highlights.content",
+      "experience-list.portfolio-static.highlights.delivery",
+      "experience-list.portfolio-static.highlights.maintenance"
+    ],
+    "projectSlug": "portfolio-static",
+    "skills": [
+      {
+        "skillKey": "angular"
+      },
+      {
+        "skillKey": "typescript"
+      },
+      {
+        "skillKey": "githubactions"
+      },
+      {
+        "skillKey": "html"
+      },
+      {
+        "skillKey": "css"
+      },
+      {
+        "skillKey": "git"
+      }
+    ]
+  },
+  {
+    "id": "epam-fundamentals",
+    "type": "internship",
+    "organization": "EPAM Systems",
+    "startDate": "2026-02",
+    "endDate": "2026-06",
+    "titleKey": "experience-list.epam-fundamentals.title",
+    "shortTitleKey": "experience-list.epam-fundamentals.short",
+    "summaryKey": "experience-list.epam-fundamentals.summary",
+    "highlightKeys": [
+      "experience-list.epam-fundamentals.highlights.csharp",
+      "experience-list.epam-fundamentals.highlights.data",
+      "experience-list.epam-fundamentals.highlights.quality"
+    ],
+    "skills": [
+      {
+        "skillKey": "csharp"
+      },
+      {
+        "skillKey": "async"
+      },
+      {
+        "skillKey": "sql"
+      },
+      {
+        "skillKey": "adonet"
+      },
+      {
+        "skillKey": "entityframeworkcore"
+      },
+      {
+        "skillKey": "aspnetcore"
+      }
+    ]
+  },
+  {
+    "id": "personal-site",
+    "type": "project",
+    "organization": null,
+    "startDate": "2025-06",
+    "endDate": "2026-02",
+    "titleKey": "experience-list.personal-site.title",
+    "shortTitleKey": "experience-list.personal-site.short",
+    "summaryKey": "experience-list.personal-site.summary",
+    "highlightKeys": [
+      "experience-list.personal-site.highlights.architecture",
+      "experience-list.personal-site.highlights.delivery",
+      "experience-list.personal-site.highlights.quality"
+    ],
+    "projectSlug": "personal-site",
+    "skills": [
+      {
+        "skillKey": "csharp"
+      },
+      {
+        "skillKey": "aspnetcore"
+      },
+      {
+        "skillKey": "cqrs"
+      },
+      {
+        "skillKey": "entityframeworkcore"
+      },
+      {
+        "skillKey": "postgresql"
+      },
+      {
+        "skillKey": "xunit"
+      },
+      {
+        "skillKey": "moq"
+      },
+      {
+        "skillKey": "angular"
+      },
+      {
+        "skillKey": "typescript"
+      },
+      {
+        "skillKey": "docker"
+      },
+      {
+        "skillKey": "githubactions"
+      },
+      {
+        "skillKey": "aws"
+      }
+    ]
+  },
+  {
+    "id": "forja",
+    "type": "project",
+    "organization": "IT STEP Academy",
+    "startDate": "2025-01",
+    "endDate": "2025-04",
+    "titleKey": "experience-list.forja.title",
+    "shortTitleKey": "experience-list.forja.short",
+    "summaryKey": "experience-list.forja.summary",
+    "highlightKeys": [
+      "experience-list.forja.highlights.ownership",
+      "experience-list.forja.highlights.performance",
+      "experience-list.forja.highlights.integrations"
+    ],
+    "projectSlug": "forja-platform",
+    "skills": [
+      {
+        "skillKey": "csharp"
+      },
+      {
+        "skillKey": "aspnetcore"
+      },
+      {
+        "skillKey": "entityframeworkcore"
+      },
+      {
+        "skillKey": "postgresql"
+      },
+      {
+        "skillKey": "redis"
+      },
+      {
+        "skillKey": "keycloak"
+      },
+      {
+        "skillKey": "minio"
+      },
+      {
+        "skillKey": "docker"
+      },
+      {
+        "skillKey": "swagger"
+      }
+    ]
+  },
+  {
+    "id": "itstep",
+    "type": "education",
+    "organization": "IT STEP Academy",
+    "startDate": "2021-12",
+    "endDate": "2025-05",
+    "titleKey": "experience-list.itstep.title",
+    "shortTitleKey": "experience-list.itstep.short",
+    "summaryKey": "experience-list.itstep.summary",
+    "highlightKeys": [
+      "experience-list.itstep.highlights.curriculum",
+      "experience-list.itstep.highlights.diploma"
+    ],
+    "skills": [
+      {
+        "skillKey": "csharp"
+      },
+      {
+        "skillKey": "aspnetcore"
+      },
+      {
+        "skillKey": "entityframeworkcore"
+      },
+      {
+        "skillKey": "sql"
+      },
+      {
+        "skillKey": "html"
+      },
+      {
+        "skillKey": "css"
+      },
+      {
+        "skillKey": "javascript"
+      },
+      {
+        "skillKey": "git"
+      }
+    ]
+  }
+]

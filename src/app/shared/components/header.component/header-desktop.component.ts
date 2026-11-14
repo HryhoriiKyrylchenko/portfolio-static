@@ -4,6 +4,7 @@ import {RouterLink} from '@angular/router';
 import {LanguageSwitcherComponent} from '../language-switcher.component/language-switcher.component';
 import {ThemeToggleComponent} from '../theme-toggle.component/theme-toggle.component';
 import {TranslocoPipe} from '@jsverse/transloco';
+import {RESUME} from '../../../config/contact.config';
 
 @Component({
   selector: 'app-header-desktop',
@@ -20,5 +21,7 @@ import {TranslocoPipe} from '@jsverse/transloco';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderDesktopComponent {
+  readonly resume = RESUME;
+
   @Input() navLinks: { textKey: string; path: string }[] = [];
 }
